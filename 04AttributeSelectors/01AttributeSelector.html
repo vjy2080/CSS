@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input{
+            width: 50%;
+        } */
+        /* <a> elements with a title attribute START*/
+        a[title] {
+            color: rgba(16, 57, 13, 0.677);
+        }
+
+        /* <a> elements with a title attribute END*/
+
+        /* <input> elements with a type attribute START*/
+        /* input[type] {
+            width: 50%;
+        } */
+
+        /* <input> elements with a type attribute START*/
+
+        /* <a> elements with an href matching "https://example.org" START*/
+        a[href="https://example.org"] {
+            color: green;
+        }
+
+        /* <a> elements with an href matching "https://example.org" END*/
+
+        input[type="text"],
+        input[type="password"] {
+            width: 50%;
+        }
+
+        /* <a> elements with an href containing "example" */
+        a[href*="example"] {
+            font-size: 2em;
+        }
+
+        div[class*="col"] {
+            font-size: 2em;
+            color: yellow;
+        }
+
+        /* <a> elements with an href ending ".org" */
+        a[href$=".in"] {
+            background: linear-gradient(orange, white, green);
+        }
+        a[href$=".uk"] {
+            background: red;
+        }
+
+        /* <a> elements whose class attribute contains the word "logo" */
+        a[class~="logo"] {
+            padding: 2px;
+            color: black;
+        }
+
+        /* div[class~="col"] {
+            font-size: 2em;
+            color: yellow;
+        } */
+    </style>
+</head>
+
+<body>
+    <a href="#">anchor without title</a> <br>
+    <a href="#" title="name aapyu">anchor with title</a> <br>
+    <a href="https://www.something.in">India site</a> <br>
+    <a href="https://www.something.uk">UK Site</a> <br>
+    <a class="logo" href="https://www.something.com">Comman Site</a> <br>
+    <form method="post">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+        <input type="radio" name="" id="male"> <label for="male">Male</label>
+        <input type="checkbox" name="" id="">
+    </form>
+
+    <div class="row">
+        <div class="col">test</div>
+        <div class="col">test</div>
+        <div class="col">test</div>
+        <div class="col">test</div>
+    </div>
+    <div class="row">
+        <div class="col-50">test</div>
+        <div class="col-50">test</div>
+        <div class="col-50">test</div>
+        <div class="col-50">test</div>
+    </div>
+    <div class="row">
+        <div class="col-25 col">test</div>
+        <div class="col-25 col">test</div>
+        <div class="col-25">test</div>
+        <div class="col-25">test</div>
+    </div>
+</body>
+
+</html>
