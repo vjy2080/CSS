@@ -1,1 +1,3 @@
-span{color: red;}
+span{border: 5px solid red;}
+.spanclass{background-color: yellow;font-size: larger;}
+h5{text-align: center;font-size: xx-large;}

@@ -5,13 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical of Extrnal CSS in HTML</title>
+    <link rel="stylesheet" href="style.css" class="style">
 </head>
 <body>
- <h2>Example
+    <h3>Example of External CSS</h3>
+
+    <!-- Ordered list create for explain examples -->
+    <ol>
+        <li>
+            <h4>External CSS (thick red border) given in external stylesheet to &lt;span&gt; tag</h4>
+        </li>
+
+        <!-- This code is for display code in browser to easily understand -->
+        <!-- For stop to disturb code used entities -->
+    <link rel="stylesheet" href="style.css" class="style">
     
- </h2>
-<h3>Example of External CSS</h3>
-<p>Lorem ipsum <span>dolor</span> sit amet.</p>
+   
+
+<!-- External CSS (thick red border) given to <span> tag -->
+    <p>Lorem ipsum <span>dolor</span> sit amet.</p>
+    
+    <li>
+        <h4>External CSS (Yellow Background with larger font) given in between style tag in head to &lt;span&gt; tag</h4>
+    </li>
+    
+    <!-- This code is for display code in browser to easily understand -->
+    <!-- For stop to disturb code used entities -->
+    <link rel="stylesheet" href="style.css" class="style">
+    
+    
+    
+    <!-- External CSS (Yellow Background with larger font) given to <span> tag by target to class(spanclass) and also get red font because it's <span> tag -->
+        <p>Lorem ipsum dolor sit amet consectetur, <span class="spanclass">adipisicing elit </span>.
+            Dolore, commodi.</p>
+            
+            <li>
+                <h4>External CSS (Blue Background & Yellow font) given in between style tag in head to &lt;span&gt; tag</h4>
+            </li>
+            
+            <!-- This code is for display code in browser to easily understand -->
+            <!-- For stop to disturb code used entities -->
+            <link rel="stylesheet" href="style.css" class="style">
+            
+            
+            <!-- External CSS (Blue Background & Yellow font) given to <h5> tag -->
+                <h5>Lorem ipsum dolor sit amet.</h5>
+    </ol>
 
 </body>
 </html>
