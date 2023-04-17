@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Background in CSS</title>
+    <style>
+        div[class*=back] {
+            height: 500px;
+        }
+
+        .back-color {
+            background-color: red;
+        }
+
+        .back-image {
+            background-image: url(../Images/natural.jpg);
+
+
+        }
+
+        .back-attach {
+            background-color: red;
+            color: white;
+            background-image: url(../Images/natural.jpg);
+
+            background-attachment: fixed;
+            /* background-attachment:local ; */
+            /* background-attachment:scroll ; */
+
+
+
+        }
+
+        .back-clip {
+            background-color: red;
+            color: white;
+            border: 10px dashed red;
+            outline: 10px dashed black;
+            margin: 50px;
+            padding: 50px;
+            background-image: url(../Images/natural.jpg);
+
+            background-clip: border-box;
+            /* background-clip:content-box; */
+            /* background-clip:padding-box; */
+
+        }
+
+        .back-origin {
+            background-color: red;
+            color: white;
+            border: 10px dashed red;
+            outline: 10px dashed black;
+            margin: 50px;
+            padding: 50px;
+            background-image: url(../Images/natural.jpg);
+
+            /* background-origin: padding-box; */
+            /* background-origin: content-box; */
+            background-origin: border-box;
+        }
+
+        .back-position {
+            background-color: red;
+            color: white;
+            /* border: 10px dashed red; */
+            /* outline: 10px dashed black; */
+            margin: 50px;
+            padding: 50px;
+            background-image: url(../Images/natural.jpg);
+            background-repeat: no-repeat;
+
+            /* background-position: 10% 10%; */
+            /* background-position: bottom; */
+            /* background-position: top; */
+            /* background-position: center 10%; */
+        }
+
+
+        .back-repeat {
+            background-color: rgb(149, 149, 120);
+            color: black;
+            border: 10px dashed red;
+            outline: 10px dashed black;
+            margin: 50px;
+            padding: 50px;
+            background-image: url(../Images/natural.jpg);
+            background-repeat: no-repeat;
+            /* background-repeat: repeat x  ; */
+            /* background-repeat: repeat-y; */
+
+        }
+
+        .back-size {
+            background-color: rgb(149, 149, 120);
+            color: black;
+            border: 10px dashed red;
+            outline: 10px dashed black;
+            margin: 50px;
+            padding: 50px;
+            background-image: url(../Images/natural.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            /* background-size: contain; */
+            /* background-size: cover; */
+            /* background-size: 50rem; */
+            background-size: 50em;
+        }
+
+        .shorthand{
+            height: 400px;
+            color: white;
+            background: center / contain no-repeat url(../Images/natural.jpg), pink 35% url(../Images/nature.webp);
+        }
+        .linear-gradient{
+            height: 400px;
+            background: linear-gradient(red,green,yellow);
+
+        }
+
+        .radial-gradient{
+            height: 400px;
+            background: radial-gradient(red,green,yellow);
+
+
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="back-color">
+        <h2>Background-color</h2>
+    </div>
+    <div class="back-image">
+        <h2>Background-image</h2>
+    </div>
+    <div class="back-attach">
+        <h2>Background-attachment</h2>
+    </div>
+    <div class="back-clip">
+        <h2>Background-clip</h2>
+    </div>
+    <div class="back-origin">
+        <h2>Background-origin</h2>
+    </div>
+    <div class="back-position">
+        <h2>Background-position</h2>
+    </div>
+    <div class="back-repeat">
+        <h2>Background-repeat</h2>
+    </div>
+    <div class="back-size">
+        <h2>Background-size</h2>
+    </div>
+    <div class="shorthand">
+        <h2>Background-shorthand</h2>
+    </div>
+    <div class="linear-gradient">
+        <h2>linear-gradient</h2>
+    </div>
+    <div class="radial-gradient">
+        <h2>radial-gradient</h2>
+    </div>
+</body>
+
+</html>
