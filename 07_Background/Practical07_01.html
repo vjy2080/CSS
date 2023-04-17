@@ -11,32 +11,30 @@
             box-sizing: border-box;
         }
 
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font-family: serif;
-        }
-
         h1 {
             font-size: 25px;
             margin: 0;
-
+        }
+        p, h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            padding: -10% 8%;
+            line-height: 2;
+            color: #393939;
         }
 
-        .img-area {
-
-            width: 50%;
-            height: 100%;
+        .img-area{
+            height: 200%;
+            width: 100%;
         }
 
-        .contentbox {
+            .contentbox {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 30%;
-            height: 30%;
+            height: 40%;
             text-align: center;
             background-color: rgba(91, 91, 91, 0.769);
             border: none;
@@ -57,23 +55,18 @@
             width: 30%;
             padding: 40px 0;
             text-align: center;
-            background-color: rgba(117, 117, 117, 0.027);
+            background-color: rgba(117, 117, 117, 0.415);
             color: #000000;
             font-weight: bold;
-
+            border: 1px solid gray;
+            border-radius: 10px;
         }
-        p, h1 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: lighter;
-            padding: -10% 8%;
-            line-height: 2;
-            color: #393939;
-        }
+       
     </style>
 </head>
 
 <body>
-    <div class="img-area"> <img src="../Images/task1BgImg.jpg" alt="bgimg" height="150%" width="200%"></div>
+    <div> <img class="img-area" src="../Images/task1BgImg.jpg" alt="bgimg" ></div>
     <div class="content">
         <h1>Blurred Background</h1>
         <p>By <u>Vijay Prajapati</u>
