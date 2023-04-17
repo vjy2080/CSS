@@ -1,26 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-Background Practical 1</title>
     <style>
-       .div1{
-        border: 2px solid black;
-        
-       }
-       
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: serif;
+        }
+
+        h1 {
+            font-size: 25px;
+            margin: 0;
+
+        }
+
+        .img-area {
+
+            width: 50%;
+            height: 100%;
+        }
+
+        .contentbox {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+            height: 30%;
+            text-align: center;
+            background-color: rgba(91, 91, 91, 0.769);
+            border: none;
+            border-radius: 10px;
+            filter: blur(5px);
+            border: 1px solid gray;
+            border-radius: 10px;
+
+
+        }
+
+        .content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 30%;
+            padding: 40px 0;
+            text-align: center;
+            background-color: rgba(117, 117, 117, 0.027);
+            color: #000000;
+            font-weight: bold;
+
+        }
+
+        .content p {
+           
+        }
+
+        p,
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            padding: -10% 8%;
+            line-height: 2;
+            color: #393939;
+        }
     </style>
 </head>
+
 <body>
-    <img src="../Images/task1BgImg.jpg" class="bgImg" alt="img">
-    <div class="div1">
-<h4>Blurred Background</h4>
-<p>By <u>Vijay Prajapati</u></p>
-<p>Drag this box to move around</p>
-<p>test</p>
+    <div class="img-area"> <img src="../Images/task1BgImg.jpg" alt="bgimg" height="150%" width="200%"></div>
+    <div class="content">
+        <h1>Blurred Background</h1>
+        <p>By <u>Vijay Prajapati</u>
+            <br>Image will scroll without dialog-box
+        </p>
 
     </div>
+    <div class="contentbox"></div>
+
 </body>
+
 </html>
