@@ -6,17 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical of Child Selector</title>
+
+    <!-- Recommanded External CSS must, but given internal CSS only for learning purpose, -->
+
     <style>
-        div>p>span>em {
+        /* Given style as color red to "em" which is child of "p" and p is child of "div"  */
+        div>p>em {
             color: red;
+        }
+
+        p>span>b {
+
+            color: blue;
         }
     </style>
 </head>
 
 <body>
+    
+    <h3>Example-1</h3>
+    <!-- Here in example <em> is child of <p> and <p> is child of <div> -->
     <div>
         <p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit. Donec a <em>urna</em> elit.</p>
     </div>
+
+    <h3>Example-2</h3>
+    <!-- Here in example <em> is child of <p> and <p> is child of <span> and <span> is child of <div> -->
+    <div>
+        <span>
+            <p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit. Donec a <em>urna</em> elit.</p>
+        </span>
+    </div>
+
+    <h3>Example-3</h3>
+    <!-- Here in example <b> is child of <span> and <span> is child of <p> -->
+    <p>Lorem ipsum dolor <span> <b>bold</b> sit amet consectetur adipisicing <b>bold</b> elit. Qui ab nemo sequi,
+            repellendus quidem magnam commodi reprehenderit non, distinctio <b>bold</b> </span> hic ipsa quam, eius
+        dolorum laudantium minima velit! Suscipit, at in!</p>
+
+    <h3>Example-4</h3>
+    <!-- Here in example <b> is child of <p> -->
+    <p>Lorem ipsum dolor <b>bold</b> sit amet consectetur adipisicing <b>bold</b> elit. Qui ab nemo sequi, repellendus
+        quidem magnam commodi reprehenderit non, distinctio <b>bold</b> hic ipsa quam, eius dolorum laudantium minima
+        velit! Suscipit, at in!</p>
+
+
+
 </body>
 
 </html>
