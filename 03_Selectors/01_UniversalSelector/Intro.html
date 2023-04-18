@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction of Universal Selector</title>
+    <link rel="stylesheet" href="../../AllStyleSheet/CommonIntro.css" class="style">
 </head>
+
 <body>
-    <h3></h3>
+    <h3>Universal selectors</h3>
+    <ul>
+        <li>The universal selector is a special type selector and can therefore be namespaced when using @namespace.
+        </li>
+        <li>This is useful when dealing with documents containing multiple namespaces such as HTML with inline SVG or
+            MathML, or XML that mixes multiple vocabularies.</li>
+        <ol>
+           <li> ns|* - matches all elements in namespace ns</li>
+           <li> *|* - matches all elements</li>
+           <li> |* - matches all elements without any declared namespace</li>
+        </ol>
+    </ul>
 </body>
+
 </html>

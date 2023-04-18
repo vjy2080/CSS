@@ -1,9 +1,16 @@
+
+/* given font color gray to all heading 3  */
+
 /* h3{
    color: gray;
 } */
+
+/* given font color red to class "clh3" */
 .clh3{
     color: red;
 }
+
+/* given font color green to ID "idh3" */
 #idh3{
     color: green ;
 }

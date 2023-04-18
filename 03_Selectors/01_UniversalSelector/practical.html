@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Universal Selectors in CSS</title>
+
+    <!-- Recommanded External CSS must, but given internal CSS only for learning purpose, -->
+    <style>
+        /* Define universal selector for page */
+        * {
+            color: red;
+            font-style: italic;
+            background-color: aquamarine;
+            border: 2px solid black;
+
+        }
+
+        /* Define universal selector for class "h3" */
+        *[class="h3"] {
+            color: blue;
+        }
+
+        /* Define universal selctor for id "h4" */
+        *[id="h4"] {
+            color: purple;
+        }
+
+        /* Define universal selctor for <span> tag */
+        *|span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Heading 1</h1>
+    
+    <h2>Heading 2</h2>
+    
+    <h3 class="h3">Heading 3</h3>
+    
+    <h3 class="h3">Heading 3</h3>
+    
+    <h3>Heading 3</h3>
+    
+    <h4 id="h4">Heading 4</h4>
+    
+    <h4 id="h4">Heading 4</h4>
+    
+    <h4>Heading 4</h4>
+    
+    <h5>Heading 5</h5>
+    
+    <h6>Heading 6</h6>
+    
+    <p>Paragraph</p>
+    
+    <p>Lorem ipsum <span>SPAN</span> dolor sit amet.</p>
+    
+    <p>Lorem ipsum <span>SPAN</span> dolor sit amet.</p>
+
+
+</body>
+
+</html>
