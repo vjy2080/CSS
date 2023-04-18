@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction of CSS Priority</title>
+
+    <link rel="stylesheet" href="../AllStyleSheet/CommonIntro.css" class="style">
 </head>
+
 <body>
-    
+
+    <h3> Priorities of CSS </h3>
+    <ul>
+        <li> Inline CSS has the highest priority,</li>
+        <li> Then comes Internal/Embedded followed by External CSS which has the least priority.</li>
+        <li> Multiple style sheets can be defined on one page.</li>
+        <li> For an HTML tag, styles can be defined in multiple style types and follow the below order.</li>
+        <ol>
+            <li> As Inline has the highest priority, any styles that are defined in the internal and external style
+                sheets
+                are overridden by Inline styles.</li>
+            <li> Internal or Embedded stands second in the priority list and overrides the styles in the external style
+                sheet.</li>
+            <li> External style sheets have the least priority. If there are no styles defined either in inline or
+                internal
+                style sheet then external style sheet rules are applied for the HTML tags.</li>
+        </ol>
+    </ul>
+
 </body>
+
 </html>
