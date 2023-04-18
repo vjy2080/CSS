@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of ID Selector in CSS</title>
+
+    <!-- Recommanded External CSS must, but given internal CSS only for learning purpose, -->
+
+
+    <style>
+        /* Given different background color style to different headings by each ID */
+        #h1 {
+            background-color: red;
+        }
+
+        #h2 {
+            background-color: blue;
+        }
+
+        #h3 {
+            background-color: blueviolet;
+        }
+
+        #h4 {
+            background-color: palegreen;
+        }
+
+        #h5 {
+            background-color: purple;
+        }
+
+        #h6 {
+            background-color: brown;
+        }
+
+        /* Given 5px solid green border and padding-left 400px style to ID "div" */
+        #div {
+            background-color: rgb(156, 137, 117);
+            padding-left: 400px;
+        }
+
+        /* Given 10px solid black border and font-size xx-large style to ID "table" */
+        #table{
+            border: 10px solid black;
+            font-size: xx-large;
+              }
+              
+    </style>
+
+</head>
+
+<body>
+    <h1 id="h1">Heading 1</h1>
+    <h2 id="h2">Heading 2</h2>
+    <h3 id="h3">Heading 3</h3>
+    <h4 id="h4">Heading 4</h4>
+    <h5 id="h5">Heading 5</h5>
+    <h6 id="h6">Heading 6</h6>
+
+    <div id="div">
+        <table id="table">
+                <tr>
+                    <td> ROW 1, COL 1</td>
+                    <td> ROW 1, COL 2</td>
+                </tr>
+            <tr>
+                <td> ROW 2, COL 1</td>
+                <td> ROW 2, COL 2</td>
+            </tr>
+            <tr>
+                <td> ROW 3, COL 1</td>
+                <td> ROW 3, COL 2</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
