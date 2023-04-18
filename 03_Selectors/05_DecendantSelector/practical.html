@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Decendant Selector in CSS</title>
+
+    <!-- Recommanded External CSS must, but given internal CSS only for learning purpose, -->
+
+
+    <style>
+        /* Given redbg to all <P> paragraph which is into class"firstdiv" */
+        .firstdiv p {
+            background-color: red;
+        }
+
+        /* Given yellowbg to all <P> paragraph which is into class"firstdiv" */
+        .seconddiv p {
+            background-color: yellow;
+        }
+
+        /* Given 5px solid black style to <th> which all are in <table> */
+        table th {
+            border: 5px solid black;
+        }
+
+        /* Given 5px solid blue style to <td> which all are in <table> */
+        table td {
+            border: 5px solid blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="firstdiv">
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <h4>This is Heading 4</h4>
+        <p>This is a paragraph</p>
+        <h4>This is Heading 4</h4>
+    </div>
+
+    <div class="seconddiv">
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <h4>This is Heading 4</h4>
+        <p>This is a paragraph</p>
+    </div>
+
+    <table>
+        <tr>
+            <th> ROW 1, COL 1</th>
+            <th> ROW 1, COL 2</th>
+        </tr>
+        <tr>
+            <td> ROW 2, COL 1</td>
+            <td> ROW 2, COL 2</td>
+        </tr>
+        <tr>
+            <td> ROW 3, COL 1</td>
+            <td> ROW 3, COL 2</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
