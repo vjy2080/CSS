@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Priority in CSS</title>
+
+    <!-- link given of external style sheet in first and last line for check priority of it  -->
+    <link rel="stylesheet" href="practicalstyle.css" class="style">
+    
+    <!-- here is an internal style sheet between <style> tag -->
+    <style>
+        
+        /* given style direct to heading 3 in first and last line for check it's priority */
+        
+        /* h3 {
+            color: blue;
+        } */
+        
+        /* given style to class "clh3" in internal and external style sheet also */
+        
+        .clh3 {
+            color: green;
+        }
+        
+        /* given style to ID "idh3" in internal and external style sheet also */
+        
+        #idh3 {
+            color: purple;
+        }
+        
+        
+        /* given style direct to heading 3 in first and last line for check it's priority */
+        h3 {
+            color: blue;
+        }
+        
+        /* given style to class "clh3" in last line for check priority of it */
+        /* .clh3{
+            color: yellow;
+        } */
+        
+        </style>
+
+        <!-- <link rel="stylesheet" href="practicalstyle.css" class="style"> -->
+</head>
+
+<body>
+
+    
+    <h3>This is heading 3</h3>
+    <h3 class="clh3">This is heading 3 with Class "clh3"</h3>
+    <h3 id="idh3">This is heading 3 with ID "idh3"</h3>
+
+    <!-- given inline style for check priority of it -->
+    <h3 style="color: red;">This is heading 3 with inline style color red</h3>
+
+
+</body>
+
+</html>
