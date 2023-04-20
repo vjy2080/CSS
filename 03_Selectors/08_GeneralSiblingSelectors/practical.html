@@ -11,13 +11,13 @@
 
 
     <style>
-
-/* Given style red color to all span which is next to span */
+        /* Given style red color to all span which is next to h3 and it's child of it */
 
         h3~span {
             color: red;
         }
 
+        /* Given style red color to all paragraph which is next to <img> element it's and child of it */
         img~p {
             background-color: aquamarine;
             font-size: xx-large;
@@ -39,10 +39,25 @@
     <span>SPAN</span>
     excepturi nam eum.
     <hr>
-<h2>Example-2</h2>
-    <img src="../../Images/Sample1.jpg" alt="img">
-    <P>This is the sample image, For learning purpose.</P>
+    <h2>Example-2</h2>
+    <div>
 
+        <img src="../../Images/Sample1.jpg" alt="img">
+        <P>This is the sample image, For learning purpose.</P>
+        <P>This is the sample image, For learning purpose.</P>
+
+        <ul>
+            <li>
+                <!-- This paragraph is child of <li> element not of <img> so its can't get style -->
+                <P>This is the sample image, For learning purpose.</P>
+            </li>
+        </ul>
+        <P>This is the sample image, For learning purpose.</P>
+        <div>
+            <!-- This paragraph is child of <div> element not of <img> so its can't get style -->
+            <P>This is the sample image, For learning purpose.</P>
+        </div>
+    </div>
 </body>
 
 </html>
