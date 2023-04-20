@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction of adjacent sibling selector</title>
 
-<link rel="stylesheet" href="../../AllStyleSheet/CommonIntro.css" class="style">
+    <link rel="stylesheet" href="../../AllStyleSheet/CommonIntro.css" class="style">
 
 </head>
+
 <body>
-   <h3> Adjacent sibling combinator</h3>
-   <ul>
-<li> The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element</li>
-<li> and both are children of the same parent element.</li>
-<li>It will consider only after closing tag like :- &lt;b&gt; some text &lt;span&gt;</li>
-<li> <b> Example:- </b>
-    <ul type="square">
-       <li> If, x, y and z are three HTML elements</li>
-       <li> y and z resides next to each other within x,</li>
-       <li> then y and z are called as adjacent sibling selectors.</li>
-</ul></li>
-</ul>
+    <h3> Adjacent sibling combinator</h3>
+    <ul>
+        <li> The adjacent sibling combinator (+) separates two selectors and matches the second element only if it
+            immediately follows the first element</li>
+        <li> and both are children of the same parent element.</li>
+        <li> Structure:- <ul type="square">
+                <li> <br> &lt;html&gt; <br> &lt;head&gt; <br> &lt;style&gt; b+span{color:red;} &lt;/style&gt; <br>
+                &lt;/head&gt; <br> &lt;body&gt; <br> &lt;b&gt; some text &lt;span&gt; some text &lt;/span&gt; <br>
+                &lt;/body&gt; <br> &lt;/html&gt; </li>
+    </ul>
+    <li> <b> Example:- </b>
+        <ul type="square">
+            <li> If, x, y and z are three HTML elements</li>
+            <li> y and z resides next to each other within x,</li>
+            <li> then y and z are called as adjacent sibling selectors.</li>
+        </ul>
+    </li>
+    </ul>
 </body>
+
 </html>
