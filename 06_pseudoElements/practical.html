@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of pseudo Elements</title>
+
+
+    
+    <style>
+        p::after{
+            content: "  End";
+        }
+        p::before{
+            content: "Start  ";
+        }
+        p::first-letter {
+            font-size: 36px;
+        }
+
+        p::first-line {
+            background-color: rgb(193, 203, 81);
+        }
+
+       
+        p::selection {
+            background-color: rgb(128, 0, 126);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti odit, illum beatae accusamus
+        necessitatibus aperiam fuga quisquam recusandae ipsa quidem? Aliquid velit atque deserunt nihil dolorum nulla
+        rem omnis?
+        Velit doloribus tempora eos nisi sapiente <mark>MARK</mark>ipsam impedit. Natus enim similique molestias earum quod odit magni.
+        Non repellendus ratione adipisci fugiat. Quo sed nobis dicta nulla aperiam eos ipsa accusamus!
+        Voluptates repudiandae enim ea eaque voluptatem modi quasi eum nobis. Quos recusandae voluptates voluptatibus
+        officiis, quia, nulla delectus ad inventore nostrum in dolorem. Omnis nisi, ducimus quasi accusamus id saepe!
+    </p>
+</body>
+
+</html>
