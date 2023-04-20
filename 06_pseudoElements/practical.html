@@ -10,21 +10,26 @@
 
 
     <style>
+        /* Given style after(ending of) the paragraph tag */
         p::after{
             content: "  End";
         }
+        /* Given style before(starting of) the paragraph tag */
         p::before{
             content: "Start  ";
         }
+        /* Given style First letter of the paragraph tag */
         p::first-letter {
             font-size: 36px;
         }
-
+        
+        /* Given style First line of the paragraph tag */
         p::first-line {
             background-color: rgb(193, 203, 81);
         }
-
-       
+        
+        
+        /* Given style when select a text of the paragraph tag */
         p::selection {
             background-color: rgb(128, 0, 126);
             color: white;
