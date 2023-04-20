@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Attribute Selector</title>
+
+    <!-- Recommanded External CSS must, but given internal CSS only for learning purpose, -->
+
+
+    <style>
+        div[class="skybluebg"] {
+            background-color: skyblue;
+        }
+
+
+        /* <a> elements with a title attribute */
+        a[title] {
+            color: red;
+        }
+
+        /* <a> elements with an href matching "https://www.example.com" */
+        a[href="https://www.example.com"] {
+            color: green;
+        }
+
+        /* <a> elements with an href containing "example" */
+        a[href*="example"] {
+            font-size: 2em;
+        }
+
+        /* <a> elements with an href ending ".org" */
+        a[href$=".org"] {
+            font-style: italic;
+        }
+
+        /* <a> elements whose class attribute contains the word "logo" */
+        a[class~="logo"] {
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p> <span class="skybluebg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio distinctio est nulla cum voluptate labore eius aspernatur quod molestiae pariatur vitae dicta repudiandae ipsum atque explicabo, ratione incidunt debitis. </span> </p>
+
+    <div class="skybluebg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nostrum cupiditate fuga nemo obcaecati, dicta minima quas soluta exercitationem odit pariatur accusamus ducimus excepturi distinctio dolorem ullam eveniet et repellendus?</p>
+    </div>
+
+
+    <ul>
+        <li><a href="internal" title="internal">Internal link</a></li> <br><br>
+        <li><a href="https://www.example.com">https://www.example.com</a></li> <br><br>
+        <li><a href="InSensitive">Insensitive internal link</a></li> <br><br>
+        <li><a href="http://example.org">Example org link</a></li> <br><br>
+        <li><a href="https://example.org">Example https org link</a></li> <br><br>
+        <li><a href="https://example.org" class="logo">Example https org link</a></li> <br><br>
+        <li><a href="https://example.org" class="log-1">Example https org link</a></li> <br><br>
+    </ul>
+
+    
+</body>
+
+</html>

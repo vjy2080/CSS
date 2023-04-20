@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Grouping selectors</title>
+
+    <!-- Recommanded External CSS must, but given internal CSS only for learning purpose, -->
+
+
+    <style>
+        /* Given style blue color with yellow bg to all h4,h5,h6 element */
+        
+        h4,
+        h5,
+        h6 {
+            color: blue;
+            background-color: yellow;
+        }
+        
+        /* Given style red color with skyblue bg to all h1,h2,h3 element */
+        h1,
+        h2,
+        h3 {
+            color: red;
+            background-color: skyblue;
+        }
+        
+        /* Given style font-size: x-large & text-transform: uppercase  to all span & em element */
+        span,
+        em {
+            font-size: x-large;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h1>Heading 1</h1>
+    <h6>Heading 6</h6>
+    <h6>Heading 6</h6>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h3>Heading 3</h3>
+    <table>
+        <tr>
+            <td>
+                <h2>Heading 2</h2>
+            </td>
+        <tr>
+            <td>
+                <h4>Heading 4</h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h5>Heading 5</h5>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h6>Heading 6</h6>
+            </td>
+        </tr>
+        </tr>
+    </table>
+    <p>Lorem, ipsum dolor sit amet <span>span</span> consectetur adipisicing elit. <em>emphasize</em> Suscipit placeat,
+        culpa soluta modi facere <span>span</span> molestias enim perspiciatis, amet eius blanditiis, neque cupiditate
+        atque velit rem ab corporis officiis! Atque, expedita!</p>
+    <ul>
+        <li>
+            <p>Lorem, ipsum dolor sit amet <span>span</span> consectetur adipisicing elit. <em>emphasize</em> Suscipit
+                placeat, culpa soluta modi facere <span>span</span> molestias enim perspiciatis, amet eius blanditiis,
+                neque cupiditate atque velit rem ab corporis officiis! Atque, expedita!</p>
+        </li>
+    </ul>
+    <div>
+        <p>Lorem, ipsum dolor sit amet <span>span</span> consectetur adipisicing elit. <em>emphasize</em> Suscipit
+            placeat,
+            culpa soluta modi facere <span>span</span> molestias enim perspiciatis, amet eius blanditiis, neque
+            cupiditate
+            atque velit rem ab corporis officiis! Atque, expedita!</p>
+    </div>
+
+    <blockquote>
+        <p>Lorem, ipsum dolor sit amet <span>span</span> consectetur adipisicing elit. <em>emphasize</em> Suscipit
+            placeat,
+            culpa soluta modi facere <span>span</span> molestias enim perspiciatis, amet eius blanditiis, neque
+            cupiditate
+            atque velit rem ab corporis officiis! Atque, expedita!</p>
+    </blockquote>
+</body>
+
+</html>
