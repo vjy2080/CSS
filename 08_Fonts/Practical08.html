@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practical of Font properties in CSS</title>
     <style>
+        /* Given style to h3 and ol for highlighetd topics */
+        h3 {
+            font-size: x-large;
+            text-decoration: underline;
+            color: blue;
+        }
+
+        ol {
+            font-size: x-large;
+        }
+
+/* @Font face is used for external font family import to page as customfonts */
         @font-face {
             font-family: customfonts;
-            src: url(ExternalFonts/AlexBrush-Regular.ttf);
+            src: url(SedgwickAveDisplay-Regular.ttf);
         }
-        .font-family{ font-family: 'Courier New', Courier, monospace; }
-        .font-family-sans{ font-family: sans-serif }
-        .font-family-serif{ font-family: serif }
-        .Font-size-50-px{ font-size: 50px; }
-        .Font-size-3-em{ font-size: 3em; }
-        .Font-size-3-rem{ font-size:3rem ; }
-        .Font-size-3-vh{ font-size: 5vh; }
-        .Font-size-5-in{ font-size: .5in; }
-        .font-stretch{ font-stretch: expanded; }
-        .font-style{ font-style: italic; }
-        .font-variant{ font-variant: small-caps; }
-        .font-weight{ font-weight: bolder; }
-        .line-height{  line-height: 40px; }
-        .externalfonts{ font-family: customfonts; }
+/* font family used for different type of fonts which is in built */
+        .font-family {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .font-family-sans {
+            font-family: sans-serif
+        }
+
+        .font-family-serif {
+            font-family: serif
+        }
+
+        .Font-size-20-px {
+            font-size: 20px;
+        }
+
+        .Font-size-2-em {
+            font-size: 2em;
+        }
+
+        .Font-size-2-rem {
+            font-size: 2rem;
+        }
+
+        .Font-size-2-vh {
+            font-size: 2vh;
+        }
+
+        .Font-size-2-in {
+            font-size: .2in;
+        }
+
+        .font-stretch {
+            font-stretch: expanded;
+        }
+
+        .font-style {
+            font-style: italic;
+        }
+
+        .font-variant {
+            font-variant: small-caps;
+        }
+
+        .font-weight {
+            font-weight: bolder;
+        }
+
+        .line-height {
+            line-height: 40px;
+        }
+
+        .externalfonts {
+            font-family: customfonts;
+        }
     </style>
 </head>
+
 <body>
-    <img src="typesOfFonts.png" alt="">
-    <ul>
-        <li><code>font-family</code></li>
-        <li><code>font-size</code></li>
-        <li><code>font-stretch</code></li>
-        <li><code>font-style</code></li>
-        <li><code>font-variant</code></li>
-        <li><code>font-weight</code></li>
-        <li><code>line-height</code></li>
-      </ul>
-      <h2 class="font-family-sans"> sans-serif font-family</h2> 
-      <h2 class="font-family-serif"> sans-serif font-family</h2> 
-      <p class="font-family" > 
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsam hic facilis maxime dolorum, repellat consequatur nostrum rerum nam delectus quibusdam voluptate quae est recusandae facere tempore odit expedita exercitationem!
-    </p>
-      <p class="font-size" >
-        <p class="Font-size-50-px">Font-size-50-px</p>
-        <p class="Font-size-3-em">Font-size-3-em</p>
-        <p class="Font-size-3-rem">Font-size-3-rem</p>
-        <p class="Font-size-3-vh">Font-size-3-vh</p>
-        <p class="Font-size-5-in">Font-size-5-in</p>
+
+    <ol>
+        <li>
+            <h3>font-family</h3>
+        </li>
+
+
+        <h2 class="font-family-sans"> sans-serif font-family</h2>
+        <h2 class="font-family-serif"> sans-serif font-family</h2>
+        <p class="font-family">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsam hic facilis maxime dolorum, repellat
+            consequatur nostrum rerum nam delectus quibusdam voluptate quae est recusandae facere tempore odit expedita
+            exercitationem!
+        </p>
+
+        <hr>
+
+        <li>
+            <h3>font-size</h3>
+        </li>
+
+        <p class="font-size">
+        <p class="Font-size-20-px">Font-size-20-px</p>
+        <p class="Font-size-2-em">Font-size-2-em</p>
+        <p class="Font-size-2-rem">Font-size-2-rem</p>
+        <p class="Font-size-2-vh">Font-size-2-vh</p>
+        <p class="Font-size-2-in">Font-size-2-in</p>
         <pre>
             /* &lt;absolute-size&gt; values */
                 font-size: xx-small;
@@ -80,12 +142,63 @@
                 font-size: revert-layer;
                 font-size: unset;
         </pre>
-      </p>
-      <p class="font-stretch" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt recusandae cum id exercitationem quod quaerat eum dignissimos quae minima, nulla, fugit fugiat, quo aliquid harum in voluptatem sit facere eius.</p>
-      <p class="font-style" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia debitis a molestias. Quos ratione autem fugit maxime dignissimos necessitatibus magni. Illum veritatis voluptatum officiis inventore velit accusantium odio modi voluptas.</p>
-      <p class="font-variant" >font-variant</p>
-      <p class="font-weight" >font-weight</p>
-      <p class="line-height" > line-height Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, excepturi, quia facere voluptatum et, in nam tenetur voluptatem saepe sapiente perspiciatis natus debitis! Magnam eligendi molestias veritatis eveniet minima est.</p>
-      <p class="externalfonts" > line-height Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, excepturi, quia facere voluptatum et, in nam tenetur voluptatem saepe sapiente perspiciatis natus debitis! Magnam eligendi molestias veritatis eveniet minima est.</p>
+        </p>
+
+        <hr>
+
+        <li>
+            <h3>font-stretch</h3>
+        </li>
+
+        <p class="font-stretch"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt recusandae cum id
+            exercitationem quod quaerat eum dignissimos quae minima, nulla, fugit fugiat, quo aliquid harum in
+            voluptatem sit facere eius.</p>
+
+        <hr>
+
+        <li>
+            <h3>font-style</h3>
+        </li>
+
+        <p class="font-style">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia debitis a molestias.
+            Quos ratione autem fugit maxime dignissimos necessitatibus magni. Illum veritatis voluptatum officiis
+            inventore velit accusantium odio modi voluptas.</p>
+
+        <hr>
+
+        <li>
+            <h3>font-variant</h3>
+        </li>
+
+        <p class="font-variant">font-variant</p>
+
+        <hr>
+
+        <li>
+            <h3>font-weight</h3>
+        </li>
+
+        <p class="font-weight">font-weight</p>
+
+        <hr>
+
+        <li>
+            <h3>line-height</h3>
+        </li>
+        <p class="line-height"> line-height Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+            excepturi, quia facere voluptatum et, in nam tenetur voluptatem saepe sapiente perspiciatis natus debitis!
+            Magnam eligendi molestias veritatis eveniet minima est.</p>
+
+        <hr>
+
+        <li>
+            <h3>Customfonts</h3>
+        </li>
+        <p class="externalfonts"> line-height Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+            excepturi, quia facere voluptatum et, in nam tenetur voluptatem saepe sapiente perspiciatis natus debitis!
+            Magnam eligendi molestias veritatis eveniet minima est.</p>
+
+    </ol>
 </body>
+
 </html>
