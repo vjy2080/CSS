@@ -10,24 +10,25 @@
     <!-- Recommanded External CSS must, but given internal CSS only for learning purpose, -->
     
     <style>
-/* Given style red color to all h2 which is next to h1 */
+/* Given style red color to all h2 which is first next to h1 */
 h1+h2 {
     color: red;
 }
 
-/* Given style blue color to all h3 which is next to h2 */
+/* Given style blue color to all h3 which is first next to h2 */
 h2+h3 {
     color: blue;
 }
 
-/* Given style green color to all h1 which is next to h2 */
+/* Given style green color to all h1 which is first next to h2 */
 h2+h1 {
     color: green;
 }
 
-/* Given style purple color to all span which is next to bold */
+/* Given style purple color & Font size XX-large to all span which is first next to bold */
        b+span {
             color: purple;
+            font-size: xx-large;
         }
     </style>
 </head>
@@ -46,7 +47,7 @@ h2+h1 {
     <h1>Heading 1-3</h1>
     <h2>Heading 2-3</h2>
 
-    <p>Lorem ipsum dolor sit amet consectetur <b>BOLD</b> adipisicing elit. <span>SPAN</span>Molestiae obcaecati eligendi deserunt expedita aut, tempora <b>BOLD</b> earum eum delectus incidunt corporis nostrum illum cumque corrupti soluta esse cupiditate <span>SPAN</span> aspernatur. Expedita, cumque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b>BOLD</b> adipisicing elit. <span>SPAN</span>Molestiae obcaecati eligendi deserunt expedita aut, tempora <i>Italic</i> earum eum delectus incidunt corporis nostrum illum cumque corrupti soluta esse cupiditate <span>SPAN</span> aspernatur. Expedita, cumque!</p>
 </body>
 
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of General Sibling Selectors</title>
+
+    <!-- Recommanded External CSS must, but given internal CSS only for learning purpose, -->
+
+
+    <style>
+
+/* Given style red color to all h2 which is next to h1 */
+
+        h3~span {
+            color: red;
+        }
+
+        img~p {
+            background-color: aquamarine;
+            font-size: xx-large;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h2>Example-1</h2>
+    <h3>Lorem ipsum dolor sit amet </h3>
+    <span>SPAN</span>
+    consectetur
+    <b>BOLD</b>
+    adipisicing elit.
+    <span>SPAN</span>
+    Iste recusandae, qui numquam ex
+    <span>SPAN</span>
+    excepturi nam eum.
+    <hr>
+<h2>Example-2</h2>
+    <img src="../../Images/Sample1.jpg" alt="img">
+    <P>This is the sample image, For learning purpose.</P>
+
+</body>
+
+</html>
