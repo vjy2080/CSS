@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        p{ color: brown; }
+        .text-left{ text-align: left; }
+        .text-right{ text-align: right; }
+        .text-center{ text-align: center; }
+        .text-justify{ text-align: justify; }
+        .text-end{ text-align: end; }
+        .text-start{ text-align: start; }
+        div[class*="text"]{
+            width: 250px ;
+        }
+        .text-decoration{ 
+            /* text-decoration: dashed; not applicable  */
+            /* text-decoration: line-through; */
+            /* text-decoration: overline; */
+            text-decoration: underline;
+         }
+         .btn:hover{
+             background-color: rgb(19, 103, 103);
+            box-shadow: 3px 3px 5px rgb(11, 75, 75);
+         }
+         .btn{
+            background-color: teal;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+         }
+         .text-trans-capitalize{ text-transform: capitalize; }
+         .text-trans-lowercase{ text-transform: lowercase; }
+         .text-trans-uppercase{ text-transform: uppercase; }
+         .text-indentation{ text-indent: 50px; }
+         .text-letter-spacing{letter-spacing: 5px; }
+         .text-word-spacing{word-spacing: 5px; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> Text Color</li>
+        <li> Text Alignment</li>
+        <li> Text Decoration</li>
+        <li> Removing the Default Underline from Links</li>
+        <li> Text Transformation</li>
+        <li> Text Indentation</li>
+        <li> Letter Spacing</li>
+        <li> Word Spacing</li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima ratione corrupti delectus excepturi, itaque aliquam labore sunt modi fuga, rerum dolores, fugit ab minus incidunt velit deserunt illo saepe! Quia!</p>
+    <div class="text-left"> <h2> text-left </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nobis hic corporis, alias nulla velit reprehenderit officia quae aperiam delectus excepturi soluta, necessitatibus pariatur in rem! Assumenda non ab fuga! </div>
+    <div class="text-right"> <h2> text-right </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nobis hic corporis, alias nulla velit reprehenderit officia quae aperiam delectus excepturi soluta, necessitatibus pariatur in rem! Assumenda non ab fuga! </div>
+    <div class="text-center"> <h2> text-center </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nobis hic corporis, alias nulla velit reprehenderit officia quae aperiam delectus excepturi soluta, necessitatibus pariatur in rem! Assumenda non ab fuga! </div>
+    <div class="text-justify"> <h2> text-justify </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nobis hic corporis, alias nulla velit reprehenderit officia quae aperiam delectus excepturi soluta, necessitatibus pariatur in rem! Assumenda non ab fuga! </div>
+    <div class="text-end"> <h2> text-end </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nobis hic corporis, alias nulla velit reprehenderit officia quae aperiam delectus excepturi soluta, necessitatibus pariatur in rem! Assumenda non ab fuga! </div>
+    <div class="text-start text-decoration"> <h2> text-start </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nobis hic corporis, alias nulla velit reprehenderit officia quae aperiam delectus excepturi soluta, necessitatibus pariatur in rem! Assumenda non ab fuga! </div>
+    <h3 class="text-decoration">text-decoration</h3>
+    <a class="btn" href="#">Click</a>
+
+    <h2>Text Transformation</h2>
+    <h3>text-trans-capitalize</h3>
+    <div class="text-trans-capitalize"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit eaque exercitationem qui quia autem voluptate quae tenetur minima accusamus blanditiis magnam cumque, necessitatibus ullam accusantium architecto dolor earum nostrum.</p></div>
+    <h3>text-trans-lowercase</h3>
+    <div class="text-trans-lowercase"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit eaque exercitationem qui quia autem voluptate quae tenetur minima accusamus blanditiis magnam cumque, necessitatibus ullam accusantium architecto dolor earum nostrum.</p></div>
+    <h3>text-trans-uppercase</h3>
+    <div class="text-trans-uppercase"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit eaque exercitationem qui quia autem voluptate quae tenetur minima accusamus blanditiis magnam cumque, necessitatibus ullam accusantium architecto dolor earum nostrum.</p></div>
+    <h3>text-indentation</h3>
+    <div class="text-indentation"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit eaque exercitationem qui quia autem voluptate quae tenetur minima accusamus blanditiis magnam cumque, necessitatibus ullam accusantium architecto dolor earum nostrum.</p></div>
+    <h3>Letter Spacing</h3>
+    <div class="text-letter-spacing"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit eaque exercitationem qui quia autem voluptate quae tenetur minima accusamus blanditiis magnam cumque, necessitatibus ullam accusantium architecto dolor earum nostrum.</p></div>
+    <h3>Word Spacing</h3>
+    <div class="text-word-spacing"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit eaque exercitationem qui quia autem voluptate quae tenetur minima accusamus blanditiis magnam cumque, necessitatibus ullam accusantium architecto dolor earum nostrum.</p></div>
+    <h3>word-break: normal;</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
