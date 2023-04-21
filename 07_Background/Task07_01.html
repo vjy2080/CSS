@@ -8,14 +8,20 @@
     <title>CSS-Background Practical 1</title>
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
+        /* Given style to h1 */
         h1 {
             font-size: 25px;
             margin: 0;
+            /* Given style to h1 & Paragraph */
         }
-        p, h1 {
+
+        p,
+        h1 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: lighter;
             padding: -10% 8%;
@@ -23,20 +29,22 @@
             color: #393939;
         }
 
-        .img-area{
+        /* Given style to background image */
+        .img-area {
             height: 200%;
             width: 100%;
         }
-
-            .contentbox {
+        
+        /* Given style to contnent box for create look like blur-glass */
+        .contentbox {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 30%;
-            height: 40%;
+            height: 27%;
             text-align: center;
-            background-color: rgba(91, 91, 91, 0.769);
+            background-color: rgba(91, 91, 91, 0.337);
             border: none;
             border-radius: 10px;
             filter: blur(5px);
@@ -45,7 +53,7 @@
 
 
         }
-
+/* Given style to content which is in the box  */
         .content {
             position: fixed;
             top: 50%;
@@ -55,18 +63,18 @@
             width: 30%;
             padding: 40px 0;
             text-align: center;
-            background-color: rgba(117, 117, 117, 0.415);
-            color: #000000;
-            font-weight: bold;
+            background-color: rgba(201, 201, 201, 0.415);
+            color: black;
+            font-weight: 900;
+            font-size: large;
             border: 1px solid gray;
             border-radius: 10px;
         }
-       
     </style>
 </head>
 
 <body>
-    <div> <img class="img-area" src="../Images/task1BgImg.jpg" alt="bgimg" ></div>
+    <div> <img class="img-area" src="../Images/task1BgImg.jpg" alt="bgimg"></div>
     <div class="content">
         <h1>Blurred Background</h1>
         <p>By <u>Vijay Prajapati</u>
