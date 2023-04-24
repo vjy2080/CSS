@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid grey;
+            background-color: teal;
+            color: white;
+        }
+
+        .container {
+            background-color: turquoise;
+        }
+
+        .float-r {
+            float: right;
+        }
+
+        .float-l {
+            float: left;
+        }
+
+        .clear-float {
+            clear: both;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Float</h2>
+    <p>The float CSS property places an element on the left or right side of its container, allowing text and inline
+        elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a
+        part of the flow (in contrast to absolute positioning).</p>
+    <div>test</div>
+    before
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam atque possimus tempore eveniet, labore dolorum
+        pariatur voluptas sint. Assumenda reiciendis necessitatibus sapiente minus eos accusantium labore harum dolorum
+        ipsum voluptatibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sed deleniti tenetur error
+        dolor reprehenderit consequatur quaerat porro est temporibus, accusamus atque aliquid quam suscipit minima ipsa
+        assumenda veritatis consectetur.</div>
+        after
+        <div class="container">
+            <div class="logo float-l">Logo</div>
+            <div class="menu float-r">Menu</div>
+        </div>
+    <figure class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Specified value</th>
+                    <th>Computed value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>inline</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>inline-block</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>inline-table</code></td>
+                    <td><code>table</code></td>
+                </tr>
+                <tr>
+                    <td><code>table-row</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>table-row-group</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>table-column</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>table-column-group</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>table-cell</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>table-caption</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>table-header-group</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>table-footer-group</code></td>
+                    <td><code>block</code></td>
+                </tr>
+                <tr>
+                    <td><code>inline-flex</code></td>
+                    <td><code>flex</code></td>
+                </tr>
+                <tr>
+                    <td><code>inline-grid</code></td>
+                    <td><code>grid</code></td>
+                </tr>
+                <tr>
+                    <td><em>other</em></td>
+                    <td><em>unchanged</em></td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <ul>
+        <li>float: left;</li>
+        <li>float: right;</li>
+        <li>float: none;</li>
+        <li>float: inline-start;</li>
+        <li>float: inline-end;</li>
+    </ul>
+  
+    <div class="center">test</div>
+    <!-- <div class="clear-float"></div> -->
+    <!-- <div class="clear-float">test</div> -->
+</body>
+
+</html>

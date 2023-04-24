@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table.border{
+            border-collapse: collapse;
+        }
+        table.border,table.border td,table.border th{
+            border: 1px solid;
+            width: 150px;
+            /* height: 150; */
+            padding: 10px;
+        }
+        /* tr:nth-child(even){
+            background-color: teal;
+            color: white;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(4, 59, 59);
+            color: white;
+        } */
+        /* tr:nth-child(3n){ */
+        tr:nth-child(3n+2){
+            background-color: rgb(4, 59, 59);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>test</th>
+                <th>test</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+    </table>
+    <table class="border">
+        <thead>
+            <tr>
+                <th>test</th>
+                <th>test</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+    </table>
+
+</body>
+</html>
