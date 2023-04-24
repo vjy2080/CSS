@@ -1,40 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .left-logo{
+        
+        .left-logo {
             float: left;
         }
-        .left-search{
+
+        .left-search {
             float: left;
+            border: 1px solid orange;
+            border-radius: 3px;
+            margin-top: 5px;
+            width: 150px;
         }
-        .srchbtn{
-            border: 2px solid orange;
+
+        input::placeholder {
+            font: 8px sans-serif;
+        }
+
+        .srchbtn {
+            float: left;
+            border: 1px solid orange;
+            border-radius: 3px;
             color: orange;
             height: 20px;
             width: 20px;
             background-image: url(../Images/search.jpg);
+            margin-top: 5px;
+            background-repeat: no-repeat;
         }
-        .center{
-            float: center;
+
+        .border>a {
+            border-right: 1px solid black;
+            text-decoration: none;
+            font-size: xx-small;
+            margin: 2px;
+            padding: 2px;
+            color: black;
         }
-        .right{
-            float: right;
+
+        .last-anchor {
+            border: none;
+        }
+
+
+        /* ======================================================================================== */
+        .bottom>a {
+            text-decoration: none;
+            font-size: 7px;
+            text-align: center;
+
+        }
+
+       
+
+        .carter {
+            background-color: skyblue;
+                        
+        }
+
+        .bottom {
+            background-color: yellow;
+margin-top: 10px;
+            /* display:inline-block  ; */
+            height: 20px;
+            padding: 10px;
         }
     </style>
 </head>
-<body>
-    
-    <header>
-        <div class="left-logo"><img src="../Images/Logo Firstcry.png.png" alt=""></div>
-        <div class="left-search"><input type="search" size="34%" placeholder="Search fora a Category, Brand or Product"></div>
-        <div><button class="srchbtn" type="button"></button></div>
-        <div class="right">menu</div>
-    </header>
 
+<body>
+
+    <header>
+        <div class="left-logo"><img src="../Images/Logo Firstcry.png.png" alt="" width="50px"></div>
+        <input class="left-search" type="search" placeholder="Search for a Category, Brand or Product">
+        </div>
+        <div><button class="srchbtn" type="button"></button></div>
+        <div class="border"> <a href="#">Select location</a>
+            <a href="#">Stores & Preschool</a>
+            <a href="#">Support</a>
+            <a href="#">Track Order</a>
+            <a href="#">FirstCry Parenting</a>
+            <a href="#">Login/Register</a>
+            <a href="#">&#9829;&nbsp;Shortlist</a>
+            <a href="#" class="last-anchor">Cart</a>
+        </div>
+
+    </header>
+    <div class="bottom">
+        <a href="#">ALL CATAGORIES</a>
+        <a href="#">BOYS FASHION</a>
+        <a href="#">GIRLS FASHION</a>
+        <a href="#">FOOTWARE</a>
+        <a href="#">TOYS</a>
+        <a href="#">DIAPERING</a>
+        <a href="#">GEAR</a>
+        <a href="#">FEEDING</a>
+        <a href="#">BATH</a>
+        <a href="#">NURSERY</a>
+        <a href="#">MOMS</a>
+        <a href="#">HEALTH</a>
+        <a href="#">BOUTIQUES</a>
+        <a href="#">CLUB</a>
+        <a href="#" class="carter">carter's</a>
+    </div>
 </body>
+
 </html>
