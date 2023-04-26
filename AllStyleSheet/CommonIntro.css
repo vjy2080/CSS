@@ -1,23 +1,29 @@
-*{
+* {
     font-family: Verdana, Geneva, sans-serif;
     line-height: 2.5;
 }
+
 body {
     height: 1500px;
-    background: rgb(161, 252, 161);
-    background: linear-gradient(0deg, rgba(161, 252, 161, 1) 30%, rgba(255, 216, 133, 1) 89%);
+    background: rgb(250, 200, 93);
+    background: linear-gradient(180deg, rgb(250, 200, 93, 1) 0%, rgba(187, 252, 173, 1) 50%, rgba(250, 200, 93, 1) 100%);
 }
-h3{
+
+h3 {
     color: red;
     font-size: 30px;
 }
-p,ul{
+
+p,
+ul {
     color: blue;
     font-size: 20px;
 }
-ol{
+
+ol {
     color: green;
 }
-ul[type=square]{
+
+ul[type=square] {
     color: blueviolet;
 }
