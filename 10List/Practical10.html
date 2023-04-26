@@ -7,66 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical of list in CSS</title>
     <style>
-        /* Given list-style-image as style instead of simple bullet  */
-        .blue-arrow{
-            list-style-image: url(../Images/forwardArrow.png);
-            list-style-position: outside;
-        }
-        
-        /* Given list-style-image as style instead of simple bullet  */
-        .yellow-arrow{
-            list-style-image: url(../Images/Arrow.png);
-        list-style-position: inside;
-    }
-    
-    
-    /* Given style border to table for saperate content in table for easy to understand   */
-        table,th,td{
-            border: 2px solid black;
-            padding: 5px;
-            margin: 35px;
+        /* Given style to list from default */
+         .decimal-leading-zero {
+            list-style: decimal-leading-zero;
         }
 
-        /* Given style to list from default */
-        ul{
-            list-style:decimal-leading-zero ;
+
+        /* Given list-style-image as style instead of simple bullet  */
+        .blue-arrow {
+            list-style-image: url(../Images/forwardArrow.png);
+        }
+
+        /* Given list-style-image as style instead of simple bullet  */
+        .yellow-arrow {
+            list-style-image: url(../Images/Arrow.png);
+        }
+
+        .inside {
+            list-style-position: inside;
+        }
+
+        .outside {
+            list-style-position: outside;
         }
     </style>
 </head>
 
 <body>
+    <h3>Example-1 "list-style: decimal-leading-zero;" </h3>
     <ul>
-        <li> list-style</li>
-        <li> list-style-image</li>
-        <li> list-style-position</li>
-        <li> list-style-type</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
     </ul>
-<table>
-   <tr><th> VALUE</th> <th>	DESCRIPTION </th> </tr>
-<tr> <td> list-style-type </td> <td> 	Default is disc. Sets the type of marker. </td> </tr>
-<tr> <td> list-style-position </td> <td> 	Default is outside. Sets where to place the marker. </td> </tr>
-<tr> <td> list-style-image </td> <td> 	Default is none. Sets the type of marker. </td> </tr>
-<tr> <td> initial </td> <td> 	Sets the value to its default value. </td> </tr>
-<tr> <td> inherit  </td> <td>	Inherits the value from its parent element. </td> </tr>
-</table>
-    <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-    </ul>
+    <h3>Example-2 "list-style-image (Blue-arrow) as style instead of simple bullet"</h3>
     <ul class="blue-arrow">
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
     </ul>
 
+    <h3>Example-3 "list-style-image (Yellow-arrow) as style instead of simple bullet"</h3>
     <ul class="yellow-arrow">
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet, sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas! Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+    </ul>
+
+    <h3>Example-4 "list-style-position (inside) "</h3>
+    <ul class="inside">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+    </ul>
+    <h3>Example-5 "list-style-position (inside) "</h3>
+    <ul class="outside">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi, quisquam architecto porro, amet,
+            sed corporis quasi temporibus quia totam quae itaque quis! Doloribus blanditiis facilis illum voluptas!
+            Dolores, ut.</li>
     </ul>
 </body>
 
