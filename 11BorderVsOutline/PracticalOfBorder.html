@@ -7,174 +7,260 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border</title>
     <style>
-        .dotted {
-            border: 10px dotted blue;
+        /* ===================================================================== */
+        /* CUSTOM BORDERS */
+        /* Given custom border solid */
+        .custom-bdr {
+            border-bottom: 2px solid;
             margin: 30px;
         }
 
-        .dashed {
-            border: 10px dashed blue;
+        /* Given custom border dotted */
+        .custom2-bdr {
+            border-bottom: 2px dotted;
             margin: 30px;
         }
+
+        /* Given custom border dashed */
+        .custom3-bdr {
+            border-bottom: 2px dashed;
+            margin: 30px;
+        }
+
+        /* ========================================================================= */
+        /* DIFFERENT BORDER TYPES */
+        /* Given 10px solid blue border */
 
         .solid {
-            border: 10px solid blue;
-            margin: 30px;
+            border-color: yellowgreen;
+            border-width: 10px;
+            margin: 10px;
+            padding: 10px;
+            border-style: solid;
+            text-align: center;
+            width: 400px;
         }
+
+        /* Given 10px dashed blue border */
+
+        .dashed {
+            border-color: yellowgreen;
+            border-width: 10px;
+            margin: 10px;
+            padding: 10px;
+            border-style: dashed;
+            text-align: center;
+            width: 400px;
+        }
+
+
+        /* Given 10px dotted blue border */
+
+        .dotted {
+            border-color: yellowgreen;
+            border-width: 10px;
+            margin: 10px;
+            padding: 10px;
+            border-style: dotted;
+            text-align: center;
+            width: 400px;
+        }
+
+
+        /* Given 10px double blue border */
 
         .double {
-            border: 10px double blue;
-            margin: 30px;
+            border-color: yellowgreen;
+            border-width: 10px;
+            margin: 10px;
+            padding: 10px;
+            border-style: double;
+            text-align: center;
+            width: 400px;
         }
+
+        /* Given 10px groove blue border */
 
         .groove {
-            border: 10px groove blue;
-            margin: 30px;
+            border-color: yellowgreen;
+            border-width: 10px;
+            margin: 10px;
+            padding: 10px;
+            border-style: groove;
+            text-align: center;
+            width: 400px;
         }
+
+        /* Given 10px ridge blue border */
 
         .ridge {
-            border: 10px ridge blue;
-            margin: 30px;
+            border-color: yellowgreen;
+            border-width: 10px;
+            margin: 10px;
+            padding: 10px;
+            border-style: ridge;
+            text-align: center;
+            width: 400px;
         }
+
+        /* Given 10px inset blue border */
 
         .inset {
-            border: 10px inset blue;
-            margin: 30px;
+            border-color: yellowgreen;
+            border-width: 10px;
+            margin: 10px;
+            padding: 10px;
+            border-style: inset;
+            text-align: center;
+            width: 400px;
         }
+
+        /* Given 10px outset blue border */
 
         .outset {
-            border: 10px outset blue;
-            margin: 30px;
+            border-color: yellowgreen;
+            border-width: 10px;
+            margin: 10px;
+            padding: 10px;
+            border-style: outset;
+            text-align: center;
+            width: 400px;
         }
 
+        /* ====================================================== */
+        /* DIFFERENT METHODS TO APPLY BORDER */
+        /* Given dashed border */
+        .border-style {
+            border-style: dashed;
+            margin-bottom: 20px;
+
+        }
+
+        /* Given dashed grey border */
         .border-color {
             border-style: dashed;
             border-color: grey;
+            margin-bottom: 10px;
+
         }
 
-        .border-style {
-            border-style: dashed;
-        }
-
+        /* Given dashed 5px border */
         .border-width {
             border-style: dashed;
             border-width: 5px;
+            margin-bottom: 20px;
+
         }
 
+        /* Given dashed 5px brown border */
         .border-all {
             border-style: dashed;
             border-width: 5px;
             border-color: brown;
+            margin-bottom: 20px;
+
         }
 
+        /* Given dashed 5px brown border by shorthand  */
         .border-shorthand {
             border: dashed 5px brown;
+            margin-bottom: 20px;
+
         }
 
-        .dotted {
-            border-color: yellowgreen;
-            border-width: 15px;
-            margin: 10px;
-            padding: 10px;
-            border-style: dotted;
-        }
-
-        .double {
-            border-color: yellowgreen;
-            border-width: 15px;
-            margin: 10px;
-            padding: 10px;
-            border-style: double;
-        }
-
-        .groove {
-            border-color: yellowgreen;
-            border-width: 15px;
-            margin: 10px;
-            padding: 10px;
-            border-style: groove;
-        }
-
-        .ridge {
-            border-color: yellowgreen;
-            border-width: 15px;
-            margin: 10px;
-            padding: 10px;
-            border-style: ridge;
-        }
-
-        .inset {
-            border-color: yellowgreen;
-            border-width: 15px;
-            margin: 10px;
-            padding: 10px;
-            border-style: inset;
-        }
-
-        .outset {
-            border-color: yellowgreen;
-            border-width: 15px;
-            margin: 10px;
-            padding: 10px;
-            border-style: outset;
-        }
-
-        .custom-border {
-            border-bottom: 2px solid;
-            /* border-style: dotted; */
-        }
+        /* =================================================================== */
     </style>
 </head>
 
 <body>
-    <div class="custom-border">Cusotm Border</div>
-    <div class=" dotted"> dotted</div>
-    <div class=" dashed"> dashed</div>
-    <div class=" solid"> solid</div>
-    <div class=" double"> double</div>
-    <div class=" groove"> groove</div>
-    <div class=" ridge"> ridge</div>
-    <div class=" inset"> inset</div>
-    <div class=" outset"> outset</div>
-    <ul>
-        <li>border-color</li>
-        <li>border-style</li>
-        <li>border-width</li>
-    </ul>
-    <div class="border-color">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non eaque
-        minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque deserunt
-        perferendis excepturi .</div>
-    <div class="border-style">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non eaque
-        minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque deserunt
-        perferendis excepturi.</div>
-    <div class="border-width">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non eaque
-        minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque deserunt
-        perferendis excepturi.</div>
-    <div class="border-all">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non eaque
-        minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque deserunt
-        perferendis excepturi.</div>
-    <div class="border-shorthand">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
-        eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque deserunt
-        perferendis excepturi.</div>
 
-    <div class=" dotted">
-        <h2> dotted</h2>
-    </div>
-    <div class=" double">
-        <h2> double</h2>
-    </div>
-    <div class=" groove">
-        <h2> groove</h2>
-    </div>
-    <div class=" ridge">
-        <h2> ridge</h2>
-    </div>
-    <div class=" inset">
-        <h2> inset</h2>
-    </div>
-    <div class=" outset">
-        <h2> outset</h2>
-    </div>
+    <h3>Types of Border in CSS</h3>
+    <ol>
+        <li>
+            <div class="custom-bdr">Cusotm solid Border</div>
+        </li>
+        <li>
+            <div class="custom2-bdr">Cusotm dotted Border</div>
+        </li>
+        <li>
+            <div class="custom3-bdr">Cusotm dashed Border</div>
+        </li>
+        <li>
+            <div class=" solid">
+                <h2> solid </h2>
+            </div>
+        </li>
+        <li>
+            <div class=" dashed">
+                <h2> dashed </h2>
+            </div>
+        </li>
+        <li>
+            <div class=" dotted">
+                <h2> dotted</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" double">
+                <h2> double</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" groove">
+                <h2> groove</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" ridge">
+                <h2> ridge</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" inset">
+                <h2> inset</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" outset">
+                <h2> outset</h2>
+            </div>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h3>Given border by different types of methods</h3>
+
+    <ol>
+
+        <li>Given dashed border <br> <br>
+            <div class="border-style">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
+                eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque
+                deserunt perferendis excepturi.</div>
+        </li>
+        <li>Given dashed grey border <br> <br>
+            <div class="border-color">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
+                eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque
+                deserunt perferendis excepturi .</div>
+        </li>
+        <li>Given dashed border with 5px width <br> <br>
+            <div class="border-width">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
+                eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque
+                deserunt perferendis excepturi.</div>
+        </li>
+        <li>Given dashed border with 5px width and with brown color <br> <br>
+            <div class="border-all">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
+                eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque
+                deserunt perferendis excepturi.</div>
+        </li>
+        <li>Given dashed border with 5px width and with brown color shorthand <br> <br>
+            <div class="border-shorthand">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni,
+                non eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo
+                itaque deserunt perferendis excepturi.</div>
+        </li>
+    </ol>
+
+    
 </body>
 
 </html>
