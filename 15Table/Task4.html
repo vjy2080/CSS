@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Task 4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        table,
+        td {
+            border: 2px outset rgb(219, 219, 219);
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .a0,
+        .a3 {
+            font-size: 40px;
+            height: 0px;
+            width: 50px;
+        }
+        
+        .a5,
+        .a6 {
+            font-size: 40px;
+            height: 50px;
+            width: 50px;
+        }
+        .a0{
+            background: rgb(225, 0, 255);
+            background: linear-gradient(180deg, rgba(225, 0, 255, 1) 52%, rgba(255, 255, 255, 1) 48%);
+            padding-bottom: 50px;            
+        }
+
+        .a1{
+            height: 50px;
+            width: 25px;
+            background: rgb(226, 109, 94);
+            background: linear-gradient(180deg, rgb(226, 109, 94) 50%, rgba(255, 255, 255, 1) 50%);
+            padding-bottom: 25px;
+        }
+        .a2{
+            height: 50px;
+            width: 25px;
+            background: rgb(180, 143, 41);
+            background: linear-gradient(180deg, rgba(180, 143, 41, 1) 50%, rgba(255, 255, 255, 1) 50%);
+            padding-bottom: 25px;
+        }
+
+        .a3{
+            background: rgb(151, 235, 107);
+            background: linear-gradient(180deg, rgb(181, 225, 98, 1) 52%, rgba(255, 255, 255, 1) 48%);
+            padding-bottom: 50px;            
+        }
+
+        .a4 {
+            font-size: 40px;
+            height: 55px;
+            width: 50px;           
+            background: rgb(139, 213, 114);
+            background: linear-gradient(180deg, rgb(139, 213, 114) 95%, rgba(255, 255, 255, 1) 20%);
+
+        }
+        .a5{
+            height: 50px;
+            width: 25px;
+            background: rgb(81, 221, 139);
+            background: linear-gradient(90deg, rgba(81, 221, 139, 1) 98%, rgba(255, 255, 255, 1) 20%);
+
+        }
+        .a6{
+            height: 50px;
+            width: 50px;
+            background: rgb(81, 221, 139);
+            background: linear-gradient(90deg, rgb(157, 204, 234) 100%, rgba(255, 255, 255, 1) 0%);
+
+        }
+        .a7{
+            height: 35px;
+            width: 25px;
+            background: rgb(81, 221, 139);
+            background: linear-gradient(180deg, rgb(96, 130, 234) 80%, rgba(255, 255, 255, 1) 20%);
+            padding-bottom: 8px;            
+
+
+        }
+        .a8{
+            height: 35px;
+            width: 25px;
+            background: rgb(81, 221, 139);
+            background: linear-gradient(180deg, rgb(117, 93, 225) 80%, rgba(255, 255, 255, 1) 20%);
+            padding-bottom: 8px;            
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td class="a0" rowspan="2">0</td>
+            <td class="a1">1</td>
+            <td class="a2">2</td>
+            <td class="a3" rowspan="2">3</td>
+        </tr>
+        <tr>
+            <td class="a4" colspan="2" rowspan="2">4</td>
+        </tr>
+        <tr>
+            <td class="a5" rowspan="2">5</td>
+            <td class="a6" rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td class="a7">7</td>
+            <td class="a8">8</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
