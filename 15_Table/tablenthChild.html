@@ -6,15 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>nth Child for List and table</title>
   <style>
-    li:nth-child(even){
+    ul>li:nth-child(even){
       background-color: red;
     }
-    li:nth-child(odd){
+    ul>li:nth-child(odd){
       background-color: skyblue;
       color: brown;
     }
     ul{
       width: 10%;
+
+      
+    }
+
+    ol>li:nth-child(1n+1){
+      background-color: orange;
+    }
+    ol>li:nth-child(2n+2){
+      background-color: green;
+      color: rgb(246, 255, 0);
+    }
+    ol>li:nth-child(3n+3){
+      background-color: skyblue;
+      color: rgb(4, 8, 85);
+    }
+    ol{
+      width: 10%;
+
+      
     }
     table,td{
       border: 2px solid blue;
@@ -28,8 +47,31 @@
 </head>
 <body>
   <h4>Fruit-List</h4>
-
+  
   <ul>
+    <li> Mango</li>
+
+      <li> Banana</li>
+
+      <li> Apple</li>
+
+      <li> Mango</li>
+
+      <li> Banana</li>
+
+      <li> Apple</li>
+
+      <li> Mango</li>
+
+      <li> Banana</li>
+
+      <li> Apple</li>
+
+  </ul>
+
+
+  <h4>Fruit-List</h4>
+  <ol>
       <li> Mango</li>
 
       <li> Banana</li>
