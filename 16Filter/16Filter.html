@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: flex;
+            width: 1000px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .col{
+            width: 25%;
+        }
+        img{
+            width: 100%;
+        }
+        .imgblur{filter: blur(5px);}
+        .brightness{filter: brightness(0.4);}
+        .contrast{filter: contrast(200%);}
+        .shadow{filter: drop-shadow(16px 16px 20px blue);}
+        .grayscale{filter: grayscale(50%);}
+        .multiple:hover{filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px 10px blue);}
+    </style>
+
+</head>
+<body>
+    <ul>
+        /* &lt;filter-function&gt; values */
+            <li> filter: blur(5px);</li>
+            <li> filter: brightness(0.4);</li>
+            <li> filter: contrast(200%);</li>
+            <li> filter: drop-shadow(16px 16px 20px blue);</li>
+            <li> filter: grayscale(50%);</li>
+            <li> filter: hue-rotate(90deg);</li>
+            <li> filter: invert(75%);</li>
+            <li> filter: opacity(25%);</li>
+            <li> filter: saturate(30%);</li>
+            <li> filter: sepia(60%);</li>
+            
+            <li> /* URL */</li>
+            <li> filter: url("filters.svg#filter-id");</li>
+            
+            <li> /* Multiple filters */</li>
+            <li> filter: contrast(175%) brightness(3%);</li>
+            <li> filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue);</li>
+            
+            <li> /* Use no filter */</li>
+            <li> filter: none;</li>
+            
+            <li> /* Global values */</li>
+            <li> filter: inherit;</li>
+            <li> filter: initial;</li>
+            <li> filter: revert;</li>
+            <li> filter: revert-layer;</li>
+            <li> filter: unset;</li>
+    </ul>
+    <div class="wrapper">
+        <div class="col"><img class="imgblur" src="images/img10.jpeg" alt=""></div>
+        <div class="col"><img class="brightness"  src="images/img11.jpeg" alt=""></div>
+        <div class="col"><img  class="contrast" src="images/img12.jpeg" alt=""></div>
+        <div class="col"><img class="shadow"  src="images/img13.jpeg" alt=""></div>
+        <div class="col"><img class="grayscale"  src="images/img14.jpeg" alt=""></div>
+        <div class="col"><img class="multiple" src="images/img15.jpeg" alt=""></div>
+        <div class="col"><img src="images/img16.jpeg" alt=""></div>
+        <div class="col"><img src="images/img17.jpeg" alt=""></div>
+        <div class="col"><img src="images/img18.jpeg" alt=""></div>
+    </div>
+</body>
+</html>
