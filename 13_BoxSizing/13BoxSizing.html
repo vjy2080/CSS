@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* box-sizing: content-box; */
+        }
+        .row1{
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .row2{
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .row3{
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .col{
+            height: 300px;
+            width: 300px;
+        }
+        .box-1{ padding: 20px; background-color:grey ; }
+        .box-2{ padding: 50px; background-color:green ; }
+        .box-3{ padding: 80px; background-color:yellow ; }
+        .box-4{ padding: 160px; background-color: orangered; }
+    </style>
+</head>
+<body>
+
+    <h3>Without Box-Sizing</h3>
+    
+    <div class="row1">
+        <div class="col box-1"></div>
+        <div class="col box-2"></div>
+        <div class="col box-3"></div>
+        <div class="col box-4"></div>
+    </div>
+
+    <hr>
+
+
+    <h3>Box-Sizing - border-box</h3>
+    
+    <div class="row2">
+        <div class="col box-1"></div>
+        <div class="col box-2"></div>
+        <div class="col box-3"></div>
+        <div class="col box-4"></div>
+    </div>
+
+    <h3>Box-Sizing - content-box</h3>
+
+    <div class="row3">
+        <div class="col box-1"></div>
+        <div class="col box-2"></div>
+        <div class="col box-3"></div>
+        <div class="col box-4"></div>
+    </div>
+</body>
+</html>

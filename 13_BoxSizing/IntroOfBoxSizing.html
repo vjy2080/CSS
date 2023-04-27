@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction of Box Sizing in CSS</title>
+    <link rel="stylesheet" href="../AllStyleSheet/CommonIntro.css" class="style">
+</head>
+<body>
+    <h3>What is the box sizing in CSS?</h3>
+    <ul><li>
+    The box-sizing CSS property sets how the total width and height of an element is calculated.
+</li>
+<ol>
+   <li> By default in the CSS box model, the width and height you assign to an element is applied only to the element's content box.</li>
+   <li> If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen.</li>
+   <li> This means that when you set width and height, you have to adjust the value you give to allow for any border or padding that may be added.</li>
+   <li> For example, if you have four boxes with width: 25%;, if any has left or right padding or a left or right border, they will not by default fit on one line within the constraints of the parent container.</li>
+</ol>
+</ul>
+
+<h3>Box-Sizing :- Content-Box</h3>
+<ul>
+<li> content-box gives you the default CSS box-sizing behavior.</li>
+<li> If you set an element's width to 100 pixels,</li>
+<li> then the element's content box will be 100 pixels wide,</li>
+<li> and the width of any border or padding will be added to the final rendered width,</li>
+<li> making the element wider than 100px.</li>
+</ul>
+
+<h3>Box-Sizing :- Border-Box</h3>
+<ul>
+<li> border-box tells the browser to account for any border and padding in the values you specify for an element's width and height.</li>
+<li> If you set an element's width to 100 pixels,</li>
+<li> that 100 pixels will include any border or padding you added,</li>
+<li> and the content box will shrink to absorb that extra width.</li>
+<li> This typically makes it much easier to size elements.</li>
+</ul>
+</body>
+</html>
