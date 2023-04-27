@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Task 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+    
+
+        table,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        caption {
+            text-align: left;
+            font-size: smaller;
+        }
+
+        .pinkbg {
+            background-color: rgb(255, 220, 226);
+            padding: 15px;
+            height: 200px;
+            width: 80px;
+        }
+        .pinkbg-logo {
+            background-color: rgb(255, 220, 226);
+            padding: 5px;
+        }
+
+        .yellowbg-TopMenu {
+            background-color: rgb(247, 247, 158);
+            padding: 5px;
+        }
+        .yellowbg {
+            background-color: rgb(247, 247, 158);
+            padding: 15px;
+            height: 200px;
+            width: 50px;
+        }
+
+        .greenbg {
+            background-color: rgb(159, 251, 159);
+            padding: 5px;
+            height: 100px;
+            width: 180px;
+        }
+
+        .skybluebg {
+            background-color: rgb(152, 224, 253);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Table with column and row spanned:</caption>
+        <tr>
+            <td class="pinkbg-logo">Logo</td>
+            <td class="yellowbg-TopMenu" colspan="3">Top Menu</td>
+        </tr>
+        <tr>
+            <td class="yellowbg" rowspan="2">Side Menu</td>
+            <td class="greenbg">World News</td>
+            <td class="greenbg">Financial</td>
+            <td class="pinkbg" rowspan="2">List of Ads</td>
+        </tr>
+        <tr>
+            <td class="greenbg">Technology</td>
+            <td class="greenbg">Sports</td>
+        </tr>
+        <tr>
+            <td class="skybluebg" colspan="4">Footer</td>
+        </tr>
+    </table>
+</body>
+
+</html>
