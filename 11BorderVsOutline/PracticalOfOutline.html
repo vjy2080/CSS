@@ -1,55 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>outline</title>
+    <title>Outline</title>
     <style>
-        .outline-color{ 
-            outline-style: dashed;
-            outline-color:grey ;
-         }
-        .outline-style{ 
-            outline-style: dashed;
+        /* ===================================================================== */
+    
+        /* DIFFERENT OUTLINE TYPES */
+        /* Given 10px solid blue outline */
+
+        .solid {
+            outline-color: yellowgreen;
+            outline-width: 10px;
+            margin-bottom: 100px;
+            margin-left: 30px;
+            padding: 10px;
+            outline-style: solid;
+            text-align: center;
+            width: 400px;
         }
-        .outline-width{ 
+
+        /* Given 10px dashed blue outline */
+
+        .dashed {
+            outline-color: yellowgreen;
+            outline-width: 10px;
+            margin-bottom: 100px;
+            margin-left: 30px;
+            padding: 10px;
             outline-style: dashed;
-            outline-width:5px ;
-         }
-        .outline-all{ 
+            text-align: center;
+            width: 400px;
+        }
+
+
+        /* Given 10px dotted blue outline */
+
+        .dotted {
+            outline-color: yellowgreen;
+            outline-width: 10px;
+            margin-bottom: 100px;
+            margin-left: 30px;
+            padding: 10px;
+            outline-style: dotted;
+            text-align: center;
+            width: 400px;
+        }
+
+
+        /* Given 10px double blue outline */
+
+        .double {
+            outline-color: yellowgreen;
+            outline-width: 10px;
+            margin-bottom: 100px;
+            margin-left: 30px;
+            padding: 10px;
+            outline-style: double;
+            text-align: center;
+            width: 400px;
+        }
+
+        /* Given 10px groove blue outline */
+
+        .groove {
+            outline-color: yellowgreen;
+            outline-width: 10px;
+            margin-bottom: 100px;
+            margin-left: 30px;
+            padding: 10px;
+            outline-style: groove;
+            text-align: center;
+            width: 400px;
+        }
+
+        /* Given 10px ridge blue outline */
+
+        .ridge {
+            outline-color: yellowgreen;
+            outline-width: 10px;
+            margin-bottom: 100px;
+            margin-left: 30px;
+            padding: 10px;
+            outline-style: ridge;
+            text-align: center;
+            width: 400px;
+        }
+
+        /* Given 10px inset blue outline */
+
+        .inset {
+            outline-color: yellowgreen;
+            outline-width: 10px;
+            margin-bottom: 100px;
+            margin-left: 30px;
+            padding: 10px;
+            outline-style: inset;
+            text-align: center;
+            width: 400px;
+        }
+
+        /* Given 10px outset blue outline */
+
+        .outset {
+            outline-color: yellowgreen;
+            outline-width: 10px;
+            margin-bottom: 100px;
+            margin-left: 30px;
+            padding: 10px;
+            outline-style: outset;
+            text-align: center;
+            width: 400px;
+        }
+
+        /* ====================================================== */
+        /* DIFFERENT METHODS TO APPLY OUTLINE */
+        /* Given dashed outline */
+        .outline-style {
             outline-style: dashed;
-            outline-width:5px ;
+            margin-bottom: 20px;
+
+        }
+
+        /* Given dashed grey outline */
+        .outline-color {
+            outline-style: dashed;
+            outline-color: grey;
+            margin-bottom: 10px;
+
+        }
+
+        /* Given dashed 5px outline */
+        .outline-width {
+            outline-style: dashed;
+            outline-width: 5px;
+            margin-bottom: 20px;
+
+        }
+
+        /* Given dashed 5px brown outline */
+        .outline-all {
+            outline-style: dashed;
+            outline-width: 5px;
             outline-color: brown;
-         }
-        .outline-shorthand{ 
+            margin-bottom: 20px;
+
+        }
+
+        /* Given dashed 5px brown outline by shorthand  */
+        .outline-shorthand {
             outline: dashed 5px brown;
-         }
-            .outline-style-dotted{ outline-color: yellowgreen; outline-width: 15px; margin: 50px; padding: 10px; outline-style: dotted;}
-            .outline-style-double{ outline-color: yellowgreen; outline-width: 15px; margin: 50px; padding: 10px; outline-style: double;}
-            .outline-style-groove{ outline-color: yellowgreen; outline-width: 15px; margin: 50px; padding: 10px; outline-style: groove;}
-            .outline-style-ridge{ outline-color: yellowgreen; outline-width: 15px; margin: 50px; padding: 10px; outline-style: ridge;}
-            .outline-style-inset{ outline-color: yellowgreen; outline-width: 15px; margin: 50px; padding: 10px; outline-style: inset;}
-            .outline-style-outset{ outline-color: yellowgreen; outline-width: 15px; margin: 50px; padding: 10px; outline-style: outset;}
+            margin-bottom: 20px;
+
+        }
+
+        /* =================================================================== */
     </style>
 </head>
-<body>
-    <ul>
-        <li>outline-color</li>
-        <li>outline-style</li>
-        <li>outline-width</li>
-    </ul>
-    <div class="outline-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, corrupti magni, non eaque minima optio tempora rem explicabo inventore corporis iure earum. Iure facilis nemo illo itaque deserunt perferendis excepturi. </div>
-    <div class="outline-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, corrupti magni, non eaque minima optio tempora rem explicabo inventore corporis iure earum. Iure facilis nemo illo itaque deserunt perferendis excepturi.</div>
-    <div class="outline-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, corrupti magni, non eaque minima optio tempora rem explicabo inventore corporis iure earum. Iure facilis nemo illo itaque deserunt perferendis excepturi.</div>
-    <div class="outline-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, corrupti magni, non eaque minima optio tempora rem explicabo inventore corporis iure earum. Iure facilis nemo illo itaque deserunt perferendis excepturi.</div>
-    <div class="outline-shorthand">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, corrupti magni, non eaque minima optio tempora rem explicabo inventore corporis iure earum. Iure facilis nemo illo itaque deserunt perferendis excepturi.</div>
 
-    <div class="outline-style-dotted"> <h2>outline-style-dotted</h2> </div>
-    <div class="outline-style-double"> <h2>outline-style-double</h2> </div>
-    <div class="outline-style-groove"> <h2>outline-style-groove</h2> </div>
-    <div class="outline-style-ridge"> <h2>outline-style-ridge</h2> </div>
-    <div class="outline-style-inset"> <h2>outline-style-inset</h2> </div>
-    <div class="outline-style-outset"> <h2>outline-style-outset</h2> </div>
+<body>
+
+    <h3>Types of Outline in CSS</h3>
+    <ol>
+       
+            <div class=" solid">
+                <h2> solid </h2>
+            </div>
+        </li>
+        <li>
+            <div class=" dashed">
+                <h2> dashed </h2>
+            </div>
+        </li>
+        <li>
+            <div class=" dotted">
+                <h2> dotted</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" double">
+                <h2> double</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" groove">
+                <h2> groove</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" ridge">
+                <h2> ridge</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" inset">
+                <h2> inset</h2>
+            </div>
+        </li>
+        <li>
+            <div class=" outset">
+                <h2> outset</h2>
+            </div>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h3>Given outline by different types of methods</h3>
+
+    <ol>
+
+        <li>Given dashed outline <br> <br>
+            <div class="outline-style">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
+                eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque
+                deserunt perferendis excepturi.</div>
+        </li>
+        <li>Given dashed grey outline <br> <br>
+            <div class="outline-color">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
+                eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque
+                deserunt perferendis excepturi .</div>
+        </li>
+        <li>Given dashed outline with 5px width <br> <br>
+            <div class="outline-width">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
+                eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque
+                deserunt perferendis excepturi.</div>
+        </li>
+        <li>Given dashed outline with 5px width and with brown color <br> <br>
+            <div class="outline-all">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni, non
+                eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo itaque
+                deserunt perferendis excepturi.</div>
+        </li>
+        <li>Given dashed outline with 5px width and with brown color shorthand <br> <br>
+            <div class="outline-shorthand">Lorem ipsum dolor sit amet consectetur adipisicing elit .Fuga, corrupti magni,
+                non eaque minima optio tempora rem explicabo inventore corporis iure earum .Iure facilis nemo illo
+                itaque deserunt perferendis excepturi.</div>
+        </li>
+    </ol>
+
+    
 </body>
+
 </html>

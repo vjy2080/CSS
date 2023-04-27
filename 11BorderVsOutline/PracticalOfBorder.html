@@ -165,10 +165,57 @@
         .border-shorthand {
             border: dashed 5px brown;
             margin-bottom: 20px;
+            
+        }
+        
+        /* =================================================================== */
+        /* Given border image  */
+        
+        .brd-img {
+            border-style: solid;
+            border-width: 50px;
+            border-image: url(../Images/natural.jpg) 50;
+            height: 150px;
+        }
+        
+        /* =================================================================== */
+        /* Given border gradient color  */
+        
+        .brd-grd {
 
+            border-style: solid;
+            border-width: 50px;
+            height: 150px;
+            border-image: repeating-linear-gradient(0deg, green, white, orange 50px) 10;
         }
 
         /* =================================================================== */
+
+/* Given border */
+
+        label {
+            border: 2px solid;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+
+        .circle {
+            background-color: teal;
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            border-radius: 50%;
+        }
+
+        .leaf {
+            background-color: rgb(6, 99, 193);
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            /* border-radius: 50% 0; */
+            border-radius: 10px 50px 0px 100px;
+        }
     </style>
 </head>
 
@@ -260,7 +307,24 @@
         </li>
     </ol>
 
-    
+    <hr>
+
+    <div class="brd-img">
+        This is the example of Border Image
+    </div>
+
+    <hr>
+    <div class="brd-grd">
+        This is the example of Border Gradient color
+    </div>
+
+    <hr>
+
+    <label for="">Testing</label>
+    <div class="circle"></div>
+    <div class="leaf"></div>
+
+
 </body>
 
 </html>
