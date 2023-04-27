@@ -1,39 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practical of Margin Vs Padding</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        div{
-            border: 1px solid;
+
+        .margin {
+            border: 2px solid;
+            margin: 35px;
         }
-        .box:nth-child(even){
-            margin: 50px;
+        .padding {
+            border: 2px solid;
+            padding: 35px;
         }
-        .box:nth-child(odd){
-            padding: 50px;
+        .mp{
+            border: 2px solid;
+            padding: 35px;
+            margin: 35px;
+            
         }
-        .margin-side{
-            /* margin: TOP RIGHT BOTTOM LEFT; */
-            /* margin: 10px 50px 30px 5px; */
-            /* margin: TOP RIGHT-LEFT BOTTOM ; */
-            /* margin: 10px 50px 30px; */
-            /* margin: TOP-BOTTOM LEFT-RIGHT  ; */
-            margin: 10px 50px;
+        .margin-left {
+            border: 2px solid;
+            margin-left: 35px;
+        }
+        .margin-right {
+            border: 2px solid;
+            margin-right: 35px;
+        }
+        .margin-top {
+            border: 2px solid;
+            margin-top: 50px;
+        }
+        .margin-bottom {
+            border: 2px solid;
+            margin-bottom: 50px;
         }
     </style>
 </head>
+
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iure facilis, necessitatibus eius corporis, obcaecati sint voluptas repudiandae dicta exercitationem, reiciendis est eveniet culpa doloribus quae sit consequuntur nemo accusamus?</p>
-    <div class="box">margin</div>
-    <div class="box">padding</div>
-    <div class="box">margin</div>
-    <div class="margin-side">margin-side</div>
+
+    <h2>Example of Margin which is effect outside of border</h2>
+    <div class="margin">
+        This is the exmple of margin
+    </div>
+
+    <hr>
+    <br><br>
+    <h2>Example of Padding which is effect inside of border</h2>
+    <br><br>
+<div class="padding">
+    This is the exmple of padding
+</div>
+    <br><br>
+    <h2>Example of Margin and Padding both </h2>
+    <br><br>
+<div class="mp">
+    This is the exmple of padding
+</div>
+
+<hr>
+
+<h2>Example of Margin-left </h2><br><br>
+<div class="margin-left">
+    This is the exmple of margin-left
+</div>
+
+<h2>Example of Margin-right </h2><br><br>
+<div class="margin-right">
+    This is the exmple of margin-right
+</div>
+
+<h2>Example of Margin-top </h2><br><br>
+<div class="margin-top">
+    This is the exmple of margin-top
+</div>
+
+<h2>Example of Margin-bottom </h2>
+<div class="margin-bottom">
+    This is the exmple of margin-bottom
+</div>
+
 </body>
+
 </html>
