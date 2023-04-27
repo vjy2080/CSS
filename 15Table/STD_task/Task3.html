@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Task 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-weight: bold;
+
+        }
+
+        table {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        table,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            empty-cells: hide;
+        }
+
+        table.table {
+            border-collapse: separate;
+            border-spacing: 0px;
+
+            /* Hiding empty cells border */
+            empty-cells: hide;
+        }
+
+        tbody>tr>td {
+            padding: 20px;
+        }
+
+        thead>tr>td {
+            width: 10px;
+        }
+
+        .title {
+            font-size: large;
+            text-align: left;
+        }
+
+        .bggreen {
+            background-color: rgb(134, 234, 134);
+        }
+
+        .bgyellow {
+            background-color: rgb(226, 182, 61);
+        }
+
+        .bgblue {
+            background-color: rgb(165, 215, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>I</td>
+                <td>II</td>
+                <td>III</td>
+                <td>IV</td>
+                <td>V</td>
+                <td>VI</td>
+                <td>VII</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bggreen">H</td>
+                <td></td>
+                <td colspan="3" rowspan="3" class="title">Periodic Table of Elements</td>
+                <td></td>
+                <td class="bgyellow">He</td>
+            </tr>
+            <tr>
+                <td>Li</td>
+                <td>Be</td>
+                <td>B</td>
+                <td class="bgyellow">Ne</td>
+            </tr>
+            <tr>
+                <td>Na</td>
+                <td>Mg</td>
+                <td>AI</td>
+                <td class="bgyellow">Ar</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>Ca</td>
+                <td>Sc</td>
+                <td>Ti</td>
+                <td>V</td>
+                <td>Ga</td>
+                <td class="bgyellow">Kr</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
