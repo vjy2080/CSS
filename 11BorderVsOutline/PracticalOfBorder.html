@@ -191,30 +191,35 @@
 
         /* =================================================================== */
 
-/* Given border */
+/* Create shape like button using border */
 
-        label {
-            border: 2px solid;
-            padding: 10px;
-            display: inline-block;
-            border-radius: 20px;
-        }
 
-        .circle {
-            background-color: teal;
-            height: 100px;
-            width: 100px;
-            border: 2px solid;
-            border-radius: 50%;
-        }
+.button {
+    color: red;
+    border: 2px solid blue;
+    border-radius: 20px;
+    background-color: aquamarine;
+    padding: 10px;
+    display: inline-block;
+}
 
+/* Create shape like circle using border */
+.circle {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+/* Create shape like leaf using border */
         .leaf {
-            background-color: rgb(6, 99, 193);
-            height: 100px;
-            width: 100px;
+            background-color: rgb(193, 6, 181);
+            height: 200px;
+            width: 200px;
             border: 2px solid;
-            /* border-radius: 50% 0; */
-            border-radius: 10px 50px 0px 100px;
+            /* border-radius: 10px 50px 0px 100px; */
+            border-radius: 50px 100px 0px 100px;
         }
     </style>
 </head>
@@ -319,10 +324,14 @@
     </div>
 
     <hr>
-
-    <label for="">Testing</label>
-    <div class="circle"></div>
-    <div class="leaf"></div>
+<h2>Shape like button using border</h2>
+<div class="button"> Button </div>
+<hr>
+<h2>Shape like circle using border</h2>
+<div class="circle"></div>
+<hr>
+<h2>Shape like leaf using border</h2>
+<div class="leaf"></div>
 
 
 </body>
