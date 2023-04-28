@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[class*="box"] {
+            height: 200px;
+            width: 200px;
+            box-shadow: 2px 2px 5px grey;
+            border: 2px solid;
+        }
+
+        p {
+            display: inline-block;
+            margin: 8px;
+        }
+
+        .box1 {
+            overflow: auto;
+        }
+
+        .box2 {
+            overflow: visible;
+        }
+
+        .box3 {
+            overflow: scroll;
+        }
+
+        .box4 {
+            overflow-x: scroll;
+        }
+
+        .box5 {
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="box1"><b>overflow: auto</b> <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+        necessitatibus voluptates
+        expedita maiores. Harum rem velit veritatis necessitatibus alias a doloribus sunt consequuntur, commodi repellat
+        tenetur dolorem libero accusamus accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum architecto aperiam voluptate sint voluptatibus facere? Minus, quis distinctio fuga sit alias sequi ex
+        enim impedit commodi id natus eum consequatur.</p>
+    <p class="box2"><b>overflow: visible</b> <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+        necessitatibus voluptates
+        expedita maiores. Harum rem velit veritatis necessitatibus alias a doloribus sunt consequuntur, commodi repellat
+        tenetur dolorem libero accusamus accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum architecto aperiam voluptate sint voluptatibus facere? Minus, quis distinctio fuga sit alias sequi ex
+        enim impedit commodi id natus eum consequatur.</p>
+    <p class="box3"><b>overflow: scroll</b> <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+        necessitatibus voluptates
+        expedita maiores. Harum rem velit veritatis necessitatibus alias a doloribus sunt consequuntur, commodi repellat
+        tenetur dolorem libero accusamus accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum architecto aperiam voluptate sint voluptatibus facere? Minus, quis distinctio fuga sit alias sequi ex
+        enim impedit commodi id natus eum consequatur.</p>
+    <p class="box4"><b> overflow-x: scroll</b> <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Corporis necessitatibus voluptates
+        expedita maiores. Harum rem velit veritatis necessitatibus alias a doloribus sunt consequuntur, commodi repellat
+        tenetur dolorem libero accusamus accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum architecto aperiam voluptate sint voluptatibus facere? Minus, quis distinctio fuga sit alias sequi ex
+        enim impedit commodi id natus eum consequatur.</p>
+    <p class="box5"><b> overflow-y: scroll</b> <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Corporis necessitatibus voluptates
+        expedita maiores. Harum rem velit veritatis necessitatibus alias a doloribus sunt consequuntur, commodi repellat
+        tenetur dolorem libero accusamus accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum architecto aperiam voluptate sint voluptatibus facere? Minus, quis distinctio fuga sit alias sequi ex
+        enim impedit commodi id natus eum consequatur.</p>
+
+</body>
+
+</html>
