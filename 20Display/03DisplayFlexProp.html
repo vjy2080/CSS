@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid;
+            /* margin: 0;
+            padding: 0; */
+        }
+        .disp-flex{ display: flex; height: 50px; }
+        .flex-direction-column{ flex-direction: column;}
+        .flex-direction-column-reverse{ flex-direction: column-reverse;}
+        .flex-direction-row{ flex-direction: row;}
+        .flex-direction-row-reverse{ flex-direction: row-reverse;}
+        .align-content-baseline{ flex-wrap: wrap; align-content: baseline; }
+        .align-content-center{ flex-wrap: wrap; align-content: center; }
+        .align-content-end{ flex-wrap: wrap; align-content: end; }
+        .align-content-flex-end{ flex-wrap: wrap; align-content: flex-end; }
+        .align-content-flex-start{ flex-wrap: wrap; align-content: flex-start; }
+        .justify-content-center{ justify-content: center; }
+        .justify-content-start{ justify-content: start; }
+        .justify-content-end{ justify-content: end; }
+        .justify-content-space-between{ justify-content: space-between; }
+        .justify-content-space-around{ justify-content: space-around; }
+        .justify-content-space-evenly{ justify-content: space-evenly; }
+    </style>
+</head>
+
+<body>
+    <a href="https://yoksel.github.io/flex-cheatsheet/">flex-cheatsheet</a>
+    <ul>
+        <li>Ordering & Orientation</li>
+        <li>flex-direction</li>
+        <li>flex-wrap</li>
+        <li>flex-flow</li>
+        <li>order</li>
+        <li>Alignment</li>
+        <li>justify-content</li>
+        <li>align-items, align-self</li>
+        <li>align-content</li>
+        <li>Flexibility</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>flex</li>
+        <li>Flex values</li>
+    </ul>
+    <ul>
+        <li>flex</li>
+        <li>flex-basis</li>
+        <li>flex-direction</li>
+        <li>flex-flow</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-wrap</li>
+    </ul>
+    <h2>disp-flex</h2>
+    <div class="disp-flex">
+        <div class="child-box">child-box1</div>
+        <div class="child-box">child-box2</div>
+        <div class="child-box">child-box3</div>
+    </div>
+    <div class="flex-direction">
+        <h2>Display flex-direction:column</h2>
+        <ol>
+            <li>column</li>
+            <li>column-reverse</li> 
+            <li>row</li> 
+            <li>row-reverse</li> 
+        </ol>
+        <h3>flex-direction-column</h3>
+        <div class="disp-flex flex-direction-column">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h3>flex-direction-column-reverse</h3>
+        <div class="disp-flex flex-direction-column-reverse">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h3>flex-direction-row</h3>
+        <div class="disp-flex flex-direction-row">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h3>flex-direction-row-reverse</h3>
+        <div class="disp-flex flex-direction-row-reverse">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+    </div>
+    <div class="align-content">
+        <h2>align-content</h2>
+        <div >
+            <ol>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+                <li>stretch</li>
+            </ol> 
+        </div>
+        <h2>align-content-baseline</h2>
+        <div class="disp-flex align-content-baseline">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>align-content-center</h2>
+        <div class="disp-flex align-content-center">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>align-content-end</h2>
+        <div class="disp-flex align-content-end">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>align-content-flex-end</h2>
+        <div class="disp-flex align-content-flex-end">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>align-content-flex-start</h2>
+        <div class="disp-flex align-content-flex-start">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+    </div>
+    <div class="justify-content">
+        <h2>justify-content</h2>
+        <ol>
+            <li>justify-content: center; /* Pack items around the center */</li> 
+            <li>justify-content: start; /* Pack items from the start */</li> 
+            <li>justify-content: end; /* Pack items from the end */</li> 
+            <li>justify-content: flex-start; /* Pack flex items from the start */</li> 
+            <li>justify-content: flex-end; /* Pack flex items from the end */</li> 
+            <li>justify-content: left; /* Pack items from the left */</li> 
+            <li>justify-content: right; /* Pack items from the right */</li>
+            <li>ustify-content: normal;</li> 
+            <li>ustify-content: space-between; /* Distribute items evenly The first item is flush with the start, the last is flush with the end */</li> 
+            <li>ustify-content: space-around; /* Distribute items evenly Items have a half-size space on either end */</li> 
+            <li>ustify-content: space-evenly; /* Distribute items evenly Items have equal space around them */</li> 
+            <li>ustify-content: stretch; /* Distribute items evenly Stretch 'auto'-sized items to fit the container */</li> 
+        </ol>
+        <h2>justify-content-center</h2>
+        <div class="disp-flex justify-content-center">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>justify-content-start</h2>
+        <div class="disp-flex justify-content-start">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>justify-content-end</h2>
+        <div class="disp-flex justify-content-end">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>justify-content-space-between</h2>
+        <div class="disp-flex justify-content-space-between">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>justify-content-space-around</h2>
+        <div class="disp-flex justify-content-space-around">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+        <h2>justify-content-space-evenly</h2>
+        <div class="disp-flex justify-content-space-evenly">
+            <div class="child-box">child-box1</div>
+            <div class="child-box">child-box2</div>
+            <div class="child-box">child-box3</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Filter in CSS </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 5px;
+            padding: 0;
+        }
+
+        img {
+            height: 200px;
+            padding-left: 300px;
+
+        }
+        hr {
+            border: 2px solid blue;
+            
+        }
+
+        .img1 {
+            filter: blur(5px);
+        }
+
+        .img2 {
+            filter: brightness(0.4);
+
+        }
+
+        .img3 {
+            filter: contrast(200%);
+
+        }
+
+        .img4 {
+
+            filter: drop-shadow(16px 16px 20px blue);
+        }
+
+        .img5 {
+
+            filter: grayscale(50%);
+        }
+
+        .img6 {
+            filter: hue-rotate(90deg);
+
+        }
+
+        .img7 {
+            filter: invert(75%);
+
+        }
+
+        .img8 {
+            filter: opacity(25%);
+
+        }
+
+        .img9 {
+
+            filter: saturate(30%);
+        }
+
+        .img10 {
+            filter: sepia(60%);
+
+        }
+
+        .img11 {
+            filter: contrast(175%) brightness(3%);
+        }
+
+        .img12 {
+            filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <ol>
+        <h3>Image-1</h3>
+        <li> <code> filter: blur(5px); </code> </li>
+        <img class="img1" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-2</h3>
+        <li> <code> filter: brightness(0.4); </code> </li>
+        <img class="img2" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-3</h3>
+        <li> <code> filter: contrast(200%); </code> </li>
+        <img class="img3" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-4</h3>
+        <li> <code> filter: drop-shadow(16px 16px 20px blue); </code> </li>
+        <img class="img4" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-5</h3>
+        <li> <code> filter: grayscale(50%); </code> </li>
+        <img class="img5" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-6</h3>
+        <li> <code> filter: hue-rotate(90deg); </code> </li>
+        <img class="img6" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-7</h3>
+        <li> <code> filter: invert(75%); </code> </li>
+        <img class="img7" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-8</h3>
+        <li> <code> filter: opacity(25%); </code> </li>
+        <img class="img8" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-9</h3>
+        <li> <code> filter: saturate(30%); </code> </li>
+        <img class="img9" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-10</h3>
+        <li> <code> filter: sepia(60%); </code> </li>
+        <img class="img10" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-11</h3>
+        <li> <code> filter: contrast(175%) brightness(3%); </code> </li>
+        <img class="img11" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+        <h3>Image-12</h3>
+        <li> <code> filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue); </code> </li>
+        <img class="img12" src="../Images/firefox-logo.svg" alt="">
+        <hr>
+    </ol>
+
+</body>
+
+</html>
