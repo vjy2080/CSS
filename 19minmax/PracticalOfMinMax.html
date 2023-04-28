@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical of Minmax in CSS</title>
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(240, 240, 161);
+        }
+        
+        h3 {
+            color: red;
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+        
+        .min {
+            min-width: 200px;
+            border: 2px solid blue;
+            background-color: rgb(234, 234, 77);
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .max {
+            max-width: 200px;
+            border: 2px solid blue;
+            background-color: rgb(234, 234, 77);
+            /* display: inline-block; */
+            margin: 10px;
+
+        }
+
+        .width {
+            width: 200px;
+            /* min-width: 200px; */
+            /* max-width:200px; */
+            border: 2px solid blue;
+            background-color: rgb(234, 234, 77);
+            display: inline-block;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <h3>Example of min-width</h3>
+
+    <div class="min">This is the example of <b> min-width=200px </b></div>
+
+    <div class="min">This is the example of <b> min-width=200px </b> with Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel ea nulla beatae officiis ipsa sed sint dolor officia magnam enim nisi incidunt, inventore
+        consequuntur dolore, modi a harum praesentium voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Odit maiores provident fugit atque deleniti minus rerum, necessitatibus aliquam eos saepe soluta neque?
+        Quidem enim quia autem tempora accusamus, ea pariatur?</div>
+
+    <h3>Example of max-width</h3>
+
+    <div class="max">This is the example of <b> max-width=200px </b></div>
+
+    <div class="max">This is the example of <b> max-width=200px </b> with Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel ea nulla beatae officiis ipsa sed sint dolor officia magnam enim nisi incidunt, inventore
+        consequuntur dolore, modi a harum praesentium voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Porro reiciendis optio molestiae. Obcaecati perspiciatis perferendis aliquam, dicta quod minus nemo ab
+        nisi porro laboriosam sapiente, facere, labore sed corporis laudantium. </div>
+
+    <h3>Example of only width</h3>
+
+    <div class="width">This is the example of <b> width=200px </b></div>
+
+    <div class="width">This is the example of <b> width=200px </b> with Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Doloribus, maxime repellendus nostrum, tempora officiis ea autem cupiditate fuga magni
+        numquam, maiores quaerat quas et voluptatem aliquam praesentium obcaecati ex rerum.</div>
 </body>
+
 </html>
