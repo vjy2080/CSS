@@ -11,7 +11,11 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: 'Courier New', Courier, monospace;
         }
+        h1{text-decoration: underline;text-align: center;color: blue;}
+
+        /* ======================================================================= */
 
         .container {
             display: flex;
@@ -57,11 +61,7 @@
 
         /* ==================================================================== */
         
-        .container1 {
-            display: flex;
-            margin: 20px;
-            border: 5px solid blueviolet;
-        }
+        
 
         .container1>.yellow {
             background: yellow;
@@ -92,11 +92,7 @@
         }
 
         /* ======================================================================== */
-        .container2 {
-            display: flex;
-            margin: 20px;
-            border: 5px solid blueviolet;
-        }
+        
 
         .container2>.yellow {
             background: yellow;
@@ -107,9 +103,11 @@
 
         .container2>.yellow>.pink {
             background: pink;
+            min-width: 50px
         }
         .container2>.yellow>.purple {
             background: purple;
+            min-width: 50px
         }
         .container2>.green {
             background: green;
@@ -129,23 +127,31 @@
 </head>
 
 <body>
+<h1>Example of Display Flex</h1>
+    <h3>1.Example of Empty boxes in container</h3>
     <div class="container">
         <div class="red">1</div>
         <div class="green">2</div>
         <div class="blue">3</div>
     </div>
+    <hr>
+    <h3>2.Example of 1 with Paragraph & 2-3 Empty boxes in container </h3>
     <div class="container">
         <div class="red">1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis illo enim possimus
             architecto sit iste quidem laborum repudiandae minima.</div>
         <div class="green">2</div>
         <div class="blue">3</div>
     </div>
+    <hr>
+    <h3>3.Example of 1-2 Empty boxes & 3 with Paragraph in container</h3>
     <div class="container">
         <div class="red">1</div>
         <div class="green">2</div>
         <div class="blue">3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis illo enim possimus
             architecto sit iste quidem laborum repudiandae minima.</div>
-    </div>
+        </div>
+        <hr>
+        <h3>4.Example of 3 boxes with Paragraph (incerasing words) in container</h3>
     <div class="container">
         <div class="red">1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis illo enim possimus
             architecto sit iste quidem laborum repudiandae minima.</div>
