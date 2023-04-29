@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Display Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+            border: 5px solid black;
+        }
+
+        .container1 {
+            display: flex;
+            margin: 20px;
+            border: 5px solid black;
+        }
+
+        .container2 {
+            display: flex;
+            margin: 20px;
+            border: 5px solid black;
+        }
+
+        .container>.red {
+            background: red;
+            flex-grow: 1;
+            /* width: 100px; */
+        }
+
+        .container>.green {
+            background: green;
+            flex-grow: 1;
+            /* width: 300px; */
+        }
+
+        .container>.blue {
+            background: blue;
+            flex-grow: 1;
+            /* width: 600px; */
+        }
+
+        .container>div {
+            font-size: 3vw;
+            padding: .5em;
+            color: white;
+        }
+
+        /* ==================================================================== */
+        
+        .container1 {
+            display: flex;
+            margin: 20px;
+            border: 5px solid blueviolet;
+        }
+
+        .container1>.yellow {
+            background: yellow;
+            color: blue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container1>.yellow>.pink {
+            background: pink;
+        }
+        .container1>.yellow>.purple {
+            background: purple;
+        }
+        .container1>.green {
+            background: green;
+        }
+
+        .container1>.blue {
+            background: blue;
+        }
+
+        .container1>div {
+            font-size: 3vw;
+            padding: .5em;
+            color: white;
+            flex: 1;
+        }
+
+        /* ======================================================================== */
+        .container2 {
+            display: flex;
+            margin: 20px;
+            border: 5px solid blueviolet;
+        }
+
+        .container2>.yellow {
+            background: yellow;
+            color: blue;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container2>.yellow>.pink {
+            background: pink;
+        }
+        .container2>.yellow>.purple {
+            background: purple;
+        }
+        .container2>.green {
+            background: green;
+        }
+
+        .container2>.blue {
+            background: blue;
+        }
+
+        .container2>div {
+            font-size: 3vw;
+            padding: .5em;
+            color: white;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="blue">3</div>
+    </div>
+    <div class="container">
+        <div class="red">1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis illo enim possimus
+            architecto sit iste quidem laborum repudiandae minima.</div>
+        <div class="green">2</div>
+        <div class="blue">3</div>
+    </div>
+    <div class="container">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="blue">3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis illo enim possimus
+            architecto sit iste quidem laborum repudiandae minima.</div>
+    </div>
+    <div class="container">
+        <div class="red">1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis illo enim possimus
+            architecto sit iste quidem laborum repudiandae minima.</div>
+        <div class="green">2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis illo enim possimus
+            architecto sit iste quidem laborum repudiandae minima. Lorem ipsum dolor sit amet.</div>
+        <div class="blue">3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis illo enim possimus
+            architecto sit iste quidem laborum repudiandae minima. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Tenetur, commodi.</div>
+    </div>
+    <hr>
+    <div class="container1">
+        <div class="yellow">container1 class yellow
+            <div class="pink">container1 class pink </div>
+            <div class="purple">container1 class purple</div>
+        </div>
+        <div class="green">container1 class green</div>
+        <div class="blue">container1 class blue</div>
+    </div>
+    <hr>
+    <div class="container2">
+        <div class="yellow">container1 class yellow
+            <div class="pink">container1 class pink </div>
+            <div class="purple">container1 class purple</div>
+        </div>
+        <div class="green">container1 class green</div>
+        <div class="blue">container1 class blue</div>
+    </div>
+
+
+</body>
+
+</html>
