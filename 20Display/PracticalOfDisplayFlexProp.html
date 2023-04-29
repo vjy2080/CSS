@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Display Flex Properties</title>
+    <style>
+        /* *{border: 2px dotted blue;} */
+        .display-flex {
+            display: flex;
+            border: 2px solid;
+            height: 50px;
+        }
+
+        .align-content-baseline {
+            flex-wrap: wrap align-content:baseline;
+        }
+
+        .align-content-center {
+            flex-wrap: wrap align-content:center;
+        }
+
+        .align-content-end {
+            flex-wrap: wrap align-content:end;
+        }
+
+        .align-content-flex-end {
+            flex-wrap: wrap align-content:flex-end;
+        }
+
+        .align-content-flex-start {
+            flex-wrap: wrap align-content:flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="display-flex align-content-baseline">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+    </div>
+    <div class="align-content-baseline">
+
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+
+    </div>
+
+    <div class="align-content-center">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+
+
+    </div>
+
+    <div class="align-content-end">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+
+
+    </div>
+    <div class="align-content-flex-end">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+
+
+
+    </div>
+
+    <div class="align-content-flex-start">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+
+
+
+
+    </div>
+</body>
+
+</html>
