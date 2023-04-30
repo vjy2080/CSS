@@ -7,18 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical of Display Flex Properties</title>
     <style>
-        /* *{border: 2px dotted blue;} */
-        h3{
+        h3 {
             background-color: yellow;
             border: 2px dashed red;
             color: blue;
             display: inline-block;
             padding: 5px;
         }
+        hr{
+            margin: 20px;
+        }
+
+        .a {
+            background-color: orange;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .b {
+            background-color: limegreen;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .c {
+            background-color: skyblue;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+
         .display-flex {
             display: flex;
-            border: 2px solid;
-            height: 50px;
+            border: 2px dashed blue;
+            height: 100px;
+            width: 50%;
         }
 
         .align-content-baseline {
@@ -50,65 +75,155 @@
             flex-wrap: wrap;
             align-content: start;
         }
+
+        /* ====================================================== */
+
+        .justify-content-start  {
+            justify-content:start ;
+        }
+        .justify-content-center  {
+            justify-content:center ;
+        }
+        .justify-content-end  {
+            justify-content:end ;
+        }
+        .justify-content-space-between  {
+            justify-content:space-between ;
+        }
+        .justify-content-space-around  {
+            justify-content:space-around ;
+        }
+        .justify-content-space-evenly  {
+            justify-content:space-evenly ;
+        }
     </style>
 </head>
 
 <body>
 
     <h3>Example of Display-flex align-content-baseline</h3>
+
     <div class="display-flex align-content-baseline">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
     </div>
 
-    <h3>Example of Display-flex align-content-center</h3>
-    <div class="display-flex align-content-center">
+    <hr>
 
+    <h3>Example of Display-flex align-content-center</h3>
+
+    <div class="display-flex align-content-center">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
-
     </div>
+
+    <hr>
+
     <h3>Example of Display-flex align-content-end</h3>
+
     <div class="display-flex align-content-end">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
-
-
     </div>
 
+    <hr>
+
     <h3>Example of Display-flex align-content-flex-end</h3>
+
     <div class="display-flex align-content-flex-end">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
-
-
     </div>
 
+    <hr>
+
     <h3>Example of Display-flex align-content-flex-start</h3>
+
     <div class="display-flex align-content-flex-start">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
-
-
-
     </div>
 
-    <h3>Example of Display-flex align-content-start</h3>
-    <div class="display-flex align-content-start">
+    <hr>
 
+    <h3>Example of Display-flex align-content-start</h3>
+
+    <div class="display-flex align-content-start">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
-
-
-
-
     </div>
+
+
+    <!-- ================================================================================ -->
+    <hr>
+
+
+    <h3>Example of Display-flex justify-content-start</h3>
+
+    <div class="display-flex justify-content-start">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+    </div>
+
+    <hr>
+
+    <h3>Example of Display-flex justify-content-center</h3>
+
+    <div class="display-flex justify-content-center">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+    </div>
+
+    <hr>
+
+    <h3>Example of Display-flex justify-content-end</h3>
+
+    <div class="display-flex justify-content-end">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+    </div>
+
+    <hr>
+
+    <h3>Example of Display-flex justify-content-space-between</h3>
+
+    <div class="display-flex justify-content-space-between">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+    </div>
+
+    <hr>
+
+    <h3>Example of Display-flex justify-content-space-around</h3>
+
+    <div class="display-flex justify-content-space-around">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+    </div>
+
+    <hr>
+
+    <h3>Example of Display-flex justify-content-space-evenly</h3>
+
+    <div class="display-flex justify-content-space-evenly">
+        <div class="a">class="a"</div>
+        <div class="b">class="b"</div>
+        <div class="c">class="c"</div>
+    </div>
+
+
+
 </body>
 
 </html>
