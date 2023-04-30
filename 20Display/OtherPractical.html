@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Practical for learning</title>
+    <style>
+        .container {
+            background-color:palevioletred;
+            border: 2px solid red;
+            border-radius: 5px;
+            box-shadow: aquamarine;
+            margin: 10px;
+            display: flex;
+            list-style: none;
+            font-family: sans-serif;
+            color: aqua;
+            padding: 5px;
+            justify-content: space-between;
+            height: 25px;
+        }
+        .logo{
+            width:  30px;
+            height: 30px;
+            padding-bottom: 10px;
+        }
+
+        /* ================================================================= */
+        .cat {
+            display: inline-block;
+            position: relative;
+            font-size: large;
+        }
+
+        .cat-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            font-size: small;
+            overflow: auto;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+        }
+
+        .cat:hover .cat-content {
+            display: block;
+            background-color: navy;
+            color: rgb(217, 53, 108);
+            border: 2px dotted black;
+            border-radius: 5px;
+        }
+
+        .cat-content a {
+            display: block;
+            color: rgb(217, 53, 108);
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .cat-content a:hover {
+            color: navy;
+            background-color: rgb(217, 53, 108);
+        }
+
+        /* ================================================================= */
+        
+
+        .srcbtn {
+            width: 20px;
+            height: 20px;
+            background-image: url(../Images/search-1.png);
+            background-repeat: no-repeat;
+            border: 2px solid red;
+            border-radius: 3px;
+            padding: 10px;
+            margin-top: 1px;
+            margin-left: 3px;
+
+        }
+
+        input {
+            border: 2px solid red;
+            border-radius: 3px;
+            height: 20px;
+        }
+
+        .srcdiv {
+            display: inline-flex;
+        }
+
+        
+        button{
+            background-color: rgb(217, 22, 87);
+            color: yellow;
+            border-radius: 5px ;
+        }
+        button:hover { color: black;
+        background-color: rgb(217, 53, 108);
+        cursor:pointer ;
+        }
+        .menu{
+            width: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+    <div class="container">
+        <div><img class="logo" src="../Images/v-logo3.png" alt="logo"></div>
+        
+
+        <div class="cat">
+            <button>Menu</button>
+            <div class="cat-content menu">
+                <a href="#" target="_blank">Menu1</a>
+                <a href="#" target="_blank">Menu2</a>
+                <a href="#" target="_blank">Menu3</a>
+                <a href="#" target="_blank">Menu4</a>
+                <a href="#" target="_blank">Menu5</a>
+            </div>
+        </div>
+        <div class="cat">
+            <button>Categories</button>
+            <div class="cat-content">
+                <a href="#" target="_blank">Shopping</a>
+                <a href="#" target="_blank">Services</a>
+            </div>
+
+        </div>
+        <div class="cat">
+            <button>Contact us</button>
+            <div class="cat-content">
+                <a href="#" target="_blank">About</a>
+                <a href="#" target="_blank">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="srcdiv"><input type="text" placeholder="Search Here"> <button class="srcbtn"></button></div>
+    </div>
+    </div>
+</nav>
+</body>
+
+</html>
