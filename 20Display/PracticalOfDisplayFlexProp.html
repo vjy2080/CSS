@@ -8,6 +8,13 @@
     <title>Practical of Display Flex Properties</title>
     <style>
         /* *{border: 2px dotted blue;} */
+        h3{
+            background-color: yellow;
+            border: 2px dashed red;
+            color: blue;
+            display: inline-block;
+            padding: 5px;
+        }
         .display-flex {
             display: flex;
             border: 2px solid;
@@ -15,42 +22,56 @@
         }
 
         .align-content-baseline {
-            flex-wrap: wrap align-content:baseline;
+            flex-wrap: wrap;
+            align-content: baseline;
         }
 
         .align-content-center {
-            flex-wrap: wrap align-content:center;
+            flex-wrap: wrap;
+            align-content: center;
         }
 
         .align-content-end {
-            flex-wrap: wrap align-content:end;
+            flex-wrap: wrap;
+            align-content: end;
         }
 
         .align-content-flex-end {
-            flex-wrap: wrap align-content:flex-end;
+            flex-wrap: wrap;
+            align-content: flex-end;
         }
 
         .align-content-flex-start {
-            flex-wrap: wrap align-content:flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .align-content-start {
+            flex-wrap: wrap;
+            align-content: start;
         }
     </style>
 </head>
 
 <body>
+
+    <h3>Example of Display-flex align-content-baseline</h3>
     <div class="display-flex align-content-baseline">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
     </div>
-    <div class="align-content-baseline">
+
+    <h3>Example of Display-flex align-content-center</h3>
+    <div class="display-flex align-content-center">
 
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
 
     </div>
-
-    <div class="align-content-center">
+    <h3>Example of Display-flex align-content-end</h3>
+    <div class="display-flex align-content-end">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
@@ -58,14 +79,17 @@
 
     </div>
 
-    <div class="align-content-end">
+    <h3>Example of Display-flex align-content-flex-end</h3>
+    <div class="display-flex align-content-flex-end">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
 
 
     </div>
-    <div class="align-content-flex-end">
+
+    <h3>Example of Display-flex align-content-flex-start</h3>
+    <div class="display-flex align-content-flex-start">
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
@@ -74,7 +98,9 @@
 
     </div>
 
-    <div class="align-content-flex-start">
+    <h3>Example of Display-flex align-content-start</h3>
+    <div class="display-flex align-content-start">
+
         <div class="a">class="a"</div>
         <div class="b">class="b"</div>
         <div class="c">class="c"</div>
