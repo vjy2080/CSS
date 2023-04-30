@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex direction</title>
+    <style>
+        body{
+            background-color: rgb(159, 222, 159);
+        }
+        .menubar {
+            border: 2px solid blue;
+            border-radius: 20px;
+            background-color: rgb(232, 192, 176);
+            display: flex;
+            flex-direction: row;
+            width: 97vw;
+            justify-content: space-between;
+        }
+
+        .index {
+            border: 2px solid;
+            border-radius: 10px;
+            text-align: center;
+            
+            background-color: rgb(207, 231, 239);
+            font-size: xx-large;
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        li {
+
+            list-style: none;
+        }
+
+        iframe {
+            border: 5px groove red;
+            border-radius: 10px;
+            width: 97vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hello Friends its a CSS tutorial</h2>
+
+
+    <div class="menubar">
+        <li><a class="index" href="./IntroOfDisplay.html" target="myframe">Introduction of display</a></li>
+        <li><a class="index" href="./PracticalOfDisplay.html" target="myframe">Practical of Display</a></li>
+        <li><a class="index" href="./PracticalOfDisplayFlex.html" target="myframe">Practical of Display-Flex</a></li>
+        <li><a class="index" href="./OtherPractical.html" target="myframe">Other Practical of CSS</a></li>
+    </div>
+    <iframe src="./IntroOfDisplay.html" frameborder="1" name="myframe"></iframe>
+</body>
+
+</html>
