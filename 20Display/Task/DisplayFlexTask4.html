@@ -11,20 +11,22 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
         }
 
         .container {
-            border: 2px solid;
             display: inline-flex;
         }
 
         div[class*="card"] {
-            border: 2px solid transparent;
+            /* border: 2px solid transparent; */
             border-radius: 10px;
             padding: 10px;
             margin: 10px;
         }
+
+        h4, h3, p{margin-bottom: 20px;}
+
 
         span {
             color: red;
@@ -32,16 +34,21 @@
 
         .first-card {
             background-color: skyblue;
-            flex: 0 1 auto;
-
+            color: white;
+            flex: auto;
+            
         }
-
+        
         .second-card {
             background-color: lightseagreen;
+            color: white;
+            flex-shrink: 1;
         }
-
+        
         .third-card {
             background-color: mediumorchid;
+            color: white;
+            flex-basis: 150vw;
         }
     </style>
 </head>
@@ -50,8 +57,7 @@
     <h3>Default Setup</h3>
     <p>Defult setup of flex properties is <span> flex: 0 1 auto</span>. Thats shorthand for <span> flex-grow </span>.
         <span>flex-shrink </span>. and <span>flex-bassis</span> properties values.
-    </p>
-    <p>This setup basically tells us:"All the flex children <b> should not grow.should shrink</b> at the same rate and
+    <br>This setup basically tells us:"All the flex children <b> should not grow.should shrink</b> at the same rate and
         have their <b> initial size based on their width or height</b>"</p>
 
     <div class="container">
