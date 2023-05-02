@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex Task 3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        div[class*="box"] {
+            background-color: green;
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .box1 {
+            height: 100px;
+        }
+        
+        .box2 {
+            /* height: 30px; */
+        }
+        .tw{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: baseline;
+
+        }
+        .box3{
+            /* height: 30px; */
+        }
+        .thr{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: end;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">One</div>
+        <div class="tw">
+            <div class="box2">Two</div>
+
+        </div>
+
+        <div class="thr">
+        <div class="box3">Three</div>
+    </div>
+</div>
+</body>
+
+</html>

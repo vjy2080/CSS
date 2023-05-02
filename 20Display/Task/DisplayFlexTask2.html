@@ -7,34 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Flex Task 2</title>
     <style>
-        * {
+       
+       * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: sans-serif;
         }
 
         body {
             border: 5px solid red;
             padding: 5px;
-            /* flex-wrap: wrap; */
 
         }
 
-        div div {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-            flex-grow: 1;
-            margin: 5px;
-        }
-      
-
+        /* ============================================================ */
+       
         .row1 {
             display: flex;
             height: 150px;
             flex-wrap: wrap;
-            
         }
 
         .m1,
@@ -45,50 +37,67 @@
             justify-content: center;
             flex-grow: 1;
             margin: 5px;
-            background-color: royalblue;
+            background-color: blueviolet;
         }
 
+        /* ============================================================ */
+        
         .row2 {
             display: flex;
-            
-        }
-        
-        .row3 {
-            background-color: pink;
-            display: flex;
-            /* flex-direction: row; */
-            
+            height: 250px;
+            flex-wrap: wrap;            
         }
         
         .m3 {
             display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            margin: 5px;
             background-color: orange;
+            flex-grow: 1;
+        }
+
+        .m4,
+        .m5 {
+            background-color: blue;
+            height: 120px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            margin: 5px;
+        }
+        
+        .m4-5{ 
+            flex-direction: column;
+            margin: 5px;
+            flex-shrink: 1;
+            flex-grow: 1;
+           }
+
+           /* ============================================================== */
+
+           .row3{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .m6,.m7, .m8{
+            height: 150px;
+            display: flex;
             flex-wrap: wrap;
             align-content: center;
             justify-content: center;
             flex-grow: 1;
-            height: 200px;
-            
-        }
-        
-        .m4-5 {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-            flex-grow: 1; 
-            /* height: 200px; */
-            
-            
+            margin: 5px;
+            background-color: pink;
+           }
 
-        }
-
-        .m4, .m5{
-            background-color: blue;
-            /* display: flex; */
-
-        }
     </style>
 </head>
 
@@ -98,8 +107,8 @@
         <div class="m2">Menu2</div>
     </div>
     <div class="row2">
-        <div>
-            <div class="m3">Menu3</div>
+        <div class="m3">
+            <div>Menu3</div>
         </div>
         <div class="m4-5">
             <div class="m4">Menu4</div>
