@@ -5,157 +5,231 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Flex Task 5</title>
+    <title>Document</title>
     <style>
-        * {
-            /* border: 2px solid; */
-            /* box-sizing: border-box; */
-            /* margin: 0; */
-            /* padding: 0; */
-        }
 
-        .maincontainer {
-            border: 5px solid #FFCD9A;
-        }
+.main-container{
+    border: 5px solid rgb(241, 191, 176);
+background-color: rgb(253, 234, 155);
+}
 
-        .firstcontainer {
+/* ============================================================= */
+
+        .first-container {
+            border-bottom: 5px solid rgb(241, 191, 176);
             display: flex;
-            height: 100px;
-            border-bottom: 5px solid #FFCD9A;
-            background-color: #FFEF9A;
-            align-content: center;
-            justify-content: left;
-            /* margin: 5px; */
-
         }
-
 
         .box1 {
-            width: 100px;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: flex-end;
-            justify-content: center;
-            background-color: #9AFFCD;
             margin: 5px;
-            border-radius: 5px;
+            display: inline-flex;
+            height: 100px;
+            border-radius: 10px;
+            background-color: cyan;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-end;
         }
 
-        .box1content1 {
-            width: 90px;
-            background-color: #FF9AFF;
-            margin: 5px;
+        .box1-content1 {
+            margin: 10px;
+            height: 20px;
+            width: 130px;
             border-radius: 5px;
+            background-color: pink;
         }
 
         .box2 {
-            width: 100px;
+            margin: 5px;
+            display: inline-flex;
+            height: 100px;
+            border-radius: 10px;
+            background-color: cyan;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            align-content: flex-end;
+        }
+
+        .box2-content1 {
+            margin: 10px;
+            height: 80px;
+            width: 30px;
+            border-radius: 5px;
+            background-color: pink;
             display: flex;
             flex-wrap: wrap;
-            align-content: flex-end;
             justify-content: center;
-            background-color: #9AFFCD;
-            margin: 5px;
-            border-radius: 5px;
+            align-content: flex-start;
         }
 
-        .box2content1 {
-           
-        }
-
-        .box2content1-1 {
-            background-color: #9AFFCD;
+        .box2-content1-box1 {
+            margin: 2px;
+            margin-top: 5px;
             height: 20px;
             width: 20px;
-            width: 90px;
-            background-color: #FF9AFF;
+            border-radius: 5px;
+            background-color: cyan;
+        }
+
+        .box2-content2 {
+            margin: 10px;
+            height: 80px;
+            width: 20px;
+            border-radius: 5px;
+            background-color: pink;
+        }
+
+        .box2-content3 {
+            margin: 10px;
+            height: 80px;
+            width: 20px;
+            border-radius: 5px;
+            background-color: pink;
+        }
+
+
+
+        /* ====================================================================================== */
+        .second-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sbox1 {
             margin: 5px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: cyan;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: flex-end;
+        }
+
+        .sbox1-content1 {
+            margin: 10px;
+            height: 20px;
+            width: 130px;
+            border-radius: 5px;
+            background-color: pink;
+        }
+
+        .sbox1-content2 {
+            margin: 5px;
+            height: 100px;
+            width: 130px;
+            border-radius: 10px;
+            background-color: pink;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-between;
+        }
+
+        .sbox1-content2-box1 {
+            margin: 10px;
+            height: 20px;
+            width: 110px;
+            border-radius: 5px;
+            background-color: green;
+        }
+
+        .sbox1-content2-box2 {
+            margin: 10px;
+            height: 20px;
+            width: 110px;
+            border-radius: 5px;
+            background-color: blue;
+        }
+
+        .sbox2 {
+            background-color: cyan;
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+            margin: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: end;
+
+        }
+
+        .sbox2-content1 {
+            background-color: pink;
+            height: 120px;
+            width: 280px;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            justify-content: flex-start;
+            align-content: flex-end;
+            margin: 5px;
+
+        }
+
+        .sbox2-content1-box1 {
+            background-color: cyan;
+            height: 100px;
+            width: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            align-content: start;
+            margin: 5px;
+        }
+
+        .sbox2-content1-box1-content {
+            background-color: orangered;
+            margin: 5px;
+            height: 20px;
+            width: 70px;
+            display: flex;
+            flex-wrap: wrap;
             border-radius: 5px;
         }
-
-        .box2content2 {
-            background-color: burlywood;
-        }
-
-        .box2content3 {
-            background-color: burlywood;
-        }
-
-        /* 
-        .secondcontainer {
-            height: 200px;
-            background-color: #FFEF9A;
-        } */
-        /* .box1 {
-            background-color: #9AFFCD;
-        }
-
-        .content1 {
-            background-color: burlywood;
-        }
-
-        .content2 {
-            background-color: burlywood;
-        }
-
-        .content2-1 {
-            background-color: burlywood;
-        }
-
-        .content2-2 {
-            background-color: burlywood;
-        }
-
-        .box2 {
-            background-color: #9AFFCD;
-        }
-
-        .content1 {
-            background-color: burlywood;
-        }
-
-        .content1-1 {
-            background-color: burlywood;
-        }
-
-        .content1-1-1 {
-            background-color: burlywood;
-        } */
     </style>
 </head>
 
 <body>
-    <div class="maincontainer">
-        <div class="firstcontainer">
-            <!-- <div class="box1">
-                <div class="box1content1"></div>
-            </div> -->
-            <div class="box2">
-                <div class="box2content1">
-                    <div class="content1-1"></div>
-                </div>
-                <div class="box2content2"></div>
-                <div class="box2content3"></div>
-            </div>
-
-        </div>
-        <!-- <div class="secondcontainer">
+    <div class="main-container">
+        <div class="first-container">
             <div class="box1">
-                <div class="content1"></div>
-                <div class="content2">
-                    <div class="content2-1"></div>
-                    <div class="content2-2"></div>
-                </div>
+                <div class="box1-content1"></div>
             </div>
             <div class="box2">
-                <div class="content1">
-                    <div class="content1-1">
-                        <div class="content1-1-1"></div>
+                <div class="box2-content1">
+                    <div class="box2-content1-box1"></div>
+                </div>
+                <div class="box2-content2"></div>
+                <div class="box2-content3"></div>
+            </div>
+        </div>
+        <div class="second-container">
+            <div class="sbox1">
+                <div class="sbox1-content1"></div>
+                <div class="sbox1-content2">
+                    <div class="sbox1-content2-box1">
+                        <div class="sbox1-content2-box2"></div>
                     </div>
                 </div>
             </div>
+            <div class="sbox2">
+                <div class="sbox2-content1">
+                    <div class="sbox2-content1-box1">
+                        <div class="sbox2-content1-box1-content"></div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-    </div> -->
+    </div>
 </body>
 
 </html>
