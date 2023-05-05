@@ -7,74 +7,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3</title>
     <style>
-       *{
-       }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         .fr {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: minmax(90px, auto) ;
-            gap: 0.01px;
-               }
+            grid-auto-rows: minmax(90px, auto);
+            gap: 10px;
+        }
+
         .sr {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-auto-rows: minmax(1px, auto) ;
+            grid-auto-rows: minmax(90px, auto);
             gap: 10px;
-               }
+        }
+
         .tr {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-auto-rows: minmax(1px, auto) ;
+            grid-auto-rows: minmax(90px, auto);
             gap: 10px;
-               }
+        }
+
         .frt {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: minmax(1px, auto) ;
+            grid-auto-rows: minmax(90px, auto);
             gap: 10px;
-               }
+        }
 
 
-        .img1  {grid-column: 1/2;  grid-row: 1; }
-        .img2  {grid-column: 2/3;  grid-row: 1; }
-        .img3  {grid-column: 3/4;  grid-row: 1; }
-        .img4  {grid-column: 4/5;  grid-row: 1; }
-        .img5  {grid-column: 1/2;  grid-row: 1; }
-        .img6  {grid-column: 2/3;  grid-row: 1; }
-        .img7  {grid-column: 3/4;  grid-row: 1; }
-        .img8  {grid-column: 1/2;  grid-row: 1; }
-        .img9  {grid-column: 2/3;  grid-row: 1; }
-        .img10 {grid-column: 3/4;  grid-row: 1; }
-        .img11 {grid-column: 1/2;  grid-row: 1; }
-        .img12 {grid-column: 2/3;  grid-row: 1; }
-        .img13 {grid-column: 3/4;  grid-row: 1; }
-        .img14 {grid-column: 4/5;  grid-row: 1; }
+        .img1 {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+
+        .img2 {
+            grid-column: 2/3;
+            grid-row: 1;
+        }
+
+        .img3 {
+            grid-column: 3/4;
+            grid-row: 1;
+        }
+
+        .img4 {
+            grid-column: 4/5;
+            grid-row: 1;
+        }
+
+        .img5 {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+
+        .img6 {
+            grid-column: 2/3;
+            grid-row: 1;
+        }
+
+        .img7 {
+            grid-column: 3/4;
+            grid-row: 1;
+        }
+
+        .img8 {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+
+        .img9 {
+            grid-column: 2/3;
+            grid-row: 1;
+        }
+
+        .img10 {
+            grid-column: 3/4;
+            grid-row: 1;
+        }
+
+        .img11 {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+
+        .img12 {
+            grid-column: 2/3;
+            grid-row: 1;
+        }
+
+        .img13 {
+            grid-column: 3/4;
+            grid-row: 1;
+        }
+
+        .img14 {
+            grid-column: 4/5;
+            grid-row: 1;
+        }
     </style>
 </head>
 
 <body>
     <div class="image">
-       <div class="fr"> <img class="img1" src="Images for task/task3/1.png" alt="">
-        <img class="img2" src="Images for task/task3/2.png" alt="">
-        <img class="img3" src="Images for task/task3/3.png" alt="">
-        <img class="img4" src="Images for task/task3/4.png" alt="">
-    </div>
-    <div class="sr">
-        <img class="img5" src="Images for task/task3/5.png" alt="">
-        <img class="img6" src="Images for task/task3/6.png" alt="">
-        <img class="img7" src="Images for task/task3/7.png" alt="">
-    </div>
-    <div class="tr">
-        <img class="img8" src="Images for task/task3/8.png" alt="">
-        <img class="img9" src="Images for task/task3/9.png" alt="">
-        <img class="img10" src="Images for task/task3/10.png" alt="">
-    </div>
-    <div class="ftr">
-        <img class="img11" src="Images for task/task3/11.png" alt="">
-        <img class="img12" src="Images for task/task3/12.png" alt="">
-        <img class="img13" src="Images for task/task3/13.png" alt="">
-        <img class="img14" src="Images for task/task3/14.png" alt="">
-    </div>
+        <div class="fr"> <img class="img1" src="Images for task/task3/1.png" alt="">
+            <img class="img2" src="Images for task/task3/2.png" alt="">
+            <img class="img3" src="Images for task/task3/3.png" alt="">
+            <img class="img4" src="Images for task/task3/4.png" alt="">
+        </div>
+        <div class="sr">
+            <img class="img5" src="Images for task/task3/5.png" alt="">
+            <img class="img6" src="Images for task/task3/6.png" alt="">
+            <img class="img7" src="Images for task/task3/7.png" alt="">
+        </div>
+        <div class="tr">
+            <img class="img8" src="Images for task/task3/8.png" alt="">
+            <img class="img9" src="Images for task/task3/9.png" alt="">
+            <img class="img10" src="Images for task/task3/10.png" alt="">
+        </div>
+        <div class="ftr">
+            <img class="img11" src="Images for task/task3/11.png" alt="">
+            <img class="img12" src="Images for task/task3/12.png" alt="">
+            <img class="img13" src="Images for task/task3/13.png" alt="">
+            <img class="img14" src="Images for task/task3/14.png" alt="">
+        </div>
     </div>
 </body>
 
