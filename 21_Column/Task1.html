@@ -1,61 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
     <style>
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
 
-        .container{
+        .container {
             border: 2px solid;
+            background-image: url(../Images/nature.webp);
             display: flex;
-            justify-content: space-between;
-            
-            
-        }
-        
-        .detail{
-            width: 60%;
-            background-color: #000;
-            
-        }
-        
-        .img{
-            filter: blur(1px);
+            /* justify-content: space-between; */
+
+
         }
 
-        h4{
-            color: orangered;
+        .detail {
+            width: 60%;
+            background-color: #000000df;
+            text-align: end;
+            line-height: 180%;
+            padding: 40px;
+            flex-wrap: wrap;
+
         }
-        h2{
+
+        .btn {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+
+            border: 2px solid white;
+            background-color: red;
+            border-radius: 20px;
+            height: 40px;
+            width: 40px;
+            margin-top: 100px;
+            margin-left: -20px;
+            
+        }
+        .a1{
+            
+            background-image: url(../Images/columntask1/a1.png);
+        }
+        .a2{
+            
+            background-image: url(../Images/columntask1/a2.png);
+        }
+        .a3{
+            
+            background-image: url(../Images/columntask1/a3.jpeg);
+        }
+
+        .img {
+            flex-wrap: wrap;
+            filter: blur(1px);
+            width: 60%;
+        }
+
+        h4 {
+            color: orangered;
+            padding: 30px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            text-transform: uppercase;
             color: white;
         }
-        p{
+
+        p {
             color: gray;
             font-size: xx-small;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="detail">
             <h2>our services</h2>
             <h4>web design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit itaque mollitia facilis, alias voluptas aperiam in veritatis, a reprehenderit, temporibus sed asperiores deserunt. Pariatur recusandae nesciunt labore iusto nam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit itaque mollitia facilis, alias
+                voluptas aperiam in veritatis, a reprehenderit, temporibus sed asperiores deserunt. Pariatur recusandae
+                nesciunt labore iusto nam.</p>
             <h4>print design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit itaque mollitia facilis, alias voluptas aperiam in veritatis, a reprehenderit, temporibus sed asperiores deserunt. Pariatur recusandae nesciunt labore iusto nam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit itaque mollitia facilis, alias
+                voluptas aperiam in veritatis, a reprehenderit, temporibus sed asperiores deserunt. Pariatur recusandae
+                nesciunt labore iusto nam.</p>
             <h4>photography</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit itaque mollitia facilis, alias voluptas aperiam in veritatis, a reprehenderit, temporibus sed asperiores deserunt. Pariatur recusandae nesciunt labore iusto nam.</p>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit itaque mollitia facilis, alias
+                voluptas aperiam in veritatis, a reprehenderit, temporibus sed asperiores deserunt. Pariatur recusandae
+                nesciunt labore iusto nam.</p>
         </div>
-        <img class="img" src="../Images/natural.jpg" alt="">
+        <div class="btn">
+            <a class="a1" href="#"></a>
+            <a class="a2" href="#"></a>
+            <a class="a3" href="#"></a>
+        </div>
+        <!-- <img class="img" src="../Images/natural.jpg" alt=""> -->
     </div>
 </body>
+
 </html>
