@@ -7,105 +7,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 2</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-        .container{
+
+        .container {
             display: flex;
             flex-direction: column;
             height: 100vh;
+            width: 100vw;
+            justify-content: space-between;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/WDpagenatural.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat, no-repeat;
         }
-        .logo{
+
+        /* .container::before {
+            background-color: rgba(2, 2, 2, 0.37);
+            content: '';
+            display: block;
+            height: 100%;
+            position:absolute ;
+            width: 100%;
+        } */
+
+        .logo {
             border: 2px solid;
             display: inline-block;
         }
-        .nav>img{
+
+        .nav>img {
             width: 80px;
             height: 50px;
             border-radius: 50px;
-            margin-right: 200px;
         }
+
         .nav {
             display: flex;
-            justify-content: end;
+            justify-content: space-between;
         }
-        
+
         nav {
             border: 2px solid;
             display: flex;
             flex-wrap: wrap;
-            width: 50%;
+            width: 70%;
             justify-content: space-between;
             text-transform: uppercase;
-            
+
         }
-        
+
         nav>div {
             justify-content: end;
             flex-direction: row;
             /* margin: 10px; */
         }
-        .content{
+
+        .content {
             display: flex;
+            flex-direction: column;
             border: 2px solid;
             text-align: center;
-            justify-content: center;
             align-content: center;
 
 
         }
-       h5{
-        text-transform: capitalize;
-       }
-        hr{
+
+        h5 {
+            text-transform: capitalize;
+        }
+
+        hr {
             border-style: solid;
             border-width: 5px;
             border-image: url(../Images/border-diamonds.png) 15;
-            height:0px;
+            height: 0px;
             width: 20%;
         }
-        
-        
-   
-  
-
-        
     </style>
 </head>
 
 <body>
     <div class="container">
-    <div class="logo">
-    </div>
-    <div class="nav">
-        <img src="../Images/v-logo2.webp" alt="">
-        <nav>
-            <div class="home">home</div>
-            <div class="about uabouts"></div>
-            <div class="portfolio">portfolio</div>
-            <div class="pricing">pricing</div>
-            <div class="team">team</div>
-            <div class="blog">blog</div>
-            <div class="contact">contact</div>
-        </nav>
-    </div>
-    <div class="content">
-        <h5>our clients are our first priority</h4>
-        <h2>welcome to sky</h2>
-       <hr> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit animi sunt ducimus repellat minima quasi,
-            doloremque qui non, ipsa beatae tenetur quis sint aliquid veniam sequi eligendi necessitatibus, quaerat
-            perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem dolore magni, veniam
-            omnis cum molestiae neque beatae, nihil quos perspiciatis consequuntur laboriosam ratione sint nulla dolorum
-            debitis architecto commodi.</p>
+        <!-- <div class="logo">    </div> -->
+        <div class="nav">
+            <img src="../Images/v-logo2.webp" alt="">
+            <nav>
+                <div class="home">home</div>
+                <div class="about uabouts"></div>
+                <div class="portfolio">portfolio</div>
+                <div class="pricing">pricing</div>
+                <div class="team">team</div>
+                <div class="blog">blog</div>
+                <div class="contact">contact</div>
+            </nav>
+        </div>
+        <div class="content">
+            <h5>our clients are our first priority</h4>
+                <h2>welcome to sky</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit animi sunt ducimus repellat minima
+                    quasi,
+                    doloremque qui non, ipsa beatae tenetur quis sint aliquid veniam sequi eligendi necessitatibus,
+                    quaerat
+                    perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem dolore
+                    magni, veniam
+                    omnis cum molestiae neque beatae, nihil quos perspiciatis consequuntur laboriosam ratione sint nulla
+                    dolorum
+                    debitis architecto commodi.</p>
         </div>
         <div class="btn">
             <a href="#">get started now</a>
-        <a href="#">learn more</a>
+            <a href="#">learn more</a>
+        </div>
     </div>
-</div>
 </body>
 
 </html>
