@@ -12,6 +12,11 @@
             margin: 0;
             padding: 0;
         }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
         .logo{
             border: 2px solid;
             display: inline-block;
@@ -43,8 +48,12 @@
             /* margin: 10px; */
         }
         .content{
+            display: flex;
             border: 2px solid;
             text-align: center;
+            justify-content: center;
+            align-content: center;
+
 
         }
        h5{
@@ -67,6 +76,7 @@
 </head>
 
 <body>
+    <div class="container">
     <div class="logo">
     </div>
     <div class="nav">
@@ -95,7 +105,7 @@
             <a href="#">get started now</a>
         <a href="#">learn more</a>
     </div>
-
+</div>
 </body>
 
 </html>
