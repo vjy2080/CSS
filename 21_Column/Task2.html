@@ -11,9 +11,11 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: sans-serif;
         }
 
         .container {
+            color: white;
             display: flex;
             flex-direction: column;
             height: 100vh;
@@ -37,6 +39,7 @@
         .logo {
             border: 2px solid;
             display: inline-block;
+            margin-left: 100px;
         }
 
         .nav>img {
@@ -47,14 +50,18 @@
 
         .nav {
             display: flex;
-            justify-content: space-between;
+            /* flex-wrap: wrap; */
+            justify-content: space-around;
+            font-size: x-small;
         }
 
         nav {
+            align-content: center;
             border: 2px solid;
             display: flex;
             flex-wrap: wrap;
-            width: 70%;
+            width: 50%;
+            /* margin-right: 100px; */
             justify-content: space-between;
             text-transform: uppercase;
 
@@ -63,7 +70,7 @@
         nav>div {
             justify-content: end;
             flex-direction: row;
-            /* margin: 10px; */
+            border: 2px solid;
         }
 
         .content {
@@ -72,6 +79,8 @@
             border: 2px solid;
             text-align: center;
             align-content: center;
+            height: 50%;
+            justify-content: space-around;
 
 
         }
@@ -80,12 +89,36 @@
             text-transform: capitalize;
         }
 
+        h2 {
+            text-transform: uppercase;
+            font-size: 35px;
+        }
+
+        .hr {
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+        }
+
         hr {
             border-style: solid;
             border-width: 5px;
             border-image: url(../Images/border-diamonds.png) 15;
             height: 0px;
-            width: 20%;
+            width: 10%;
+        }
+        .btn{
+            border: 2px solid;
+            height: 150px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: white;
+            text-transform: uppercase;
+        }
+        .a>a{
+            background-color: #fff;
+
         }
     </style>
 </head>
@@ -97,7 +130,7 @@
             <img src="../Images/v-logo2.webp" alt="">
             <nav>
                 <div class="home">home</div>
-                <div class="about uabouts"></div>
+                <div class="about us">about us</div>
                 <div class="portfolio">portfolio</div>
                 <div class="pricing">pricing</div>
                 <div class="team">team</div>
@@ -108,7 +141,9 @@
         <div class="content">
             <h5>our clients are our first priority</h4>
                 <h2>welcome to sky</h2>
-                <hr>
+                <div class="hr">
+                    <hr>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit animi sunt ducimus repellat minima
                     quasi,
                     doloremque qui non, ipsa beatae tenetur quis sint aliquid veniam sequi eligendi necessitatibus,
@@ -120,9 +155,11 @@
                     debitis architecto commodi.</p>
         </div>
         <div class="btn">
+            <div class="a">
             <a href="#">get started now</a>
             <a href="#">learn more</a>
         </div>
+    </div>
     </div>
 </body>
 
