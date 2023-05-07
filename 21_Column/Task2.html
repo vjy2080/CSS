@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 2</title>
     <style>
-        .nav{
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+            border: 2px solid;
+            display: inline-block;
+        }
+        .nav>img{
+            width: 80px;
+            height: 50px;
+            border-radius: 50px;
+            margin-right: 200px;
+        }
+        .nav {
+            display: flex;
+            justify-content: end;
+        }
+        
+        nav {
+            border: 2px solid;
             display: flex;
             flex-wrap: wrap;
+            width: 50%;
+            justify-content: space-between;
+            text-transform: uppercase;
+            
         }
+        
+        nav>div {
+            justify-content: end;
+            flex-direction: row;
+            /* margin: 10px; */
+        }
+        .content{
+            border: 2px solid;
+            text-align: center;
+
+        }
+       h5{
+        text-transform: capitalize;
+       }
+        hr{
+            border-style: solid;
+            border-width: 5px;
+            border-image: url(../Images/border-diamonds.png) 15;
+            height:0px;
+            width: 20%;
+        }
+        
+        
+   
+  
+
+        
     </style>
 </head>
+
 <body>
     <div class="logo">
-        <img src="../Images/v-logo.jpg" alt="">
     </div>
     <div class="nav">
+        <img src="../Images/v-logo2.webp" alt="">
         <nav>
-            <div class="home"></div>
-            <div class="about us"></div>
-            <div class="portfolio"></div>
-            <div class="pricing"></div>
-            <div class="team"></div>
-            <div class="blog"></div>
-            <div class="contact"></div>
+            <div class="home">home</div>
+            <div class="about uabouts"></div>
+            <div class="portfolio">portfolio</div>
+            <div class="pricing">pricing</div>
+            <div class="team">team</div>
+            <div class="blog">blog</div>
+            <div class="contact">contact</div>
         </nav>
     </div>
     <div class="content">
-        <h4>our clients are our first priority</h4>
+        <h5>our clients are our first priority</h4>
         <h2>welcome to sky</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit animi sunt ducimus repellat minima quasi, doloremque qui non, ipsa beatae tenetur quis sint aliquid veniam sequi eligendi necessitatibus, quaerat perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem dolore magni, veniam omnis cum molestiae neque beatae, nihil quos perspiciatis consequuntur laboriosam ratione sint nulla dolorum debitis architecto commodi.</p>
-        <a href="#">get started now</a>
+       <hr> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit animi sunt ducimus repellat minima quasi,
+            doloremque qui non, ipsa beatae tenetur quis sint aliquid veniam sequi eligendi necessitatibus, quaerat
+            perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem dolore magni, veniam
+            omnis cum molestiae neque beatae, nihil quos perspiciatis consequuntur laboriosam ratione sint nulla dolorum
+            debitis architecto commodi.</p>
+        </div>
+        <div class="btn">
+            <a href="#">get started now</a>
         <a href="#">learn more</a>
     </div>
 
 </body>
+
 </html>
