@@ -21,7 +21,7 @@
             height: 100vh;
             width: 100vw;
             justify-content: space-between;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/WDpagenatural.jpg);
+            background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../Images/WDpagenatural.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat, no-repeat;
@@ -37,14 +37,14 @@
         } */
 
         .logo {
-            border: 2px solid;
+            /* border: 2px solid; */
             display: inline-block;
             margin-left: 100px;
         }
 
         .nav>img {
-            width: 80px;
-            height: 50px;
+            width: 100px;
+            height: 60px;
             border-radius: 50px;
         }
 
@@ -57,7 +57,7 @@
 
         nav {
             align-content: center;
-            border: 2px solid;
+            /* border: 2px solid; */
             display: flex;
             flex-wrap: wrap;
             width: 50%;
@@ -66,17 +66,24 @@
             text-transform: uppercase;
 
         }
-
-        nav>div {
+        nav>a{
+            text-decoration: none;
+            color: white;
+        }
+        nav>a:hover{
+            color: orangered;
+        }
+        /* nav>a {
             justify-content: end;
             flex-direction: row;
             border: 2px solid;
-        }
+            
+        } */
 
         .content {
             display: flex;
             flex-direction: column;
-            border: 2px solid;
+            /* border: 2px solid; */
             text-align: center;
             align-content: center;
             height: 50%;
@@ -108,7 +115,6 @@
             width: 10%;
         }
         .btn{
-            border: 2px solid;
             height: 150px;
             display: flex;
             flex-wrap: wrap;
@@ -117,7 +123,31 @@
             text-transform: uppercase;
         }
         .a>a{
-            background-color: #fff;
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 10px 25px;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: x-small;
+            background-color: rgba(0, 0, 0, 0.375);
+        }
+        .a>a:hover{
+            background-color: orangered;
+        }
+        .p{
+            padding: 5px;
+            /* border: 2px solid; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: x-small;
+        }
+        p{
+            color: rgb(157, 157, 157);
+            width: 60%;
+            line-height: 20px;
+            /* border: 2px solid; */
 
         }
     </style>
@@ -129,13 +159,30 @@
         <div class="nav">
             <img src="../Images/v-logo2.webp" alt="">
             <nav>
+
+<a href="">home</a>
+<a href="">about us</a>
+<a href="">portfolio</a>
+<a href="">pricing</a>
+<a href="">team</a>
+<a href="">blog</a>
+<a href="">contact</a>
+
+
+
+
+
+
+
+
+                <!-- 
                 <div class="home">home</div>
                 <div class="about us">about us</div>
                 <div class="portfolio">portfolio</div>
                 <div class="pricing">pricing</div>
                 <div class="team">team</div>
                 <div class="blog">blog</div>
-                <div class="contact">contact</div>
+                <div class="contact">contact</div> -->
             </nav>
         </div>
         <div class="content">
@@ -144,6 +191,7 @@
                 <div class="hr">
                     <hr>
                 </div>
+                <div class="p">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit animi sunt ducimus repellat minima
                     quasi,
                     doloremque qui non, ipsa beatae tenetur quis sint aliquid veniam sequi eligendi necessitatibus,
@@ -153,6 +201,7 @@
                     omnis cum molestiae neque beatae, nihil quos perspiciatis consequuntur laboriosam ratione sint nulla
                     dolorum
                     debitis architecto commodi.</p>
+                </div>
         </div>
         <div class="btn">
             <div class="a">
