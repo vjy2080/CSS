@@ -21,23 +21,16 @@
             height: 100vh;
             width: 100vw;
             justify-content: space-between;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../Images/WDpagenatural.jpg);
+            background-image:
+                linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+                url(../Images/WDpagenatural.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat, no-repeat;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 90%, 0 75%);
         }
 
-        /* .container::before {
-            background-color: rgba(2, 2, 2, 0.37);
-            content: '';
-            display: block;
-            height: 100%;
-            position:absolute ;
-            width: 100%;
-        } */
-
         .logo {
-            /* border: 2px solid; */
             display: inline-block;
             margin-left: 100px;
         }
@@ -50,46 +43,36 @@
 
         .nav {
             display: flex;
-            /* flex-wrap: wrap; */
             justify-content: space-around;
             font-size: x-small;
         }
 
         nav {
             align-content: center;
-            /* border: 2px solid; */
             display: flex;
             flex-wrap: wrap;
             width: 50%;
-            /* margin-right: 100px; */
             justify-content: space-between;
             text-transform: uppercase;
-
         }
-        nav>a{
+
+        nav>a {
             text-decoration: none;
             color: white;
         }
-        nav>a:hover{
+
+        nav>a:hover {
             color: orangered;
+            font-size: 12px;
         }
-        /* nav>a {
-            justify-content: end;
-            flex-direction: row;
-            border: 2px solid;
-            
-        } */
 
         .content {
             display: flex;
             flex-direction: column;
-            /* border: 2px solid; */
             text-align: center;
             align-content: center;
             height: 50%;
             justify-content: space-around;
-
-
         }
 
         h5 {
@@ -114,7 +97,8 @@
             height: 0px;
             width: 10%;
         }
-        .btn{
+
+        .btn {
             height: 150px;
             display: flex;
             flex-wrap: wrap;
@@ -122,7 +106,8 @@
             color: white;
             text-transform: uppercase;
         }
-        .a>a{
+
+        .a>a {
             border: 2px solid grey;
             border-radius: 5px;
             padding: 10px 25px;
@@ -132,57 +117,39 @@
             font-size: x-small;
             background-color: rgba(0, 0, 0, 0.375);
         }
-        .a>a:hover{
+
+        .a>a:hover {
             background-color: orangered;
         }
-        .p{
+
+        .p {
             padding: 5px;
-            /* border: 2px solid; */
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             font-size: x-small;
         }
-        p{
+
+        p {
             color: rgb(157, 157, 157);
             width: 60%;
             line-height: 20px;
-            /* border: 2px solid; */
-
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <!-- <div class="logo">    </div> -->
         <div class="nav">
             <img src="../Images/v-logo2.webp" alt="">
             <nav>
-
-<a href="">home</a>
-<a href="">about us</a>
-<a href="">portfolio</a>
-<a href="">pricing</a>
-<a href="">team</a>
-<a href="">blog</a>
-<a href="">contact</a>
-
-
-
-
-
-
-
-
-                <!-- 
-                <div class="home">home</div>
-                <div class="about us">about us</div>
-                <div class="portfolio">portfolio</div>
-                <div class="pricing">pricing</div>
-                <div class="team">team</div>
-                <div class="blog">blog</div>
-                <div class="contact">contact</div> -->
+                <a href="">home</a>
+                <a href="">about us</a>
+                <a href="">portfolio</a>
+                <a href="">pricing</a>
+                <a href="">team</a>
+                <a href="">blog</a>
+                <a href="">contact</a>
             </nav>
         </div>
         <div class="content">
@@ -192,23 +159,19 @@
                     <hr>
                 </div>
                 <div class="p">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit animi sunt ducimus repellat minima
-                    quasi,
-                    doloremque qui non, ipsa beatae tenetur quis sint aliquid veniam sequi eligendi necessitatibus,
-                    quaerat
-                    perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem dolore
-                    magni, veniam
-                    omnis cum molestiae neque beatae, nihil quos perspiciatis consequuntur laboriosam ratione sint nulla
-                    dolorum
-                    debitis architecto commodi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit animi sunt ducimus repellat
+                        minima quasi, doloremque qui non, ipsa beatae tenetur quis sint aliquid veniam sequi eligendi
+                        necessitatibus, quaerat perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum dolorem dolore magni, veniam omnis cum molestiae neque beatae, nihil quos
+                        perspiciatis consequuntur laboriosam ratione sint nulla dolorum debitis architecto commodi.</p>
                 </div>
         </div>
         <div class="btn">
             <div class="a">
-            <a href="#">get started now</a>
-            <a href="#">learn more</a>
+                <a href="#">get started now</a>
+                <a href="#">learn more</a>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 
