@@ -177,7 +177,8 @@ h1 {
     width: 11em;
 }
 
-/* ====================================================== */
+/* ==========================healthy-and-delicious============================ */
+
 #healthy-and-delicious>.container {
     /* border: 2px solid; */
     /* border-radius: 100px; */
@@ -243,3 +244,34 @@ h1 {
     content: "+";
     padding-right: 5px;
   }
+
+  /* ================================ Beverage courses =============================== */
+
+#beverage-courses{
+    background-image: url(../images/Beverage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card-beverage-courses{
+border: 2px solid;
+margin: 155px 0;
+padding: 150px 0px 150px 150px;
+width: 50%;
+
+
+}
+
+.card-bot{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
