@@ -1,0 +1,165 @@
+
+/* ===================== COMMON STYLE ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-direction-rr {
+    flex-direction: row-reverse;
+}
+
+.ml-a {
+    margin-left: auto;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-light {
+    color: white;
+}
+
+.px-3 {
+    padding: 0 3em;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    flex: 1 0 0%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== HEADER STYLE =================== */
+
+
+.main-menu {
+    width: 1180px;
+    background-color: #3a3a3a;
+    margin: 0 auto;
+    padding: 50px 30px 20px;
+    border-radius: 0px 0px 80px 80px;
+    box-shadow: 0 90px 50px -70px gray;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.social-icon-menu {
+    position: relative;
+    padding: 0 20px;
+}
+
+.social-icon-menu::after {
+    content: ' ';
+    border-right: 2px solid grey;
+    position: absolute;
+    height: 20px;
+    top: 2px;
+    right: 7px;
+}
+
+h1 {
+    color: #b68e76;
+    font-family: 'Poppins', serif;
+    font-size: 72px;
+
+}
+
+
+/* ========================== MAIN TOP SECTION STYLE ======================== */
+
+#main-top-section {
+    background: url(top-bg.png)no-repeat 0px 200px /contain;
+}
+
+.card-main-header {
+    margin: 155px 0;
+    padding: 150px 0px 150px 150px;
+    width: 50%;
+}
+
+.card-main-header h2 {
+    font-size: 37px;
+    letter-spacing: 1px;
+    line-height: 49px;
+    font-weight: 300;
+    font-family: "Roboto Slab";
+}
+
+.card-main-header p {
+    font-size: 34px;
+    letter-spacing: 1px;
+    line-height: 41px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Roboto Slab";
+    margin: 30px 0;
+    margin-right: 50px;
+}
+
+.btn{
+    border-radius: 21px;
+    padding:7px 50px;
+    color: white;
+}
+.btn-primary{
+    background-color: #b68e76;
+}
+.btn-secondary{
+    background-color: #3a3a3a;
+}
