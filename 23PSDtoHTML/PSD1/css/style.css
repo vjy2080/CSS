@@ -9,7 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: #f1e8e3;
 
 }
@@ -172,8 +172,9 @@ h1 {
 .btn-secondary {
     background-color: #3a3a3a;
 }
+
 .btn-third {
-    background-color:#b68e76;
+    background-color: #b68e76;
     width: 11em;
 }
 
@@ -186,7 +187,7 @@ h1 {
     width: 80vw;
     display: flex;
     padding: 0;
-    
+
 }
 
 #healthy-and-delicious>.container>.left-content {
@@ -230,48 +231,77 @@ h1 {
     color: #b68e76;
     font-weight: 500;
     font-family: "Roboto Slab";
-    
+
 }
+
 #healthy-and-delicious p {
     font-size: 8px;
 }
 
-#healthy-and-delicious ul{
-    list-style:none;
+#healthy-and-delicious ul {
+    list-style: none;
 }
 
 #healthy-and-delicious ul li:before {
     content: "+";
     padding-right: 5px;
-  }
+}
 
-  /* ================================ Beverage courses =============================== */
+/* ================================ Beverage courses =============================== */
 
-#beverage-courses{
+#beverage-courses {
     background-image: url(../images/Beverage.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.card-beverage-courses{
-border: 2px solid;
-margin: 155px 0;
-padding: 150px 0px 150px 150px;
-width: 50%;
+.card-beverage-courses {
+    border: 2px solid;
+    margin: 155px 0;
+    /* padding: 150px 0px 150px 150px; */
+    width: 50%;
+    height: 100%;
+    display: flex;
 
 
 }
 
-.card-bot{
+.card-top {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* width: 50%; */
+}
+.card-bot {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
 }
 
+#beverage-courses .card-top>h2 {
+    font-size: 39px;
+    letter-spacing: 0px;
+    line-height: 48px;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Roboto Slab";
+}
 
+#beverage-courses .card-top>p {
+    font-size: 32px;
+    letter-spacing: 0px;
+    line-height: 42px;
+    color: #000000;
+    font-weight: 250;
+    font-family: "Roboto Slab";
+}
 
-
-
-
-
-
+#beverage-courses .card-bot>p {
+    width: 100%;
+    height: 71px;
+    font-size: 11px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    color: #30302f;
+    font-weight: 400;
+    font-family: "Barlow";
+}
