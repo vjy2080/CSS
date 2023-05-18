@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-static{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            color: white;
+            font-size: 32px;
+            position: static;
+            left: 100px;
+        }
+        .box-relative{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(61, 13, 13);
+            color: white;
+            font-size: 32px;
+            position: relative;
+            left: 100px;
+        }
+        .box-absolute{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(61, 13, 13);
+            color: white;
+            font-size: 32px;
+            position: absolute;
+            left: 100px;
+            top: 10px;
+        }
+        .box-fixed{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(211, 117, 22);
+            color: white;
+            font-size: 32px;
+            position: fixed;
+            left: 500px;
+            top: 10px;
+        }
+        .something{
+            height: 500px;
+            width: 500px;
+            background-color: rgb(13, 61, 25);
+            color: white;
+        }
+        .something-for-sticky{
+            height: 10000px;
+            width: 100%;
+            background-color: rgb(31, 5, 83);
+            color: white;
+        }
+        .box-sticky{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(7, 75, 118);
+            color: white;
+            font-size: 32px;
+            position: sticky;
+            /* left: 100px; */
+            top: 10px;
+            left: 800px;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li>position: static;</li> 
+        <li>position: relative;</li> 
+        <li>position: absolute;</li> 
+        <li>position: fixed;</li> 
+        <li>position: sticky;</li> 
+    </ul>
+
+    <h3>Static</h3>
+    <p>The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.</p>
+    Before Box
+    <div class="box-static"> Static Box </div>
+    After Box
+    
+    <h3>Relative</h3>
+    <p>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.</p>
+    Before Box
+    <div class="box-relative"> Relative Box </div>
+    After Box
+    
+    <h3>Absolute</h3>
+    <p>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.</p>
+    Before Box
+    <div class="something">
+        
+        Before Absolute Box
+        <div class="box-absolute"> Absolute Box </div>
+        After Absolute Box
+    </div>
+    After Box
+    <h3>Fixed</h3>
+    <p>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.</p>
+    Before Box
+    <div class="something">
+        <div class="box-fixed"> Fixed Box </div>
+    </div>
+    After Box
+    <h3>sticky</h3>
+    <p>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.</p>
+    Before Box
+    <div class="something-for-sticky">
+        <div class="box-sticky"> Sticky Box </div>
+    </div>
+    After Box
+</body>
+</html>
