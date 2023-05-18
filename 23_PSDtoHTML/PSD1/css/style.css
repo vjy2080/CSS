@@ -55,8 +55,8 @@ body {
 
 .row {
     display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: auto;
+    margin-left: 180px;
 }
 
 .col {
@@ -130,12 +130,12 @@ h1 {
 
 #main-top-section {
     background: url(../images/top-bg.png)no-repeat 0px 200px /contain;
-    align-items: center;
+    background-position: -75px -84px;
 
 }
 
 .card-main-header {
-    margin: 155px 0;
+    margin: -60px 93px 200px 0px;
     padding: 150px 0px 150px 150px;
     width: 50%;
 }
