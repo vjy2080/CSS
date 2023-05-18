@@ -39,7 +39,7 @@ body {
 }
 
 .position-fixed {
-    /* position: fixed; */
+    position: fixed;
 }
 
 .w-100 {
