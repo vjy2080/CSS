@@ -39,7 +39,7 @@ body {
 }
 
 .position-fixed {
-    position: fixed;
+    /* position: fixed; */
 }
 
 .w-100 {
@@ -334,3 +334,19 @@ font-family: "Roboto Slab";
 #beverage-courses .card-bot>a{
     text-align: center;
 }
+
+/* ============================beverage menu======================= */
+#beverage-menu .container{
+    border: 2px solid red;
+}
+
+.card-beverage-menu .card-top{
+    border: 2px solid;
+}
+.card-beverage-menu .card-mid{
+    border: 2px solid;
+}
+.card-beverage-menu .card-bot{
+    border: 2px solid;
+}
+
