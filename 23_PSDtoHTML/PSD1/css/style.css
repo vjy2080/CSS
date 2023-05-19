@@ -11,6 +11,7 @@
 
 body {
     background-color: #f1e8e3;
+    max-width: 1440px;
 
 }
 
@@ -69,6 +70,20 @@ a {
     text-decoration: none;
 }
 
+th{
+    font-size: 21px;
+    font-weight: 250;
+    font-family: "Roboto Slab";
+    text-align: left;
+    padding-left: 10px;
+}
+td{
+    width: 511px;
+    height: 63px;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "Barlow";
+}
 
 
 
@@ -339,14 +354,48 @@ font-family: "Roboto Slab";
 #beverage-menu .container{
     border: 2px solid red;
 }
-
+.card-beverage-menu{
+    background-color: #000;
+    margin: auto;
+}
 .card-beverage-menu .card-top{
     border: 2px solid;
+    color: white;
 }
 .card-beverage-menu .card-mid{
+    display: flex;
     border: 2px solid;
+    color: white;
+    justify-content: space-between;
+}
+.mid-left{
+    border: 2px solid green;
+    width: 80%;
+}
+.mid-right{
+    display: flex;
+    border: 2px solid blue;
+    width: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
 }
 .card-beverage-menu .card-bot{
     border: 2px solid;
+    color: white;
 }
+
+    #beverage-menu h2 {
+
+    }
+    #beverage-menu h3 {
+
+    }
+    #beverage-menu h4 {
+        
+    }
+    #beverage-menu p {
+
+    }
+    
 
