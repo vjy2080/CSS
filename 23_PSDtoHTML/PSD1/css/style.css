@@ -199,7 +199,7 @@ h1 {
     /* border: 2px solid; */
     /* border-radius: 100px; */
     /* height: 100vh; */
-    width: 80vw;
+    /* width: 80vw; */
     display: flex;
     padding: 0;
 
@@ -262,6 +262,17 @@ h1 {
     padding-right: 5px;
 }
 
+#healthy-and-delicious h5{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    color: #30302f;
+    font-weight: 800;
+    font-family: "Barlow";
+}
+
 /* ================================ Beverage courses =============================== */
 
 #beverage-courses {
@@ -283,7 +294,7 @@ h1 {
 
 }
 
-.card-top {
+#beverage-courses .card-top {
     display: flex;
     flex-direction: column;
     /* width: 50%; */
@@ -291,7 +302,7 @@ h1 {
     height: 170px;
     justify-content: space-between;
 }
-.card-bot {
+#beverage-courses .card-bot {
     display: flex;
     flex-direction: column;
     height: 250px;
@@ -299,13 +310,13 @@ h1 {
     justify-content: space-between;
 }
 
-.card-bot>input{
+#beverage-courses .card-bot>input{
     height: 45px;
     border-radius: 23px;
     background-color: #ffffff;
     padding: 0px 20px;
 }
-.card-bot>input::placeholder
+#beverage-courses .card-bot>input::placeholder
 {
 
     width: 543px;
@@ -352,50 +363,81 @@ font-family: "Roboto Slab";
 
 /* ============================beverage menu======================= */
 #beverage-menu .container{
-    border: 2px solid red;
+    display: flex;
+    justify-content: center;
 }
-.card-beverage-menu{
+
+.right-content{
     background-color: #000;
-    margin: auto;
+    border-radius: 0px 110px  110px 0px;
+    padding-left: 50px;
 }
-.card-beverage-menu .card-top{
-    border: 2px solid;
+.right-content .card-top{
     color: white;
 }
-.card-beverage-menu .card-mid{
+.right-content .card-mid{
     display: flex;
-    border: 2px solid;
     color: white;
     justify-content: space-between;
 }
 .mid-left{
-    border: 2px solid green;
     width: 80%;
 }
 .mid-right{
     display: flex;
-    border: 2px solid blue;
     width: 10%;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content:space-between;
+    padding-bottom: 60px;
 }
-.card-beverage-menu .card-bot{
-    border: 2px solid;
+.right-content .card-bot{
     color: white;
+    background-color: #b68e76;
 }
 
     #beverage-menu h2 {
-
+        font-size: 66px;
+        font-weight: 400;
+        font-family: "Roboto Slab";
     }
     #beverage-menu h3 {
+        font-size: 34px;
+        font-weight: 500;
+        font-family: "Roboto Slab";
 
     }
     #beverage-menu h4 {
-        
+        font-size: 21px;
+        font-weight: 250;
+        font-family: "Roboto Slab";
     }
     #beverage-menu p {
-
+        width: 511px;
+        height: 63px;
+        font-size: 10px;
+        font-weight: 400;
+        font-family: "Barlow";
     }
     
+    #beverage-menu a {
+        font-size: 34px;
+        font-weight: 500;
+        font-family: "Roboto Slab";
+        color: #fff;
+        line-height: 110px;
+        
+    }
+.beverage-menu-para{
+    width: 353px;
+    height: 197px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Barlow";
+    justify-items: end;
+    display: flex;
+}
+   
 
