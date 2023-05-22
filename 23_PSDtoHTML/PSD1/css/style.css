@@ -55,6 +55,7 @@ body {
 }
 
 .row {
+    border: 2px solid;
     display: flex;
     margin-right: auto;
     margin-left: 180px;
@@ -70,14 +71,15 @@ a {
     text-decoration: none;
 }
 
-th{
+th {
     font-size: 21px;
     font-weight: 250;
     font-family: "Roboto Slab";
     text-align: left;
     padding-left: 10px;
 }
-td{
+
+td {
     width: 511px;
     height: 63px;
     font-size: 10px;
@@ -206,13 +208,15 @@ h1 {
 }
 
 #healthy-and-delicious>.container>.left-content {
-    border-radius: 100px 0px 0px 100px;
+    border-radius: 20% 0px 0px 20%;
     background-color: #fff;
     width: 50%;
-    padding: 30px;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    box-shadow: 2px 10px 49px rgb(94, 92, 92);
+
 }
 
 #healthy-and-delicious img {
@@ -221,8 +225,6 @@ h1 {
 
 #healthy-and-delicious h2 {
     font-size: 39px;
-    letter-spacing: 0px;
-    line-height: 47px;
     color: #000000;
     font-weight: 500;
     font-family: "Roboto Slab";
@@ -262,7 +264,7 @@ h1 {
     padding-right: 5px;
 }
 
-#healthy-and-delicious h5{
+#healthy-and-delicious h5 {
     text-align: center;
     padding-top: 10px;
     font-size: 14px;
@@ -289,7 +291,7 @@ h1 {
     height: 60%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between ;
+    justify-content: space-between;
 
 
 }
@@ -302,6 +304,7 @@ h1 {
     height: 170px;
     justify-content: space-between;
 }
+
 #beverage-courses .card-bot {
     display: flex;
     flex-direction: column;
@@ -310,23 +313,23 @@ h1 {
     justify-content: space-between;
 }
 
-#beverage-courses .card-bot>input{
+#beverage-courses .card-bot>input {
     height: 45px;
     border-radius: 23px;
     background-color: #ffffff;
     padding: 0px 20px;
 }
-#beverage-courses .card-bot>input::placeholder
-{
+
+#beverage-courses .card-bot>input::placeholder {
 
     width: 543px;
-height: 145px;
-font-size: 15px;
-letter-spacing: 0px;
-line-height: 31px;
-color: #000000;
-font-weight: 700;
-font-family: "Roboto Slab";
+    height: 145px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 31px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 #beverage-courses .card-top>h2 {
@@ -357,87 +360,97 @@ font-family: "Roboto Slab";
     font-weight: 400;
     font-family: "Barlow";
 }
-#beverage-courses .card-bot>a{
+
+#beverage-courses .card-bot>a {
     text-align: center;
 }
 
 /* ============================beverage menu======================= */
-#beverage-menu .container{
+#beverage-menu .container {
     display: flex;
     justify-content: center;
 }
 
-.right-content{
+.right-content {
     background-color: #000;
-    border-radius: 0px 110px  110px 0px;
+    border-radius: 0px 110px 110px 0px;
     padding-left: 50px;
 }
-.right-content .card-top{
+
+.right-content .card-top {
     color: white;
 }
-.right-content .card-mid{
+
+.right-content .card-mid {
     display: flex;
     color: white;
     justify-content: space-between;
 }
-.mid-left{
+
+.mid-left {
     width: 80%;
 }
-.mid-right{
+
+.mid-right {
     display: flex;
     width: 10%;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-bottom: 60px;
 }
-.right-content .card-bot{
+
+.right-content .card-bot {
     color: white;
-    background-color: #b68e76;
+    /* background-color: #b68e76; */
 }
 
-    #beverage-menu h2 {
-        font-size: 66px;
-        font-weight: 400;
-        font-family: "Roboto Slab";
-    }
-    #beverage-menu h3 {
-        font-size: 34px;
-        font-weight: 500;
-        font-family: "Roboto Slab";
+#beverage-menu h2 {
+    font-size: 66px;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+}
 
-    }
-    #beverage-menu h4 {
-        font-size: 21px;
-        font-weight: 250;
-        font-family: "Roboto Slab";
-    }
-    #beverage-menu p {
-        width: 511px;
-        height: 63px;
-        font-size: 10px;
-        font-weight: 400;
-        font-family: "Barlow";
-    }
-    
-    #beverage-menu a {
-        font-size: 34px;
-        font-weight: 500;
-        font-family: "Roboto Slab";
-        color: #fff;
-        line-height: 110px;
-        
-    }
-.beverage-menu-para{
-    width: 353px;
-    height: 197px;
-    font-size: 14px;
-    letter-spacing: 0px;
-    line-height: 19px;
-    color: #000000;
+#beverage-menu h3 {
+    font-size: 34px;
+    font-weight: 500;
+    font-family: "Roboto Slab";
+
+}
+
+#beverage-menu h4 {
+    font-size: 21px;
+    font-weight: 250;
+    font-family: "Roboto Slab";
+}
+
+#beverage-menu p {
+    width: 511px;
+    height: 63px;
+    font-size: 10px;
     font-weight: 400;
     font-family: "Barlow";
-    justify-items: end;
-    display: flex;
 }
-   
 
+#beverage-menu a {
+    font-size: 34px;
+    font-weight: 500;
+    font-family: "Roboto Slab";
+    color: #fff;
+    line-height: 110px;
+
+}
+
+.beverage-menu-para {
+    border: 2px solid black;
+    width: 353px;
+    font-size: 14px;
+    color: #000000;
+    font-family: "Barlow";
+    /* padding-right: 100px; */
+    justify-content: end;
+}
+
+.right-content{
+    background: rgb(0,0,0);
+background: linear-gradient(0deg,rgba(182,142,118,1) 25%,  rgba(0,0,0,1) 25%);
+}
