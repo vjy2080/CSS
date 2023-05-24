@@ -617,7 +617,12 @@ h1 {
 
 .col1{
     margin-left: 65px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .shadow-box {
     box-shadow: 27px -10px 27px rgb(69, 68, 68);
