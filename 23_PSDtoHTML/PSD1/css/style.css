@@ -55,7 +55,7 @@ body {
 }
 
 .row {
-    border: 2px solid;
+    /* border: 2px solid; */
     display: flex;
     margin-right: auto;
     margin-left: 180px;
@@ -462,12 +462,11 @@ h1 {
 
 /* ===================================Suger-Free=================================== */
 #suger-free {
-    width: 100%;
-    height: 100%;
     background-image: url(../images/suger-free.png);
     background-size: cover;
+    background-position: -188px 0;
     background-repeat: no-repeat;
-    border: 2px solid black;
+    padding-left: 200px;
 }
 
 .card-suger-free {
@@ -491,7 +490,7 @@ h1 {
     font-weight: 600;
     font-family: "Roboto Slab";
     margin-top: 30px;
-    
+
 }
 
 #suger-free h4 {
@@ -506,4 +505,71 @@ h1 {
     margin-top: 30px;
     width: 235px;
 
+}
+
+/* ====================================Learn-More================================== */
+#learn-more>.container {
+    display: flex;
+    padding: 0;
+
+}
+
+#learn-more>.container>.left-content {
+    border-radius: 20% 0px 0px 20%;
+    background-color: #fff;
+    width: 50%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 2px 10px 49px rgb(94, 92, 92);
+
+}
+
+#learn-more img {
+    width: 50%;
+}
+
+#learn-more h2 {
+    font-size: 39px;
+    font-weight: 600;
+    font-family: "Roboto Slab";
+    width: 50%;
+
+}
+
+#learn-more h3 {
+    font-size: 32px;
+    font-weight: 100;
+    font-family: "Roboto Slab";
+    width: 80%;
+
+}
+
+
+#learn-more p {
+    font-size: 14px;
+    font-family: "Barlow";
+    width: 83%;
+
+}
+
+#learn-more a {
+    width: 60%;
+    text-align: center;
+}
+#learn-more a + p {
+    font-size: 11px;
+    font-family: "Barlow";
+    width: 70%;
+
+}
+
+#learn-more h5 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #30302f;
+    font-weight: 800;
+    font-family: "Barlow";
 }
