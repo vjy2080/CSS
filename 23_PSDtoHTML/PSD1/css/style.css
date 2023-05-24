@@ -63,8 +63,8 @@ body {
 
 .col {
     flex: 1 0 0%;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
 }
 
 a {
@@ -608,22 +608,23 @@ h1 {
     padding: 50px 50px 0px 130px;
 }
 
+#favorite-seasonal-smoothie .row1{
+    margin: 0;
+}
 #favorite-seasonal-smoothie .row{
     margin: 0;
 }
-#favorite-seasonal-smoothie .col1{
-    
-        /* flex: 1 0 0%; */
-        padding-right: 25px;
-        /* padding-left: 25px; */
-    }
+
+.col1{
+    margin-left: 65px;
+}
 
 .shadow-box {
-    box-shadow: 10px 12px 25px rgb(69, 68, 68);
-    height: 350px;
+    box-shadow: 27px -10px 27px rgb(69, 68, 68);
+    height: 330px;
     width: 10px;
     position: absolute;
-    right: 5px;
+    right: 38px;
     top: 90px;
 }
 
