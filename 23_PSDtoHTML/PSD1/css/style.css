@@ -608,14 +608,17 @@ h1 {
     padding: 50px 50px 0px 130px;
 }
 
-#favorite-seasonal-smoothie .row1{
+#favorite-seasonal-smoothie .row1 {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
-#favorite-seasonal-smoothie .row{
+
+#favorite-seasonal-smoothie .row {
     margin: 0;
 }
 
-.col1{
+.col1 {
     margin-left: 65px;
     border: 2px solid;
     display: flex;
@@ -637,6 +640,7 @@ h1 {
     z-index: -1;
 }
 
+
 #favorite-seasonal-smoothie ul {
     list-style: none;
 }
@@ -646,11 +650,6 @@ h1 {
     padding-right: 5px;
 }
 
-.buy-now {
-    /* border: 2px solid; */
-    /* width: 500px; */
-    /* height: 300px; */
-}
 
 .btn-minus {
     background-color: #b68e76;
@@ -664,14 +663,39 @@ h1 {
     background-color: #b68e76;
     width: 10px;
     border-radius: 0px 20px 20px 0px;
-        padding: 7px 10px;
-        margin: 0px 10px;
+    padding: 7px 10px;
+    margin: 0px 10px;
 }
 
+#favorite-seasonal-smoothie h6 {
+    font-size: 15px;
+    color: #30302f;
+    font-weight: 600;
+    font-family: "Roboto Slab";
+    width: 55%;
+}
 
-.add-order{
+#favorite-seasonal-smoothie h5 {
+    font-size: 52px;
+    font-weight: 100;
+    font-family: "Roboto Slab";
+}
+
+.add-order {
     margin: auto;
 }
-.add-order-btn{
+.add-order .row1 a{
+
+    border: 2px solid red;
+    text-decoration: underline;
+}
+.add-order a {
+    font-size: 11px;
+    color: #30302f;
+    font-weight: 500;
+    font-family: "Roboto Slab";
+}
+
+.add-order-btn {
     margin-top: 10px;
 }
