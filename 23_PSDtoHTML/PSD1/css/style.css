@@ -87,7 +87,34 @@ td {
     font-family: "Barlow";
 }
 
+.w-100 {
+    width: 100%;
+}
 
+.h-100 {
+    height: 100%;
+}
+
+.bg-light {
+    background-color: white;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+.my-1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.mt-2 {
+    margin-top: .5em;
+}
+
+.position-reletive {
+    position: relative;
+}
 
 
 
@@ -558,7 +585,8 @@ h1 {
     width: 60%;
     text-align: center;
 }
-#learn-more a + p {
+
+#learn-more a+p {
     font-size: 11px;
     font-family: "Barlow";
     width: 70%;
@@ -572,4 +600,72 @@ h1 {
     color: #30302f;
     font-weight: 800;
     font-family: "Barlow";
+}
+
+/* ================================favorite-seasonal-smoothie=========================== */
+
+.favorite-seasonal {
+    padding: 50px 50px 0px 130px;
+}
+
+#favorite-seasonal-smoothie .row{
+    margin: 0;
+}
+#favorite-seasonal-smoothie .col1{
+    
+        /* flex: 1 0 0%; */
+        padding-right: 25px;
+        /* padding-left: 25px; */
+    }
+
+.shadow-box {
+    box-shadow: 10px 12px 25px rgb(69, 68, 68);
+    height: 350px;
+    width: 10px;
+    position: absolute;
+    right: 5px;
+    top: 90px;
+}
+
+.z-index-min-1 {
+    z-index: -1;
+}
+
+#favorite-seasonal-smoothie ul {
+    list-style: none;
+}
+
+#favorite-seasonal-smoothie ul li:before {
+    content: "+";
+    padding-right: 5px;
+}
+
+.buy-now {
+    /* border: 2px solid; */
+    /* width: 500px; */
+    /* height: 300px; */
+}
+
+.btn-minus {
+    background-color: #b68e76;
+    width: 10px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 7px 10px;
+    margin: 0px 10px;
+}
+
+.btn-plus {
+    background-color: #b68e76;
+    width: 10px;
+    border-radius: 0px 20px 20px 0px;
+        padding: 7px 10px;
+        margin: 0px 10px;
+}
+
+
+.add-order{
+    margin: auto;
+}
+.add-order-btn{
+    margin-top: 10px;
 }
