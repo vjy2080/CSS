@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            height: 200px;
+            width: 200px;
+        } */
+        
+        .parent {
+            height: 220px;
+            width: 220px;
+            background-color: brown;
+        }
+        .parent:hover .child{
+            display: block;
+            position: relative;
+        }
+        .child {
+            top: 220px;
+            height: 30px;
+            width: 220px;
+            display: none;
+            position: absolute;
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child">Data</div>
+    </div>
+
+</body>
+
+</html>

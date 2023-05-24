@@ -423,7 +423,7 @@ h1 {
     font-family: "Roboto Slab";
 }
 
-#beverage-menu p {
+#beverage-menu .mid-left p {
     width: 511px;
     height: 63px;
     font-size: 10px;
@@ -440,17 +440,38 @@ h1 {
 
 }
 
+.beverage-menu-para>p {
+    width: 440px;
+}
+
 .beverage-menu-para {
-    border: 2px solid black;
-    width: 353px;
+    width: 100%;
     font-size: 14px;
     color: #000000;
     font-family: "Barlow";
-    /* padding-right: 100px; */
-    justify-content: end;
+    padding: 0px 0px 0px 150px;
+    margin:  37px 0px 0px 150px;
+    justify-content: center;
+    
 }
 
-.right-content{
-    background: rgb(0,0,0);
-background: linear-gradient(0deg,rgba(182,142,118,1) 25%,  rgba(0,0,0,1) 25%);
+.right-content {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(182, 142, 118, 1) 25%, rgba(0, 0, 0, 1) 25%);
+}
+
+/* ===================================Suger-Free=================================== */
+#suger-free{
+    /* width: 100vh; */
+    background-image: url(../images/suger-free.png);
+    background-size:cover ;
+    background-position: -200px 100px;
+    background-repeat: no-repeat;
+}
+
+.card-suger-free{
+    flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 100%;
 }

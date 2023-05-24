@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .con{
+        #suger-free {
             border: 2px solid black;
-            display: flex;
-            justify-content: center;
         }
-        p{
-            width: 358px;
-            border: 2px solid black;
+
+        .container {
+            border: 2px solid red;
+            width: 600px;
+            height: 500px;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .row {
+            border: 2px solid brown;
+        }
+
+        .card-suger-free {
+            border: 2px solid green;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 100%;
         }
     </style>
 </head>
+
 <body>
-    <div class="con">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-        </p>
-    </div>
+    <section id="suger-free">
+        <div class="container">
+            <div class="card-suger-free d-flex">
+                <h2>Suger Free Shakes</h2>
+                <h3>The best calorie-free flavor</h3>
+                <h4>Order yours delivered to your home or visit your favorite branch</h4>
+                <a class="btn btn-primary" href="#">Find a branch</a>
+                <a class="btn btn-primary" href="#">Place your order</a>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

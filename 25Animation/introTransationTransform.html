@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid; */
+        }
+
+        .container {
+            width: 1180px;
+            margin: 0 auto;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col-3 {
+            width:25%;
+            flex: auto 0 0%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .txt-center{
+            text-align: center;
+        }
+
+        /* [*effect] */
+        img[class$="-effect"]{
+            transition: all 2s;
+        }
+        /* .-effect{
+            transition: all 5s;
+            transition: all .5s;
+        } */
+        .matrix-effect:hover{ transform:matrix(1, 2, 3, 4, 5, 6); }
+        .matrix3d-effect:hover{ transform: matrix3d(1, 0, 4, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1); }
+        .perspective-effect:hover{transform: perspective(300px) rotatey(45deg);}
+        .rotate-effect:hover{ transform: rotate(0.5turn); }
+        .rotate3d-effect:hover{ transform: rotate3d(1, 2, 3, 10deg); }
+        .rotatex-effect:hover{ transform: rotateX(45deg); }
+        .rotatey-effect:hover{ transform:rotateY(45deg) ; }
+        .rotatez-effect:hover{ transform: rotateZ(45deg); }
+        .translate-effect:hover{ transform: translate(100px,50px); }
+        .translate3d-effect:hover{ transform:translate3d(12px, 50%, 3em); }
+        .translatex-effect:hover{ transform:translateX(2em); ; }
+        .translatey-effect:hover{ transform:translateY(2em); ; }
+        .translatez-effect:hover{ transform:translateZ(2em); ; }
+        .scale-effect:hover{ transform: scale(2); }
+        .scale3d-effect:hover{ transform: scale3d(2.5, 1.2, 0.3); }
+        .scalex-effect:hover{ transform: scaleX(2); }
+        .scaley-effect:hover{ transform: scaleY(2); }
+        .scalez-effect:hover{ transform: scaleZ(2); }
+        .skew-effect:hover{ transform: skew(30deg, 20deg); }
+        .skewx-effect:hover{ transform: skewX(30deg); }
+        .skewy-effect:hover{ transform:skewY(1.07rad) ; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h2 class="txt-center">matrix</h2>
+                <img src="smiley.png" class="matrix-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">matrix3d-effect</h2>
+                <img src="smiley.png" class="matrix3d-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">perspective-effect</h2>
+                <img src="smiley.png" class="perspective-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">rotate-effect</h2>
+                <img src="smiley.png" class="rotate-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">rotate3d-effect</h2>
+                <img src="smiley.png" class="rotate3d-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">rotatex-effect</h2>
+                <img src="smiley.png" class="rotatex-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">rotatey-effect</h2>
+                <img src="smiley.png" class="rotatey-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">matrix</h2>
+                <img src="smiley.png" class="rotatez-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">translate-effect</h2>
+                <img src="smiley.png" class="translate-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">translate3d</h2>
+                <img src="smiley.png" class="translate3d-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">translatex-effect</h2>
+                <img src="smiley.png" class="translatex-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">translatey-effect</h2>
+                <img src="smiley.png" class="translatey-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">translatez-effect</h2>
+                <img src="smiley.png" class="translatez-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">scale-effect</h2>
+                <img src="smiley.png" class="scale-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">scale3d-effect</h2>
+                <img src="smiley.png" class="scale3d-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">scalex-effect</h2>
+                <img src="smiley.png" class="scalex-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">scaley-effect</h2>
+                <img src="smiley.png" class="scaley-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">scalez-effect</h2>
+                <img src="smiley.png" class="scalez-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">skew-effect</h2>
+                <img src="smiley.png" class="skew-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">skewx-effect</h2>
+                <img src="smiley.png" class="skewx-effect" width="200px" alt="">
+            </div>
+            <div class="col-3">
+                <h2 class="txt-center">skewy-effect</h2>
+                <img src="smiley.png" class="skewy-effect" width="200px" alt="">
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li> /* Keyword values */</li>
+        <li> transform: none;</li>
+        <li> /* Function values */</li>
+        <li> transform: matrix(1, 2, 3, 4, 5, 6);</li>
+        <li> transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);</li>
+        <li> transform: perspective(17px);</li>
+        <li> transform: rotate(0.5turn);</li>
+        <li> transform: rotate3d(1, 2, 3, 10deg);</li>
+        <li> transform: rotateX(10deg);</li>
+        <li> transform: rotateY(10deg);</li>
+        <li> transform: rotateZ(10deg);</li>
+        <li> transform: translate(12px, 50%);</li>
+        <li> transform: translate3d(12px, 50%, 3em);</li>
+        <li> transform: translateX(2em);</li>
+        <li> transform: translateY(3in);</li>
+        <li> transform: translateZ(2px);</li>
+        <li> transform: scale(2, 0.5);</li>
+        <li> transform: scale3d(2.5, 1.2, 0.3);</li>
+        <li> transform: scaleX(2);</li>
+        <li> transform: scaleY(0.5);</li>
+        <li> transform: scaleZ(0.3);</li>
+        <li> transform: skew(30deg, 20deg);</li>
+        <li> transform: skewX(30deg);</li>
+        <li> transform: skewY(1.07rad);</li>
+    </ul>
+</body>
+</html>
