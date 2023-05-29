@@ -770,7 +770,9 @@ footer .container {
 
 footer .row {
     border: 2px solid red;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .col {
@@ -789,3 +791,4 @@ footer ul {
 footer .social-icon-menu::after {
     display: none;
 }
+
