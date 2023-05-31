@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 60vh;
+    width: 205vh;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.logo { width: 5%; background-color: pink ;}
+.menu { width: 20%; background-color: yellow;}
+.content { width: 75%; background-color: green;}
