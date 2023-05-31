@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+div[class*=card] {
+    height: 300px;
+    width: 200px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card1 {
+    background-color: blueviolet;
+    position: absolute;
+    transform: rotate(-10deg);
+
+
+}
+
+.card1:hover{
+    transition: all 2s ease-in-out;
+    transform: translate(-10%,-10%) rotate(-10deg);
+
+}
+
+.card2 {
+    background-color: pink;
+    position: absolute;
+    transform: rotate(10deg);
+
+
+
+}
+.card2:hover{
+   
+    transition: all 2s ease-in-out;
+    transform: translate(10%,-10%) rotate(10deg);
+
+}
+.card3 {
+    position: absolute;
+    transform: rotate(0deg);
+    background-color: white;
+    
+}
+
+.card3:hover{
+    transition: all 2s ease-in-out;
+    transform: translate(0%,-10%) rotate(0deg);
+}
