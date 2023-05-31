@@ -3,19 +3,23 @@
     margin: 0;
     padding: 0;
 }
-/* .container{
-display: flex;
-flex-wrap: wrap;
-border: 2px solid black;
-width: 100vw;
+.container{
+display: grid;
+/* flex-wrap: wrap; */
+/* border: 2px solid black; */
+/* width: 100vw; */
 height: 100vh;
-} */
-.row{
+}
+/* .row{
 display: grid;
 grid-template-columns: repeat(4,0.1fr);
 grid-template-rows: minmax(300px,1fr);
-grid-gap: 0px;
 
+} */
+
+.col{
+    display: flex;
+    flex-wrap: wrap;
 }
 div[class*=article]{
     display: flex;
@@ -55,18 +59,19 @@ height: 10px;
 margin-left: 5px;
 }
 
-@media (max-width: 991.98px)(min-width:767.98px) {
+@media (min-width: 767.98px) {
     
     body{
         background-color: skyblue;
     }
 
     .container {
-        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        grid-template-columns: repeat(4, 0.1fr);
     grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
         "a1 i1 a2 i2"
-        "a3 i3 a4 i4"
+        "i3 a3 i4 a4"
         ;
 
     }
@@ -79,7 +84,7 @@ margin-left: 5px;
     }
    
     .container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 0.1fr);
     grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
         "a1 i1 a2 i2"
@@ -95,7 +100,7 @@ margin-left: 5px;
         background-color: yellow;
     }
     .container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 0.1fr);
     grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
             "a1 i1 a2 i2"
