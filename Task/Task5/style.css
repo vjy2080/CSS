@@ -1,0 +1,204 @@
+/* Universal style START */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Universal style END */
+
+/* Black Background given as a layer to create darkness on background image */
+
+.blackbg{
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* background image style START */
+
+.bg{
+    background-image: url(Images/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -10;
+}
+/* background image style END */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.row {
+    height: 100px;
+    padding-top: 125px;
+    
+}
+
+
+
+
+.text {
+    width: 99vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.text>h2{
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+    padding-bottom: 20px;
+}
+
+/* .text>p::before{
+    content: url(Images/Design.png);
+} */
+.text>p{
+    width: 1173px;
+    height: 39px;
+    font-size: 14px;
+    color: #f4f5f9;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    margin: 0px 0px;
+}
+.text h2:hover{
+    color: orangered;
+}
+
+.text h2 {
+    display: inline-block;
+    margin: auto;
+}
+
+.text p {
+    text-align: center;
+
+}
+
+.hr{
+    border-radius: 0%;
+    width: 100px;
+    height: 5px;
+    border: none;
+
+}
+.design{
+    margin: auto;
+}
+
+div[class*=img] {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    width: 155px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div[class*=img]>h3 {
+    width: 9rem;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -50px;
+
+}
+
+.content{
+    visibility: hidden;
+    width: 155px;
+    margin-top: 50px;
+
+}
+
+
+
+img:hover {
+    scale: 1.2;
+    background-color: #e74c3c;
+    opacity: 0.8;
+    visibility: visible;
+    border: 2px solid orangered;
+    
+}
+img:hover +.content {
+    opacity: 0.8;
+    visibility: visible;
+    color: #e74c3c;
+    
+  
+}
+
+
+img:hover +.content>p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+
+svg {
+    padding-top: 60px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Contact list style START */
+
+img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 3px solid orangered;
+
+}
+
+.img1 {
+    
+    top: 348px;
+    left: 192px;
+}
+
+.img2 {
+    top: 344px;
+    left: 385px;
+}
+
+.img3 {
+    top: 373px;
+    left: 577px;
+}
+
+.img4 {
+    top: 391px;
+    left: 768px;
+
+}
+
+.img5 {
+    top: 371px;
+    left: 945px;
+}
+
+/* Contact list style END */

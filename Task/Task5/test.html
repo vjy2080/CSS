@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class*=box] {
+            height: 100px;
+            width: 100px;
+        }
+
+        .box1 {
+            position: relative;
+            top: 50px;
+            /* opacity: 10%; */
+            z-index: 1;
+            background-color: red;
+        }
+
+        .box2 {
+            position: relative;
+            top: 10px;
+            opacity: 50%;
+            z-index: 11;
+            background-color: yellow;
+        }
+
+        .box3 {
+            position: relative;
+            top: 10px;
+            /* opacity: 10%; */
+            z-index: 111;
+            background-color: green;
+        }
+
+        .box4 {
+            position: relative;
+            top: 10px;
+            /* opacity: 10%; */
+            z-index: 1111;
+            background-color: blue;
+        }
+
+        .box5 {
+            position: relative;
+            top: 10px;
+            /* opacity: 10%; */
+            z-index: 11111;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+
+</html>
