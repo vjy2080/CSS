@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+
+}
+.row{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+
+}
+div[class*=article]{
+    height: 400px;
+    width: 300px;
+}
+
+.article1{
+    background-color: yellow;
+}
+.article2{
+    background-color: red ;
+}
+.article3{
+    background-color: skyblue ;
+}
+.article4{
+    background-color: orange ;
+}
