@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media print {
+            body{
+                background-color: grey;
+                color: purple;
+                font-size: 56px;
+            }
+        }
+    </style>
+</head>
+<body>
+    data
+    <pre>
+        @media print {
+            body {
+              font-size: 10pt;
+            }
+          }
+          
+          @media screen {
+            body {
+              font-size: 13px;
+            }
+          }
+          
+          @media screen, print {
+            body {
+              line-height: 1.2;
+            }
+          }
+          
+          @media only screen and (min-width: 320px) and (max-width: 480px) and (resolution: 150dpi) {
+            body {
+              line-height: 1.4;
+            }
+          }
+    </pre>
+    <h2>Available breakpoints</h2>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Breakpoint</th>
+            <th>Class infix</th>
+            <th>Dimensions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>X-Small</td>
+            <td><em>None</em></td>
+            <td>&lt;576px</td>
+          </tr>
+          <tr>
+            <td>Small</td>
+            <td><code>sm</code></td>
+            <td>≥576px</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td><code>md</code></td>
+            <td>≥768px</td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td><code>lg</code></td>
+            <td>≥992px</td>
+          </tr>
+          <tr>
+            <td>Extra large</td>
+            <td><code>xl</code></td>
+            <td>≥1200px</td>
+          </tr>
+          <tr>
+            <td>Extra extra large</td>
+            <td><code>xxl</code></td>
+            <td>≥1400px</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
