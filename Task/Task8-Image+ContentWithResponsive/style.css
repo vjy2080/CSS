@@ -1,27 +1,17 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container{
-display: grid;
-/* flex-wrap: wrap; */
-/* border: 2px solid black; */
-/* width: 100vw; */
-height: 100vh;
-}
-/* .row{
-display: grid;
-grid-template-columns: repeat(4,0.1fr);
-grid-template-rows: minmax(300px,1fr);
 
-} */
-
-.col{
-    display: flex;
-    flex-wrap: wrap;
+.container {
+    display: grid;
+    height: 100vh;
 }
-div[class*=article]{
+
+
+
+div[class*=article] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,64 +21,74 @@ div[class*=article]{
 }
 
 
-.article1{
-    grid-area: a1 ;
+.article1 {
+    grid-area: a1;
     background-color: yellow;
 }
-.article2{
-    grid-area: a2 ;
-    background-color: red ;
-}
-.article3{
-    grid-area: a3 ;
-    background-color: skyblue ;
-}
-.article4{
-    grid-area: a4 ;
-    background-color: orange ;
+
+.article2 {
+    grid-area: a2;
+    background-color: red;
 }
 
-.img1{ grid-area: i1;}
-.img2{ grid-area: i2;}
-.img3{ grid-area: i3;}
-.img4{ grid-area: i4;}
+.article3 {
+    grid-area: a3;
+    background-color: skyblue;
+}
 
-.right-arrow{
-width:  10px;
-height: 10px;
-margin-left: 5px;
+.article4 {
+    grid-area: a4;
+    background-color: orange;
+}
+
+.img1 {
+    grid-area: i1;
+}
+
+.img2 {
+    grid-area: i2;
+}
+
+.img3 {
+    grid-area: i3;
+}
+
+.img4 {
+    grid-area: i4;
+}
+
+.right-arrow {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
 }
 
 @media (min-width: 767.98px) {
-    
-    body{
-        background-color: skyblue;
-    }
+
+
 
     .container {
         display: grid;
         grid-template-columns: repeat(4, 0.1fr);
-    grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
-        "a1 i1 a2 i2"
-        "i3 a3 i4 a4"
+            "a1 i1 a2 i2"
+            "i3 a3 i4 a4"
         ;
 
     }
 }
 
 @media (max-width: 767.98px) {
-   
-    body{
-        background-color: pink;
-    }
-   
+
+
+
     .container {
         grid-template-columns: repeat(4, 0.1fr);
-    grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
-        "a1 i1 a2 i2"
-        "a3 i3 a4 i4"
+            "a1 i1 a2 i2"
+            "a3 i3 a4 i4"
         ;
 
     }
@@ -96,15 +96,19 @@ margin-left: 5px;
 
 
 @media (max-width: 575.98px) {
-    body{
-        background-color: yellow;
-    }
+
     .container {
         grid-template-columns: repeat(4, 0.1fr);
-    grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
-            "a1 i1 a2 i2"
-            "a3 i3 a4 i4"
+            "a1"
+            "i1"
+            "a2"
+            "i2"
+            "a3"
+            "i3"
+            "a4"
+            "i4"
         ;
 
     }
