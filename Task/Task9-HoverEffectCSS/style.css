@@ -12,44 +12,56 @@
     justify-content: center;
     align-items: end;
     position: relative;
+    overflow: hidden;
 }
 
 div[class*=card] {
     height: 300px;
     width: 200px;
-    border-radius: 30px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+.menu{
+    background-color: rgb(155, 19, 229);
+    color: white;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 20px 40px;
+    font-size: xx-large;
+    bottom: -38px;
+}
 
 .card1 {
-    background-color: blueviolet;
+    background-color: rgb(155, 19, 229);
     position: absolute;
-    transform: rotate(-10deg);
+    transform: rotate(-10deg) translate(-10%,0%);
 
 
 }
 
 .card1:hover{
-    transition: all 2s ease-in-out;
-    transform: translate(-10%,-10%) rotate(-10deg);
+    transition: all 0.5s ease-in-out;
+    transform: translate(-30%,-10%) rotate(-10deg);
 
 }
 
 .card2 {
-    background-color: pink;
+    background-color: rgb(255, 192, 240);
     position: absolute;
-    transform: rotate(10deg);
+    transform: rotate(10deg)translate(20%,0%);
 
 
 
 }
 .card2:hover{
    
-    transition: all 2s ease-in-out;
-    transform: translate(10%,-10%) rotate(10deg);
+    transition: all 0.5s ease-in-out;
+    transform: translate(30%,-10%) rotate(10deg);
 
 }
 .card3 {
@@ -60,6 +72,6 @@ div[class*=card] {
 }
 
 .card3:hover{
-    transition: all 2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     transform: translate(0%,-10%) rotate(0deg);
 }
