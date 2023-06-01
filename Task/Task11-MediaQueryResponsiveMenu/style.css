@@ -20,14 +20,12 @@ li>a{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    /* height: 50px; */
 
 }
 .container {
     text-align: center;
 }
 .nav{
-    border: 2px solid;
     background-color: orange;
 }
 
@@ -48,4 +46,12 @@ ul>li{
 .bg-black{
     background-color: black;
     padding: 16px;
+}
+
+@media (max-width: 575.98px) {
+
+    .d-flex{
+        display: block;
+        
+    }
 }
