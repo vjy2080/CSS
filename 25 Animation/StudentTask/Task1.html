@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 97vw;
+            height: 96vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row {
+            width: 650px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            border: 1px solid royalblue;
+            border-radius: 2px;
+            margin: 5px 5px;
+            height: 100px;
+            width: 150px;
+            background-color: royalblue;
+            text-align: center;
+            
+        }
+
+        .col1 {
+            border: 1px solid navy;
+            border-radius: 2px;
+            background-color: royalblue;
+            height: 35px;
+            width: 150px;
+            margin: 5px 5px;
+        }
+        .fade       {animation-name:fade      ;
+        animation-duration: 5s; 
+        animation-iteration-count: infinite;
+    
+    }
+
+    @keyframes fade {
+            from {
+                margin-top: 400px;
+            }
+ 
+            to {
+                margin-top: 0px;
+            }
+        }
+        .push-up    {animation-name:push-up   ;
+        animation-duration: 5s; 
+        animation-iteration-count: infinite;
+    
+    }
+        .push-down  {animation-name:push-down ;
+        animation-duration: 5s; 
+        animation-iteration-count: infinite;
+    
+    }
+        .push-left  {animation-name:push-left ;
+        animation-duration: 5s; 
+        animation-iteration-count: infinite;
+    
+    }
+        .push-right {animation-name:push-right;
+        animation-duration: 5s; 
+        animation-iteration-count: infinite;
+    
+    }
+        .slide-up   {animation-name:slide-up  ;
+        animation-duration: 5s; 
+        animation-iteration-count: infinite;
+    
+    }
+        .slide-down {animation-name:slide-down;
+        animation-duration: 5s; 
+        animation-iteration-count: infinite;
+    
+    }
+        .slide-left {animation-name:slide-left;
+        animation-duration: 5s; 
+        animation-iteration-count: infinite;
+    
+    }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col fade">  <img width="96" height="96" src="https://img.icons8.com/fluency/96/image.png" alt="image"/></div>
+            <div class="col push-up">  <img width="96" height="96" src="https://img.icons8.com/fluency/96/image.png" alt="image"/></div>
+            <div class="col push-down"> <img width="96" height="96" src="https://img.icons8.com/fluency/96/image.png" alt="image"/></div>
+            <div class="col push-left"> <img width="96" height="96" src="https://img.icons8.com/fluency/96/image.png" alt="image"/></div>
+            <button class="col1">fade</button>
+            <button class="col1">push-up</button>
+            <button class="col1">push-down</button>
+            <button class="col1">push-left</button>
+            <div class="col push-right"><img width="96" height="96" src="https://img.icons8.com/fluency/96/image.png" alt="image"/> </div>
+            <div class="col slide-up"> <img width="96" height="96" src="https://img.icons8.com/fluency/96/image.png" alt="image"/> </div>
+            <div class="col slide-down"><img width="96" height="96" src="https://img.icons8.com/fluency/96/image.png" alt="image"/> </div>
+            <div class="col slideleft"> <img width="96" height="96" src="https://img.icons8.com/fluency/96/image.png" alt="image"/> </div>
+            <button class="col1">push-right</button>
+            <button class="col1">slide-up</button>
+            <button class="col1">slide-down</button>
+            <button class="col1">slide-left</button>
+            
+        </div>
+    </div>
+</body>
+
+</html>

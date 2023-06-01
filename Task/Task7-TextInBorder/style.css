@@ -42,10 +42,11 @@ img {
 
 .bdr-shape{
     display: inline-block;
-    border: 2px solid #7be7c5;
+    border-bottom: 2px solid #7be7c5;
+    border-left: 2px solid #7be7c5;
     border-radius: 30px;
     padding: 5px;
-    position: relative;
+    /* position: relative; */
 }
 
 .btn {
@@ -53,7 +54,7 @@ img {
     padding: 5px 10px;
     color: white;
     border: none;
-    position: absolute;
+    /* position: absolute; */
 }
 
 
