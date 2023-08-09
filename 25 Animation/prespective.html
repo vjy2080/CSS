@@ -10,6 +10,7 @@
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -31,50 +32,52 @@
             display: inline-block;
             margin: 10px 20px 10px 20px;
             transition: 0.4s ease-in;
-
+            padding-top: 80px;
 
         }
 
         .b1 {
             transform-origin: left center;
+            background-color: black;
         }
 
         .b1:hover {
-            transform: perspective(300px) rotatey(45deg);
+            transform: perspective(300px) rotatey(80deg);
             opacity: 0.8;
         }
 
         .b2 {
             transform-origin: bottom center;
+            background-color: black;
+
         }
 
         .b2:hover {
             opacity: 0.8;
-            transform: perspective(300px) rotatex(45deg);
+            transform: perspective(300px) rotatex(80deg);
         }
 
 
         .b3 {
             transform-origin: right center;
+            background-color: black;
+
         }
 
         .b3:hover {
             opacity: 0.8;
-            transform: perspective(300px) rotatey(-45deg);
+            transform: perspective(300px) rotatey(-80deg);
         }
 
         .text {
             color: #D0D0D0;
             text-align: center;
             ;
-            font-size: 10px;
+            font-size: 20px;
             font-family: sans-serif;
         }
 
-        a {
-            text-decoration: underline;
-            color: #fff;
-        }
+        
     </style>
 </head>
 
@@ -90,9 +93,7 @@
             <span class="text">right center perspective</span>
         </div>
     </div>
-    <div style="color:#fff; text-align:center; font-family:sans-serif; font-size:12px; margin-top:100px;">
-        <p>this code by <a href="http://www.hassaanalalosy.com/" target="_blank">Hassaan ALalosy</a></p>
-    </div>
+    
 </body>
 
 </html>
